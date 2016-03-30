@@ -1,0 +1,8 @@
+#WARNING numUsers should be the same as the number of users in the user configuration file
+numUsers=2
+files=files.txt
+resources=resources.txt
+network=network.txt
+users=users.txt
+#the router which the topRC is connected to
+topRCrouter=router1

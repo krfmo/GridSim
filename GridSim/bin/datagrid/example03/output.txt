@@ -1,0 +1,31 @@
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 13)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_1 - id: 19)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_2 - id: 25)
+
+Creating a Gridlet user entity with name = Gridlet_User, and id = 30
+Starting GridSim version 4.0
+Entities started.
+Gridlet_User.addMaster(): file11 has been added to Res_0
+Gridlet_User.addMaster(): file22 has been added to Res_1
+Submitting gridlet 0 to resource 0
+Submitting gridlet 1 to resource 1
+Submitting gridlet 2 to resource 2
+Received back gridlet 1
+Received back gridlet 2
+Received back gridlet 0
+Gridlet_User:%%%% Exiting body() at time 190591.010519894
+DataGIS: Notify all replica catalog entities for shutting down.
+DataGIS: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+GridInformationService: Notify all GridSim entities for shutting down.
+Simulation completed.

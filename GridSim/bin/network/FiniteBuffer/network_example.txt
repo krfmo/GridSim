@@ -1,0 +1,2 @@
+# total number of Routers2# specifies each router name and whether to log its activities or not# by default no logging is requiredRouter0
+Router1# x1 x2 0.0 10 1200# specify the link between two Routers# The format is:# Router_name1  Router_name2    baud_rate(GB/s)     prop_delay(ms)  mtu(byte)Router0 	Router1 	0.001  	10.0		1500

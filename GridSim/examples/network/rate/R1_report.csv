@@ -1,0 +1,585 @@
+0.0 attach this ROUTER, with router, R4, with link, R1_R4, with packet scheduler, R1_to_R4
+0.0 attach this ROUTER, to entity, User_0, with packet scheduler, R1_to_User_0
+0.0 register this entity to GridInformationService entity.
+0.0 advertise to router, R4
+5.0 receive router ad from, R4
+5.0 receive router ad from, R4
+5.0 receive router ad from, R4
+5.0 receive router ad from, R4
+10.01012 
+10.01012 receive incoming, Packet #1, out of, 10, with id, 0, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.01012 break this packet into, 1
+10.01012 enqueing, Packet #1, out of, 10, with id, 0, from, Output_User_0, to, Res_0, tag, 108
+10.011440000000002 dequeuing, Packet #1, out of, 10, with id, 0, from, Output_User_0, to, Res_0, tag, 108
+10.02012 
+10.02012 receive incoming, Packet #2, out of, 10, with id, 1, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.02012 break this packet into, 1
+10.02012 enqueing, Packet #2, out of, 10, with id, 1, from, Output_User_0, to, Res_0, tag, 108
+10.021440000000002 dequeuing, Packet #2, out of, 10, with id, 1, from, Output_User_0, to, Res_0, tag, 108
+10.03012 
+10.03012 receive incoming, Packet #3, out of, 10, with id, 2, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.03012 break this packet into, 1
+10.03012 enqueing, Packet #3, out of, 10, with id, 2, from, Output_User_0, to, Res_0, tag, 108
+10.031440000000002 dequeuing, Packet #3, out of, 10, with id, 2, from, Output_User_0, to, Res_0, tag, 108
+10.04012 
+10.04012 receive incoming, Packet #4, out of, 10, with id, 3, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.04012 break this packet into, 1
+10.04012 enqueing, Packet #4, out of, 10, with id, 3, from, Output_User_0, to, Res_0, tag, 108
+10.041440000000001 dequeuing, Packet #4, out of, 10, with id, 3, from, Output_User_0, to, Res_0, tag, 108
+10.05012 
+10.05012 receive incoming, Packet #5, out of, 10, with id, 4, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.05012 break this packet into, 1
+10.05012 enqueing, Packet #5, out of, 10, with id, 4, from, Output_User_0, to, Res_0, tag, 108
+10.051440000000001 dequeuing, Packet #5, out of, 10, with id, 4, from, Output_User_0, to, Res_0, tag, 108
+10.06012 
+10.06012 receive incoming, Packet #6, out of, 10, with id, 5, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.06012 break this packet into, 1
+10.06012 enqueing, Packet #6, out of, 10, with id, 5, from, Output_User_0, to, Res_0, tag, 108
+10.061440000000001 dequeuing, Packet #6, out of, 10, with id, 5, from, Output_User_0, to, Res_0, tag, 108
+10.07012 
+10.07012 receive incoming, Packet #7, out of, 10, with id, 6, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.07012 break this packet into, 1
+10.07012 enqueing, Packet #7, out of, 10, with id, 6, from, Output_User_0, to, Res_0, tag, 108
+10.07144 dequeuing, Packet #7, out of, 10, with id, 6, from, Output_User_0, to, Res_0, tag, 108
+10.080119999999999 
+10.080119999999999 receive incoming, Packet #8, out of, 10, with id, 7, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.080119999999999 break this packet into, 1
+10.080119999999999 enqueing, Packet #8, out of, 10, with id, 7, from, Output_User_0, to, Res_0, tag, 108
+10.08144 dequeuing, Packet #8, out of, 10, with id, 7, from, Output_User_0, to, Res_0, tag, 108
+10.090119999999999 
+10.090119999999999 receive incoming, Packet #9, out of, 10, with id, 8, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.090119999999999 break this packet into, 1
+10.090119999999999 enqueing, Packet #9, out of, 10, with id, 8, from, Output_User_0, to, Res_0, tag, 108
+10.09144 dequeuing, Packet #9, out of, 10, with id, 8, from, Output_User_0, to, Res_0, tag, 108
+10.100119999999999 
+10.100119999999999 receive incoming, Packet #10, out of, 10, with id, 9, from, Output_User_0, to, Res_0, tag, 21, delay, 0.0
+10.100119999999999 break this packet into, 1
+10.100119999999999 enqueing, Packet #10, out of, 10, with id, 9, from, Output_User_0, to, Res_0, tag, 21
+10.10144 dequeuing, Packet #10, out of, 10, with id, 9, from, Output_User_0, to, Res_0, tag, 21
+10.110119999999998 
+10.110119999999998 receive incoming, Packet #1, out of, 10, with id, 10, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.110119999999998 break this packet into, 1
+10.110119999999998 enqueing, Packet #1, out of, 10, with id, 10, from, Output_User_0, to, Res_0, tag, 108
+10.11144 dequeuing, Packet #1, out of, 10, with id, 10, from, Output_User_0, to, Res_0, tag, 108
+10.120119999999998 
+10.120119999999998 receive incoming, Packet #2, out of, 10, with id, 11, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.120119999999998 break this packet into, 1
+10.120119999999998 enqueing, Packet #2, out of, 10, with id, 11, from, Output_User_0, to, Res_0, tag, 108
+10.12144 dequeuing, Packet #2, out of, 10, with id, 11, from, Output_User_0, to, Res_0, tag, 108
+10.130119999999998 
+10.130119999999998 receive incoming, Packet #3, out of, 10, with id, 12, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.130119999999998 break this packet into, 1
+10.130119999999998 enqueing, Packet #3, out of, 10, with id, 12, from, Output_User_0, to, Res_0, tag, 108
+10.13144 dequeuing, Packet #3, out of, 10, with id, 12, from, Output_User_0, to, Res_0, tag, 108
+10.140119999999998 
+10.140119999999998 receive incoming, Packet #4, out of, 10, with id, 13, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.140119999999998 break this packet into, 1
+10.140119999999998 enqueing, Packet #4, out of, 10, with id, 13, from, Output_User_0, to, Res_0, tag, 108
+10.14144 dequeuing, Packet #4, out of, 10, with id, 13, from, Output_User_0, to, Res_0, tag, 108
+10.150119999999998 
+10.150119999999998 receive incoming, Packet #5, out of, 10, with id, 14, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.150119999999998 break this packet into, 1
+10.150119999999998 enqueing, Packet #5, out of, 10, with id, 14, from, Output_User_0, to, Res_0, tag, 108
+10.15144 dequeuing, Packet #5, out of, 10, with id, 14, from, Output_User_0, to, Res_0, tag, 108
+10.160119999999997 
+10.160119999999997 receive incoming, Packet #6, out of, 10, with id, 15, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.160119999999997 break this packet into, 1
+10.160119999999997 enqueing, Packet #6, out of, 10, with id, 15, from, Output_User_0, to, Res_0, tag, 108
+10.161439999999999 dequeuing, Packet #6, out of, 10, with id, 15, from, Output_User_0, to, Res_0, tag, 108
+10.170119999999997 
+10.170119999999997 receive incoming, Packet #7, out of, 10, with id, 16, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.170119999999997 break this packet into, 1
+10.170119999999997 enqueing, Packet #7, out of, 10, with id, 16, from, Output_User_0, to, Res_0, tag, 108
+10.171439999999999 dequeuing, Packet #7, out of, 10, with id, 16, from, Output_User_0, to, Res_0, tag, 108
+10.180119999999997 
+10.180119999999997 receive incoming, Packet #8, out of, 10, with id, 17, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.180119999999997 break this packet into, 1
+10.180119999999997 enqueing, Packet #8, out of, 10, with id, 17, from, Output_User_0, to, Res_0, tag, 108
+10.181439999999998 dequeuing, Packet #8, out of, 10, with id, 17, from, Output_User_0, to, Res_0, tag, 108
+10.190119999999997 
+10.190119999999997 receive incoming, Packet #9, out of, 10, with id, 18, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.190119999999997 break this packet into, 1
+10.190119999999997 enqueing, Packet #9, out of, 10, with id, 18, from, Output_User_0, to, Res_0, tag, 108
+10.191439999999998 dequeuing, Packet #9, out of, 10, with id, 18, from, Output_User_0, to, Res_0, tag, 108
+10.200119999999997 
+10.200119999999997 receive incoming, Packet #10, out of, 10, with id, 19, from, Output_User_0, to, Res_0, tag, 21, delay, 0.0
+10.200119999999997 break this packet into, 1
+10.200119999999997 enqueing, Packet #10, out of, 10, with id, 19, from, Output_User_0, to, Res_0, tag, 21
+10.201439999999998 dequeuing, Packet #10, out of, 10, with id, 19, from, Output_User_0, to, Res_0, tag, 21
+10.210119999999996 
+10.210119999999996 receive incoming, Packet #1, out of, 10, with id, 20, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.210119999999996 break this packet into, 1
+10.210119999999996 enqueing, Packet #1, out of, 10, with id, 20, from, Output_User_0, to, Res_0, tag, 108
+10.211439999999998 dequeuing, Packet #1, out of, 10, with id, 20, from, Output_User_0, to, Res_0, tag, 108
+10.220119999999996 
+10.220119999999996 receive incoming, Packet #2, out of, 10, with id, 21, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.220119999999996 break this packet into, 1
+10.220119999999996 enqueing, Packet #2, out of, 10, with id, 21, from, Output_User_0, to, Res_0, tag, 108
+10.221439999999998 dequeuing, Packet #2, out of, 10, with id, 21, from, Output_User_0, to, Res_0, tag, 108
+10.230119999999996 
+10.230119999999996 receive incoming, Packet #3, out of, 10, with id, 22, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.230119999999996 break this packet into, 1
+10.230119999999996 enqueing, Packet #3, out of, 10, with id, 22, from, Output_User_0, to, Res_0, tag, 108
+10.231439999999997 dequeuing, Packet #3, out of, 10, with id, 22, from, Output_User_0, to, Res_0, tag, 108
+10.240119999999996 
+10.240119999999996 receive incoming, Packet #4, out of, 10, with id, 23, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.240119999999996 break this packet into, 1
+10.240119999999996 enqueing, Packet #4, out of, 10, with id, 23, from, Output_User_0, to, Res_0, tag, 108
+10.241439999999997 dequeuing, Packet #4, out of, 10, with id, 23, from, Output_User_0, to, Res_0, tag, 108
+10.250119999999995 
+10.250119999999995 receive incoming, Packet #5, out of, 10, with id, 24, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.250119999999995 break this packet into, 1
+10.250119999999995 enqueing, Packet #5, out of, 10, with id, 24, from, Output_User_0, to, Res_0, tag, 108
+10.251439999999997 dequeuing, Packet #5, out of, 10, with id, 24, from, Output_User_0, to, Res_0, tag, 108
+10.260119999999995 
+10.260119999999995 receive incoming, Packet #6, out of, 10, with id, 25, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.260119999999995 break this packet into, 1
+10.260119999999995 enqueing, Packet #6, out of, 10, with id, 25, from, Output_User_0, to, Res_0, tag, 108
+10.261439999999997 dequeuing, Packet #6, out of, 10, with id, 25, from, Output_User_0, to, Res_0, tag, 108
+10.270119999999995 
+10.270119999999995 receive incoming, Packet #7, out of, 10, with id, 26, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.270119999999995 break this packet into, 1
+10.270119999999995 enqueing, Packet #7, out of, 10, with id, 26, from, Output_User_0, to, Res_0, tag, 108
+10.271439999999997 dequeuing, Packet #7, out of, 10, with id, 26, from, Output_User_0, to, Res_0, tag, 108
+10.280119999999995 
+10.280119999999995 receive incoming, Packet #8, out of, 10, with id, 27, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.280119999999995 break this packet into, 1
+10.280119999999995 enqueing, Packet #8, out of, 10, with id, 27, from, Output_User_0, to, Res_0, tag, 108
+10.281439999999996 dequeuing, Packet #8, out of, 10, with id, 27, from, Output_User_0, to, Res_0, tag, 108
+10.290119999999995 
+10.290119999999995 receive incoming, Packet #9, out of, 10, with id, 28, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.290119999999995 break this packet into, 1
+10.290119999999995 enqueing, Packet #9, out of, 10, with id, 28, from, Output_User_0, to, Res_0, tag, 108
+10.291439999999996 dequeuing, Packet #9, out of, 10, with id, 28, from, Output_User_0, to, Res_0, tag, 108
+10.300119999999994 
+10.300119999999994 receive incoming, Packet #10, out of, 10, with id, 29, from, Output_User_0, to, Res_0, tag, 21, delay, 0.0
+10.300119999999994 break this packet into, 1
+10.300119999999994 enqueing, Packet #10, out of, 10, with id, 29, from, Output_User_0, to, Res_0, tag, 21
+10.301439999999996 dequeuing, Packet #10, out of, 10, with id, 29, from, Output_User_0, to, Res_0, tag, 21
+10.310119999999994 
+10.310119999999994 receive incoming, Packet #1, out of, 10, with id, 30, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.310119999999994 break this packet into, 1
+10.310119999999994 enqueing, Packet #1, out of, 10, with id, 30, from, Output_User_0, to, Res_0, tag, 108
+10.311439999999996 dequeuing, Packet #1, out of, 10, with id, 30, from, Output_User_0, to, Res_0, tag, 108
+10.320119999999994 
+10.320119999999994 receive incoming, Packet #2, out of, 10, with id, 31, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.320119999999994 break this packet into, 1
+10.320119999999994 enqueing, Packet #2, out of, 10, with id, 31, from, Output_User_0, to, Res_0, tag, 108
+10.321439999999996 dequeuing, Packet #2, out of, 10, with id, 31, from, Output_User_0, to, Res_0, tag, 108
+10.330119999999994 
+10.330119999999994 receive incoming, Packet #3, out of, 10, with id, 32, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.330119999999994 break this packet into, 1
+10.330119999999994 enqueing, Packet #3, out of, 10, with id, 32, from, Output_User_0, to, Res_0, tag, 108
+10.331439999999995 dequeuing, Packet #3, out of, 10, with id, 32, from, Output_User_0, to, Res_0, tag, 108
+10.340119999999994 
+10.340119999999994 receive incoming, Packet #4, out of, 10, with id, 33, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.340119999999994 break this packet into, 1
+10.340119999999994 enqueing, Packet #4, out of, 10, with id, 33, from, Output_User_0, to, Res_0, tag, 108
+10.341439999999995 dequeuing, Packet #4, out of, 10, with id, 33, from, Output_User_0, to, Res_0, tag, 108
+10.350119999999993 
+10.350119999999993 receive incoming, Packet #5, out of, 10, with id, 34, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.350119999999993 break this packet into, 1
+10.350119999999993 enqueing, Packet #5, out of, 10, with id, 34, from, Output_User_0, to, Res_0, tag, 108
+10.351439999999995 dequeuing, Packet #5, out of, 10, with id, 34, from, Output_User_0, to, Res_0, tag, 108
+10.360119999999993 
+10.360119999999993 receive incoming, Packet #6, out of, 10, with id, 35, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.360119999999993 break this packet into, 1
+10.360119999999993 enqueing, Packet #6, out of, 10, with id, 35, from, Output_User_0, to, Res_0, tag, 108
+10.361439999999995 dequeuing, Packet #6, out of, 10, with id, 35, from, Output_User_0, to, Res_0, tag, 108
+10.370119999999993 
+10.370119999999993 receive incoming, Packet #7, out of, 10, with id, 36, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.370119999999993 break this packet into, 1
+10.370119999999993 enqueing, Packet #7, out of, 10, with id, 36, from, Output_User_0, to, Res_0, tag, 108
+10.371439999999994 dequeuing, Packet #7, out of, 10, with id, 36, from, Output_User_0, to, Res_0, tag, 108
+10.380119999999993 
+10.380119999999993 receive incoming, Packet #8, out of, 10, with id, 37, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.380119999999993 break this packet into, 1
+10.380119999999993 enqueing, Packet #8, out of, 10, with id, 37, from, Output_User_0, to, Res_0, tag, 108
+10.381439999999994 dequeuing, Packet #8, out of, 10, with id, 37, from, Output_User_0, to, Res_0, tag, 108
+10.390119999999992 
+10.390119999999992 receive incoming, Packet #9, out of, 10, with id, 38, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.390119999999992 break this packet into, 1
+10.390119999999992 enqueing, Packet #9, out of, 10, with id, 38, from, Output_User_0, to, Res_0, tag, 108
+10.391439999999994 dequeuing, Packet #9, out of, 10, with id, 38, from, Output_User_0, to, Res_0, tag, 108
+10.400119999999992 
+10.400119999999992 receive incoming, Packet #10, out of, 10, with id, 39, from, Output_User_0, to, Res_0, tag, 21, delay, 0.0
+10.400119999999992 break this packet into, 1
+10.400119999999992 enqueing, Packet #10, out of, 10, with id, 39, from, Output_User_0, to, Res_0, tag, 21
+10.401439999999994 dequeuing, Packet #10, out of, 10, with id, 39, from, Output_User_0, to, Res_0, tag, 21
+10.410119999999992 
+10.410119999999992 receive incoming, Packet #1, out of, 10, with id, 40, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.410119999999992 break this packet into, 1
+10.410119999999992 enqueing, Packet #1, out of, 10, with id, 40, from, Output_User_0, to, Res_0, tag, 108
+10.411439999999994 dequeuing, Packet #1, out of, 10, with id, 40, from, Output_User_0, to, Res_0, tag, 108
+10.420119999999992 
+10.420119999999992 receive incoming, Packet #2, out of, 10, with id, 41, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.420119999999992 break this packet into, 1
+10.420119999999992 enqueing, Packet #2, out of, 10, with id, 41, from, Output_User_0, to, Res_0, tag, 108
+10.421439999999993 dequeuing, Packet #2, out of, 10, with id, 41, from, Output_User_0, to, Res_0, tag, 108
+10.430119999999992 
+10.430119999999992 receive incoming, Packet #3, out of, 10, with id, 42, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.430119999999992 break this packet into, 1
+10.430119999999992 enqueing, Packet #3, out of, 10, with id, 42, from, Output_User_0, to, Res_0, tag, 108
+10.431439999999993 dequeuing, Packet #3, out of, 10, with id, 42, from, Output_User_0, to, Res_0, tag, 108
+10.440119999999991 
+10.440119999999991 receive incoming, Packet #4, out of, 10, with id, 43, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.440119999999991 break this packet into, 1
+10.440119999999991 enqueing, Packet #4, out of, 10, with id, 43, from, Output_User_0, to, Res_0, tag, 108
+10.441439999999993 dequeuing, Packet #4, out of, 10, with id, 43, from, Output_User_0, to, Res_0, tag, 108
+10.450119999999991 
+10.450119999999991 receive incoming, Packet #5, out of, 10, with id, 44, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.450119999999991 break this packet into, 1
+10.450119999999991 enqueing, Packet #5, out of, 10, with id, 44, from, Output_User_0, to, Res_0, tag, 108
+10.451439999999993 dequeuing, Packet #5, out of, 10, with id, 44, from, Output_User_0, to, Res_0, tag, 108
+10.460119999999991 
+10.460119999999991 receive incoming, Packet #6, out of, 10, with id, 45, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.460119999999991 break this packet into, 1
+10.460119999999991 enqueing, Packet #6, out of, 10, with id, 45, from, Output_User_0, to, Res_0, tag, 108
+10.461439999999993 dequeuing, Packet #6, out of, 10, with id, 45, from, Output_User_0, to, Res_0, tag, 108
+10.47011999999999 
+10.47011999999999 receive incoming, Packet #7, out of, 10, with id, 46, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.47011999999999 break this packet into, 1
+10.47011999999999 enqueing, Packet #7, out of, 10, with id, 46, from, Output_User_0, to, Res_0, tag, 108
+10.471439999999992 dequeuing, Packet #7, out of, 10, with id, 46, from, Output_User_0, to, Res_0, tag, 108
+10.48011999999999 
+10.48011999999999 receive incoming, Packet #8, out of, 10, with id, 47, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.48011999999999 break this packet into, 1
+10.48011999999999 enqueing, Packet #8, out of, 10, with id, 47, from, Output_User_0, to, Res_0, tag, 108
+10.481439999999992 dequeuing, Packet #8, out of, 10, with id, 47, from, Output_User_0, to, Res_0, tag, 108
+10.49011999999999 
+10.49011999999999 receive incoming, Packet #9, out of, 10, with id, 48, from, Output_User_0, to, Res_0, tag, 108, delay, 0.0
+10.49011999999999 break this packet into, 1
+10.49011999999999 enqueing, Packet #9, out of, 10, with id, 48, from, Output_User_0, to, Res_0, tag, 108
+10.491439999999992 dequeuing, Packet #9, out of, 10, with id, 48, from, Output_User_0, to, Res_0, tag, 108
+10.50011999999999 
+10.50011999999999 receive incoming, Packet #10, out of, 10, with id, 49, from, Output_User_0, to, Res_0, tag, 21, delay, 0.0
+10.50011999999999 break this packet into, 1
+10.50011999999999 enqueing, Packet #10, out of, 10, with id, 49, from, Output_User_0, to, Res_0, tag, 21
+10.501439999999992 dequeuing, Packet #10, out of, 10, with id, 49, from, Output_User_0, to, Res_0, tag, 21
+51.23118240848803 
+51.23118240848803 receive incoming, Packet #1, out of, 10, with id, 20, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.23118240848803 break this packet into, 1
+51.23118240848803 enqueing, Packet #1, out of, 10, with id, 20, from, Output_Res_0, to, User_0, tag, 108
+51.23250240848803 dequeuing, Packet #1, out of, 10, with id, 20, from, Output_Res_0, to, User_0, tag, 108
+51.24118240848803 
+51.24118240848803 receive incoming, Packet #2, out of, 10, with id, 21, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.24118240848803 break this packet into, 1
+51.24118240848803 enqueing, Packet #2, out of, 10, with id, 21, from, Output_Res_0, to, User_0, tag, 108
+51.24250240848803 dequeuing, Packet #2, out of, 10, with id, 21, from, Output_Res_0, to, User_0, tag, 108
+51.25118240848803 
+51.25118240848803 receive incoming, Packet #3, out of, 10, with id, 22, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.25118240848803 break this packet into, 1
+51.25118240848803 enqueing, Packet #3, out of, 10, with id, 22, from, Output_Res_0, to, User_0, tag, 108
+51.25250240848803 dequeuing, Packet #3, out of, 10, with id, 22, from, Output_Res_0, to, User_0, tag, 108
+51.261182408488025 
+51.261182408488025 receive incoming, Packet #4, out of, 10, with id, 23, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.261182408488025 break this packet into, 1
+51.261182408488025 enqueing, Packet #4, out of, 10, with id, 23, from, Output_Res_0, to, User_0, tag, 108
+51.262502408488025 dequeuing, Packet #4, out of, 10, with id, 23, from, Output_Res_0, to, User_0, tag, 108
+51.27118240848802 
+51.27118240848802 receive incoming, Packet #5, out of, 10, with id, 24, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.27118240848802 break this packet into, 1
+51.27118240848802 enqueing, Packet #5, out of, 10, with id, 24, from, Output_Res_0, to, User_0, tag, 108
+51.27250240848802 dequeuing, Packet #5, out of, 10, with id, 24, from, Output_Res_0, to, User_0, tag, 108
+51.28118240848802 
+51.28118240848802 receive incoming, Packet #6, out of, 10, with id, 25, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.28118240848802 break this packet into, 1
+51.28118240848802 enqueing, Packet #6, out of, 10, with id, 25, from, Output_Res_0, to, User_0, tag, 108
+51.28250240848802 dequeuing, Packet #6, out of, 10, with id, 25, from, Output_Res_0, to, User_0, tag, 108
+51.29118240848802 
+51.29118240848802 receive incoming, Packet #7, out of, 10, with id, 26, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.29118240848802 break this packet into, 1
+51.29118240848802 enqueing, Packet #7, out of, 10, with id, 26, from, Output_Res_0, to, User_0, tag, 108
+51.29250240848802 dequeuing, Packet #7, out of, 10, with id, 26, from, Output_Res_0, to, User_0, tag, 108
+51.30118240848802 
+51.30118240848802 receive incoming, Packet #8, out of, 10, with id, 27, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.30118240848802 break this packet into, 1
+51.30118240848802 enqueing, Packet #8, out of, 10, with id, 27, from, Output_Res_0, to, User_0, tag, 108
+51.30250240848802 dequeuing, Packet #8, out of, 10, with id, 27, from, Output_Res_0, to, User_0, tag, 108
+51.311182408488015 
+51.311182408488015 receive incoming, Packet #9, out of, 10, with id, 28, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+51.311182408488015 break this packet into, 1
+51.311182408488015 enqueing, Packet #9, out of, 10, with id, 28, from, Output_Res_0, to, User_0, tag, 108
+51.312502408488015 dequeuing, Packet #9, out of, 10, with id, 28, from, Output_Res_0, to, User_0, tag, 108
+51.32118240848801 
+51.32118240848801 receive incoming, Packet #10, out of, 10, with id, 29, from, Output_Res_0, to, User_0, tag, 20, delay, 0.0
+51.32118240848801 break this packet into, 1
+51.32118240848801 enqueing, Packet #10, out of, 10, with id, 29, from, Output_Res_0, to, User_0, tag, 20
+51.32250240848801 dequeuing, Packet #10, out of, 10, with id, 29, from, Output_Res_0, to, User_0, tag, 20
+70.73508161273209 
+70.73508161273209 receive incoming, Packet #1, out of, 10, with id, 50, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.73508161273209 break this packet into, 1
+70.73508161273209 enqueing, Packet #1, out of, 10, with id, 50, from, Output_Res_0, to, User_0, tag, 108
+70.73640161273208 dequeuing, Packet #1, out of, 10, with id, 50, from, Output_Res_0, to, User_0, tag, 108
+70.7450816127321 
+70.7450816127321 receive incoming, Packet #2, out of, 10, with id, 51, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.7450816127321 break this packet into, 1
+70.7450816127321 enqueing, Packet #2, out of, 10, with id, 51, from, Output_Res_0, to, User_0, tag, 108
+70.74640161273209 dequeuing, Packet #2, out of, 10, with id, 51, from, Output_Res_0, to, User_0, tag, 108
+70.7550816127321 
+70.7550816127321 receive incoming, Packet #3, out of, 10, with id, 52, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.7550816127321 break this packet into, 1
+70.7550816127321 enqueing, Packet #3, out of, 10, with id, 52, from, Output_Res_0, to, User_0, tag, 108
+70.75640161273209 dequeuing, Packet #3, out of, 10, with id, 52, from, Output_Res_0, to, User_0, tag, 108
+70.7650816127321 
+70.7650816127321 receive incoming, Packet #4, out of, 10, with id, 53, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.7650816127321 break this packet into, 1
+70.7650816127321 enqueing, Packet #4, out of, 10, with id, 53, from, Output_Res_0, to, User_0, tag, 108
+70.7664016127321 dequeuing, Packet #4, out of, 10, with id, 53, from, Output_Res_0, to, User_0, tag, 108
+70.77508161273211 
+70.77508161273211 receive incoming, Packet #5, out of, 10, with id, 54, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.77508161273211 break this packet into, 1
+70.77508161273211 enqueing, Packet #5, out of, 10, with id, 54, from, Output_Res_0, to, User_0, tag, 108
+70.7764016127321 dequeuing, Packet #5, out of, 10, with id, 54, from, Output_Res_0, to, User_0, tag, 108
+70.78508161273211 
+70.78508161273211 receive incoming, Packet #6, out of, 10, with id, 55, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.78508161273211 break this packet into, 1
+70.78508161273211 enqueing, Packet #6, out of, 10, with id, 55, from, Output_Res_0, to, User_0, tag, 108
+70.7864016127321 dequeuing, Packet #6, out of, 10, with id, 55, from, Output_Res_0, to, User_0, tag, 108
+70.79508161273212 
+70.79508161273212 receive incoming, Packet #7, out of, 10, with id, 56, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.79508161273212 break this packet into, 1
+70.79508161273212 enqueing, Packet #7, out of, 10, with id, 56, from, Output_Res_0, to, User_0, tag, 108
+70.79640161273211 dequeuing, Packet #7, out of, 10, with id, 56, from, Output_Res_0, to, User_0, tag, 108
+70.80508161273212 
+70.80508161273212 receive incoming, Packet #8, out of, 10, with id, 57, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.80508161273212 break this packet into, 1
+70.80508161273212 enqueing, Packet #8, out of, 10, with id, 57, from, Output_Res_0, to, User_0, tag, 108
+70.80640161273212 dequeuing, Packet #8, out of, 10, with id, 57, from, Output_Res_0, to, User_0, tag, 108
+70.81508161273213 
+70.81508161273213 receive incoming, Packet #9, out of, 10, with id, 58, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+70.81508161273213 break this packet into, 1
+70.81508161273213 enqueing, Packet #9, out of, 10, with id, 58, from, Output_Res_0, to, User_0, tag, 108
+70.81640161273212 dequeuing, Packet #9, out of, 10, with id, 58, from, Output_Res_0, to, User_0, tag, 108
+70.82508161273213 
+70.82508161273213 receive incoming, Packet #10, out of, 10, with id, 59, from, Output_Res_0, to, User_0, tag, 20, delay, 0.0
+70.82508161273213 break this packet into, 1
+70.82508161273213 enqueing, Packet #10, out of, 10, with id, 59, from, Output_Res_0, to, User_0, tag, 20
+70.82640161273213 dequeuing, Packet #10, out of, 10, with id, 59, from, Output_Res_0, to, User_0, tag, 20
+71.03508161273224 
+71.03508161273224 receive incoming, Packet #1, out of, 10, with id, 80, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.03508161273224 break this packet into, 1
+71.03508161273224 enqueing, Packet #1, out of, 10, with id, 80, from, Output_Res_0, to, User_0, tag, 108
+71.03640161273223 dequeuing, Packet #1, out of, 10, with id, 80, from, Output_Res_0, to, User_0, tag, 108
+71.04508161273225 
+71.04508161273225 receive incoming, Packet #2, out of, 10, with id, 81, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.04508161273225 break this packet into, 1
+71.04508161273225 enqueing, Packet #2, out of, 10, with id, 81, from, Output_Res_0, to, User_0, tag, 108
+71.04640161273224 dequeuing, Packet #2, out of, 10, with id, 81, from, Output_Res_0, to, User_0, tag, 108
+71.05508161273225 
+71.05508161273225 receive incoming, Packet #3, out of, 10, with id, 82, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.05508161273225 break this packet into, 1
+71.05508161273225 enqueing, Packet #3, out of, 10, with id, 82, from, Output_Res_0, to, User_0, tag, 108
+71.05640161273224 dequeuing, Packet #3, out of, 10, with id, 82, from, Output_Res_0, to, User_0, tag, 108
+71.06508161273226 
+71.06508161273226 receive incoming, Packet #4, out of, 10, with id, 83, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.06508161273226 break this packet into, 1
+71.06508161273226 enqueing, Packet #4, out of, 10, with id, 83, from, Output_Res_0, to, User_0, tag, 108
+71.06640161273225 dequeuing, Packet #4, out of, 10, with id, 83, from, Output_Res_0, to, User_0, tag, 108
+71.07508161273226 
+71.07508161273226 receive incoming, Packet #5, out of, 10, with id, 84, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.07508161273226 break this packet into, 1
+71.07508161273226 enqueing, Packet #5, out of, 10, with id, 84, from, Output_Res_0, to, User_0, tag, 108
+71.07640161273225 dequeuing, Packet #5, out of, 10, with id, 84, from, Output_Res_0, to, User_0, tag, 108
+71.08508161273227 
+71.08508161273227 receive incoming, Packet #6, out of, 10, with id, 85, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.08508161273227 break this packet into, 1
+71.08508161273227 enqueing, Packet #6, out of, 10, with id, 85, from, Output_Res_0, to, User_0, tag, 108
+71.08640161273226 dequeuing, Packet #6, out of, 10, with id, 85, from, Output_Res_0, to, User_0, tag, 108
+71.09508161273227 
+71.09508161273227 receive incoming, Packet #7, out of, 10, with id, 86, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.09508161273227 break this packet into, 1
+71.09508161273227 enqueing, Packet #7, out of, 10, with id, 86, from, Output_Res_0, to, User_0, tag, 108
+71.09640161273227 dequeuing, Packet #7, out of, 10, with id, 86, from, Output_Res_0, to, User_0, tag, 108
+71.10508161273228 
+71.10508161273228 receive incoming, Packet #8, out of, 10, with id, 87, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.10508161273228 break this packet into, 1
+71.10508161273228 enqueing, Packet #8, out of, 10, with id, 87, from, Output_Res_0, to, User_0, tag, 108
+71.10640161273227 dequeuing, Packet #8, out of, 10, with id, 87, from, Output_Res_0, to, User_0, tag, 108
+71.11508161273228 
+71.11508161273228 receive incoming, Packet #9, out of, 10, with id, 88, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.11508161273228 break this packet into, 1
+71.11508161273228 enqueing, Packet #9, out of, 10, with id, 88, from, Output_Res_0, to, User_0, tag, 108
+71.11640161273228 dequeuing, Packet #9, out of, 10, with id, 88, from, Output_Res_0, to, User_0, tag, 108
+71.12508161273229 
+71.12508161273229 receive incoming, Packet #10, out of, 10, with id, 89, from, Output_Res_0, to, User_0, tag, 20, delay, 0.0
+71.12508161273229 break this packet into, 1
+71.12508161273229 enqueing, Packet #10, out of, 10, with id, 89, from, Output_Res_0, to, User_0, tag, 20
+71.12640161273228 dequeuing, Packet #10, out of, 10, with id, 89, from, Output_Res_0, to, User_0, tag, 20
+71.93508161273219 
+71.93508161273219 receive incoming, Packet #1, out of, 10, with id, 110, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.93508161273219 break this packet into, 1
+71.93508161273219 enqueing, Packet #1, out of, 10, with id, 110, from, Output_Res_0, to, User_0, tag, 108
+71.93640161273218 dequeuing, Packet #1, out of, 10, with id, 110, from, Output_Res_0, to, User_0, tag, 108
+71.9450816127322 
+71.9450816127322 receive incoming, Packet #2, out of, 10, with id, 111, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.9450816127322 break this packet into, 1
+71.9450816127322 enqueing, Packet #2, out of, 10, with id, 111, from, Output_Res_0, to, User_0, tag, 108
+71.94640161273219 dequeuing, Packet #2, out of, 10, with id, 111, from, Output_Res_0, to, User_0, tag, 108
+71.9550816127322 
+71.9550816127322 receive incoming, Packet #3, out of, 10, with id, 112, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.9550816127322 break this packet into, 1
+71.9550816127322 enqueing, Packet #3, out of, 10, with id, 112, from, Output_Res_0, to, User_0, tag, 108
+71.9564016127322 dequeuing, Packet #3, out of, 10, with id, 112, from, Output_Res_0, to, User_0, tag, 108
+71.9650816127322 
+71.9650816127322 receive incoming, Packet #4, out of, 10, with id, 113, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.9650816127322 break this packet into, 1
+71.9650816127322 enqueing, Packet #4, out of, 10, with id, 113, from, Output_Res_0, to, User_0, tag, 108
+71.9664016127322 dequeuing, Packet #4, out of, 10, with id, 113, from, Output_Res_0, to, User_0, tag, 108
+71.97508161273221 
+71.97508161273221 receive incoming, Packet #5, out of, 10, with id, 114, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.97508161273221 break this packet into, 1
+71.97508161273221 enqueing, Packet #5, out of, 10, with id, 114, from, Output_Res_0, to, User_0, tag, 108
+71.9764016127322 dequeuing, Packet #5, out of, 10, with id, 114, from, Output_Res_0, to, User_0, tag, 108
+71.98508161273222 
+71.98508161273222 receive incoming, Packet #6, out of, 10, with id, 115, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.98508161273222 break this packet into, 1
+71.98508161273222 enqueing, Packet #6, out of, 10, with id, 115, from, Output_Res_0, to, User_0, tag, 108
+71.98640161273221 dequeuing, Packet #6, out of, 10, with id, 115, from, Output_Res_0, to, User_0, tag, 108
+71.99508161273222 
+71.99508161273222 receive incoming, Packet #7, out of, 10, with id, 116, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+71.99508161273222 break this packet into, 1
+71.99508161273222 enqueing, Packet #7, out of, 10, with id, 116, from, Output_Res_0, to, User_0, tag, 108
+71.99640161273221 dequeuing, Packet #7, out of, 10, with id, 116, from, Output_Res_0, to, User_0, tag, 108
+72.00508161273223 
+72.00508161273223 receive incoming, Packet #8, out of, 10, with id, 117, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.00508161273223 break this packet into, 1
+72.00508161273223 enqueing, Packet #8, out of, 10, with id, 117, from, Output_Res_0, to, User_0, tag, 108
+72.00640161273222 dequeuing, Packet #8, out of, 10, with id, 117, from, Output_Res_0, to, User_0, tag, 108
+72.01508161273223 
+72.01508161273223 receive incoming, Packet #9, out of, 10, with id, 118, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.01508161273223 break this packet into, 1
+72.01508161273223 enqueing, Packet #9, out of, 10, with id, 118, from, Output_Res_0, to, User_0, tag, 108
+72.01640161273222 dequeuing, Packet #9, out of, 10, with id, 118, from, Output_Res_0, to, User_0, tag, 108
+72.02508161273224 
+72.02508161273224 receive incoming, Packet #10, out of, 10, with id, 119, from, Output_Res_0, to, User_0, tag, 20, delay, 0.0
+72.02508161273224 break this packet into, 1
+72.02508161273224 enqueing, Packet #10, out of, 10, with id, 119, from, Output_Res_0, to, User_0, tag, 20
+72.02640161273223 dequeuing, Packet #10, out of, 10, with id, 119, from, Output_Res_0, to, User_0, tag, 20
+72.23508161273234 
+72.23508161273234 receive incoming, Packet #1, out of, 10, with id, 140, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.23508161273234 break this packet into, 1
+72.23508161273234 enqueing, Packet #1, out of, 10, with id, 140, from, Output_Res_0, to, User_0, tag, 108
+72.23640161273234 dequeuing, Packet #1, out of, 10, with id, 140, from, Output_Res_0, to, User_0, tag, 108
+72.24508161273235 
+72.24508161273235 receive incoming, Packet #2, out of, 10, with id, 141, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.24508161273235 break this packet into, 1
+72.24508161273235 enqueing, Packet #2, out of, 10, with id, 141, from, Output_Res_0, to, User_0, tag, 108
+72.24640161273234 dequeuing, Packet #2, out of, 10, with id, 141, from, Output_Res_0, to, User_0, tag, 108
+72.25508161273235 
+72.25508161273235 receive incoming, Packet #3, out of, 10, with id, 142, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.25508161273235 break this packet into, 1
+72.25508161273235 enqueing, Packet #3, out of, 10, with id, 142, from, Output_Res_0, to, User_0, tag, 108
+72.25640161273235 dequeuing, Packet #3, out of, 10, with id, 142, from, Output_Res_0, to, User_0, tag, 108
+72.26508161273236 
+72.26508161273236 receive incoming, Packet #4, out of, 10, with id, 143, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.26508161273236 break this packet into, 1
+72.26508161273236 enqueing, Packet #4, out of, 10, with id, 143, from, Output_Res_0, to, User_0, tag, 108
+72.26640161273235 dequeuing, Packet #4, out of, 10, with id, 143, from, Output_Res_0, to, User_0, tag, 108
+72.27508161273236 
+72.27508161273236 receive incoming, Packet #5, out of, 10, with id, 144, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.27508161273236 break this packet into, 1
+72.27508161273236 enqueing, Packet #5, out of, 10, with id, 144, from, Output_Res_0, to, User_0, tag, 108
+72.27640161273236 dequeuing, Packet #5, out of, 10, with id, 144, from, Output_Res_0, to, User_0, tag, 108
+72.28508161273237 
+72.28508161273237 receive incoming, Packet #6, out of, 10, with id, 145, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.28508161273237 break this packet into, 1
+72.28508161273237 enqueing, Packet #6, out of, 10, with id, 145, from, Output_Res_0, to, User_0, tag, 108
+72.28640161273236 dequeuing, Packet #6, out of, 10, with id, 145, from, Output_Res_0, to, User_0, tag, 108
+72.29508161273237 
+72.29508161273237 receive incoming, Packet #7, out of, 10, with id, 146, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.29508161273237 break this packet into, 1
+72.29508161273237 enqueing, Packet #7, out of, 10, with id, 146, from, Output_Res_0, to, User_0, tag, 108
+72.29640161273237 dequeuing, Packet #7, out of, 10, with id, 146, from, Output_Res_0, to, User_0, tag, 108
+72.30508161273238 
+72.30508161273238 receive incoming, Packet #8, out of, 10, with id, 147, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.30508161273238 break this packet into, 1
+72.30508161273238 enqueing, Packet #8, out of, 10, with id, 147, from, Output_Res_0, to, User_0, tag, 108
+72.30640161273237 dequeuing, Packet #8, out of, 10, with id, 147, from, Output_Res_0, to, User_0, tag, 108
+72.31508161273238 
+72.31508161273238 receive incoming, Packet #9, out of, 10, with id, 148, from, Output_Res_0, to, User_0, tag, 108, delay, 0.0
+72.31508161273238 break this packet into, 1
+72.31508161273238 enqueing, Packet #9, out of, 10, with id, 148, from, Output_Res_0, to, User_0, tag, 108
+72.31640161273238 dequeuing, Packet #9, out of, 10, with id, 148, from, Output_Res_0, to, User_0, tag, 108
+72.32508161273239 
+72.32508161273239 receive incoming, Packet #10, out of, 10, with id, 149, from, Output_Res_0, to, User_0, tag, 20, delay, 0.0
+72.32508161273239 break this packet into, 1
+72.32508161273239 enqueing, Packet #10, out of, 10, with id, 149, from, Output_Res_0, to, User_0, tag, 20
+72.32640161273238 dequeuing, Packet #10, out of, 10, with id, 149, from, Output_Res_0, to, User_0, tag, 20
+82.34652161273239 
+82.34652161273239 receive incoming, Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3364        82.3365        100000000.000
+R1		82.3465            N/A        100000000.000
+
+Round Trip Time : 0.010 seconds
+Number of Hops  : 0
+Bottleneck Bandwidth : 1.0E8 bits/s, delay, 0.0
+82.34652161273239 break this packet into, 1
+82.34652161273239 enqueing, Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3364        82.3365        100000000.000
+R1		82.3465            N/A        100000000.000
+
+Round Trip Time : 0.010 seconds
+Number of Hops  : 0
+Bottleneck Bandwidth : 1.0E8 bits/s
+82.34784161273238 dequeuing, Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3364        82.3365        100000000.000
+R1		82.3465        82.3478        100000000.000
+
+Round Trip Time : 0.010 seconds
+Number of Hops  : 0
+Bottleneck Bandwidth : 1.0E8 bits/s
+82.41086561273238 
+82.41086561273238 receive incoming, Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3364        82.3365        100000000.000
+R1		82.3465        82.3478        100000000.000
+R4		82.3578        82.358        1000000000.000
+R5		82.368        82.3693        100000000.000
+Res_0		82.3793        82.3794        100000000.000
+R5		82.3894        82.3895        1000000000.000
+R4		82.3995        82.4009        100000000.000
+R1		82.4109            N/A        100000000.000
+
+Round Trip Time : 0.0743 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1.0E8 bits/s, delay, 0.0
+82.41086561273238 break this packet into, 1
+82.41086561273238 enqueing, Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3364        82.3365        100000000.000
+R1		82.3465        82.3478        100000000.000
+R4		82.3578        82.358        1000000000.000
+R5		82.368        82.3693        100000000.000
+Res_0		82.3793        82.3794        100000000.000
+R5		82.3894        82.3895        1000000000.000
+R4		82.3995        82.4009        100000000.000
+R1		82.4109            N/A        100000000.000
+
+Round Trip Time : 0.0743 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1.0E8 bits/s
+82.41218561273237 dequeuing, Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3364        82.3365        100000000.000
+R1		82.3465        82.3478        100000000.000
+R4		82.3578        82.358        1000000000.000
+R5		82.368        82.3693        100000000.000
+Res_0		82.3793        82.3794        100000000.000
+R5		82.3894        82.3895        1000000000.000
+R4		82.3995        82.4009        100000000.000
+R1		82.4109        82.4122        100000000.000
+
+Round Trip Time : 0.0743 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1.0E8 bits/s
+82.42218561273238 receives, END_OF_SIMULATION, signal, from, GridInformationService

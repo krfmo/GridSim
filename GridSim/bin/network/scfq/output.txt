@@ -1,0 +1,163 @@
+Starting network example ...
+Initializing GridSim package
+Initialising...
+Reading network from network.txt
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 14)
+
+Creating a grid user entity with name = User_0, and id = 19
+User_0:Creating 5 Gridlets
+Creating a grid user entity with name = User_1, and id = 23
+User_1:Creating 5 Gridlets
+Creating a grid user entity with name = User_2, and id = 27
+User_2:Creating 5 Gridlets
+Starting GridSim version 4.0
+Entities started.
+User_2: Sending Gridlet #0 to Res_0
+User_1: Sending Gridlet #0 to Res_0
+User_0: Sending Gridlet #0 to Res_0
+User_2: Sending Gridlet #1 to Res_0
+User_0: Sending Gridlet #1 to Res_0
+User_1: Sending Gridlet #1 to Res_0
+User_2: Sending Gridlet #2 to Res_0
+User_0: Sending Gridlet #2 to Res_0
+User_1: Sending Gridlet #2 to Res_0
+User_2: Sending Gridlet #3 to Res_0
+User_0: Sending Gridlet #3 to Res_0
+User_1: Sending Gridlet #3 to Res_0
+User_2: Sending Gridlet #4 to Res_0
+User_0: Sending Gridlet #4 to Res_0
+User_1: Sending Gridlet #4 to Res_0
+User_2: Receiving Gridlet #0 at time = 50.228542408488046
+User_1: Receiving Gridlet #0 at time = 51.22854240848804
+User_0: Receiving Gridlet #0 at time = 51.32854240848802
+User_2: Receiving Gridlet #1 at time = 51.428542408488
+User_1: Receiving Gridlet #1 at time = 51.52854240848798
+User_0: Receiving Gridlet #1 at time = 69.83244161273215
+User_2: Receiving Gridlet #2 at time = 70.83244161273215
+User_1: Receiving Gridlet #2 at time = 70.9324416127322
+User_0: Receiving Gridlet #2 at time = 71.03244161273226
+User_2: Receiving Gridlet #3 at time = 71.83244161273215
+User_1: Receiving Gridlet #3 at time = 71.9324416127322
+User_0: Receiving Gridlet #3 at time = 72.03244161273226
+User_2: Receiving Gridlet #4 at time = 72.13244161273231
+User_1: Receiving Gridlet #4 at time = 72.23244161273236
+User_0: Receiving Gridlet #4 at time = 72.33244161273241
+
+-------- User_2 ----------------
+Ping information for User_2
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_2		82.1324        82.1444        100000000.000
+R3		83.1326        83.1327        100000000.000
+R4		83.1427        83.1427        1000000000.000
+R5		84.8327        84.8328        100000000.000
+Res_0		84.8428        84.8548        100000000.000
+R5		85.8628        85.8628        1000000000.000
+R4		86.1527        86.1528        100000000.000
+R3		86.1628        86.1629        100000000.000
+User_2		86.1729            N/A            N/A
+
+Round Trip Time : 4.0285 seconds
+Number of Hops  : 4
+Bottleneck Bandwidth : 1.0E8 bits/s
+-------- User_2 ----------------
+
+User_2: sending and receiving of Gridlets complete at 86.17293361273435
+
+-------- User_1 ----------------
+Ping information for User_1
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_1		82.2324        82.2444        100000000.000
+R2		83.2326        83.2327        100000000.000
+R4		83.2427        83.2427        1000000000.000
+R5		85.0427        85.0428        100000000.000
+Res_0		86.0528        86.0648        100000000.000
+R5		87.1628        87.1628        1000000000.000
+R4		87.1728        87.1729        100000000.000
+R2		87.1829        87.1831        100000000.000
+User_1		87.1931            N/A            N/A
+
+Round Trip Time : 4.9486 seconds
+Number of Hops  : 4
+Bottleneck Bandwidth : 1.0E8 bits/s
+-------- User_1 ----------------
+
+User_1: sending and receiving of Gridlets complete at 87.19306561273487
+
+-------- User_0 ----------------
+Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		82.3324        82.3444        100000000.000
+R1		83.3326        83.3327        100000000.000
+R4		83.3427        83.3427        1000000000.000
+R5		85.1527        85.1528        100000000.000
+Res_0		86.1628        86.1748        100000000.000
+R5		88.1628        88.1628        1000000000.000
+R4		88.1728        88.1729        100000000.000
+R1		88.1829        88.1831        100000000.000
+User_0		88.1931            N/A            N/A
+
+Round Trip Time : 5.8486 seconds
+Number of Hops  : 4
+Bottleneck Bandwidth : 1.0E8 bits/s
+-------- User_0 ----------------
+
+User_0: sending and receiving of Gridlets complete at 88.19306561273538
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+--- Routing Table for R3 ---
+User_2		User_2_link
+R4		R3_R4
+User_0		R4
+R5		R4
+Res_0		R4
+R2		R4
+R1		R4
+User_1		R4
+-------------------------------------
+
+
+--- Routing Table for R4 ---
+R3		R3_R4
+R2		R2_R4
+R5		R5_R4
+R1		R1_R4
+User_0		R1
+Res_0		R5
+User_2		R3
+User_1		R2
+-------------------------------------
+
+
+============= OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        14        122.30339522546419
+    1        Success        14        177.21509283819634
+    2        Success        14        179.31509283819636
+    3        Success        14        181.4150928381964
+    4        Success        14        180.51509283819638
+
+============= OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        14        122.3333952254642
+    1        Success        14        121.43339522546421
+    2        Success        14        179.34509283819636
+    3        Success        14        181.4450928381964
+    4        Success        14        180.5450928381964
+
+============= OUTPUT for User_2 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        14        119.36339522546422
+    1        Success        14        121.46339522546421
+    2        Success        14        179.37509283819637
+    3        Success        14        181.47509283819636
+    4        Success        14        180.5750928381964
+
+Finish network example ...

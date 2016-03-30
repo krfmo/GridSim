@@ -1,0 +1,40 @@
+Starting data grid simulation ...
+Initializing GridSim package
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 20)
+
+Adding file fileH
+Adding file testFile1
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_1 - id: 27)
+
+Adding file testFile2
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_2 - id: 34)
+
+Adding file fileF
+Adding file fileG
+Creating a grid user entity with name = user1
+Creating a grid user entity with name = user2
+Starting GridSim version 4.0
+Entities started.
+user1:- Transfer of file testFile2 succesful
+user2:- Transfer of file testFile1 succesful
+user1:- Transfer of file testFile1 succesful
+user1:- Received attribute for file testFile1
+user1:- Transfer of file fileF succesful
+user1:%%%% Exiting body() at time 1998.7168399991406
+user2.replicateFile(): testFile1 has been replicated to Res_1
+user2.deleteFile(): testFile1 has been deleted from Res_1
+user2:%%%% Exiting body() at time 2750.330159998607
+DataGIS: Notify all replica catalog entities for shutting down.
+DataGIS: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+Finish data grid simulation ...

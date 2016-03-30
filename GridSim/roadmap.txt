@@ -1,0 +1,11 @@
+Short term goals:
++ Make lists typed to be compliant with Java 1.5+
++ Check which packages are in use
++ Remove the dependency on entities that wait for particular events. For example,
+the advance reservation class waits for the response of a given reservation request
+and ignores other events. This creates a dependency on multi-threading for 
+entities. That becomes a bottleneck.
++ Not every entity should be a thread. Work with the idea of thread-pool.
+
+For version 6.0:
++ Complete new design for the simulation core. Remove dependency on SimJava 

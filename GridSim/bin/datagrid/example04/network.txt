@@ -1,0 +1,11 @@
+5
+router1
+router2
+router3
+router4
+router5
+router1 router2 0.1 10.0 1500
+router1 router5 0.1 10.0 1500
+router2 router5 0.1 10.0 1500
+router2 router3 0.1 10.0 1500
+router4 router5 0.1 10.0 1500

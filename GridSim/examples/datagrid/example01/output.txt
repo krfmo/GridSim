@@ -1,0 +1,23 @@
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 13)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_1 - id: 19)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_2 - id: 25)
+
+Starting GridSim version 4.0
+Entities started.
+Dummy_User idling ....
+Dummy_User: %%%% Exiting body() at time 0.0
+DataGIS: Notify all replica catalog entities for shutting down.
+DataGIS: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+GridInformationService: Notify all GridSim entities for shutting down.
+Simulation completed.

@@ -1,0 +1,49 @@
+Starting network examples ...
+Initializing GridSim package
+Initialising...
+Starting GridSim version 3.1
+Entities started.
+user.body(): Sending Message_0, at time = 0.0
+user.body(): Sending Message_1, at time = 0.0
+user.body(): Sending Message_2, at time = 0.0
+user.body(): Sending Message_3, at time = 0.0
+
+test.body(): receive Message_0, at time = 40.01
+test.body(): Sending back Message_0, at time = 40.01
+
+test.body(): receive Message_1, at time = 80.01
+test.body(): Sending back Message_1, at time = 80.01
+user.body(): Receives Ack for Message_0
+
+test.body(): receive Message_2, at time = 120.01
+test.body(): Sending back Message_2, at time = 120.01
+user.body(): Receives Ack for Message_1
+
+test.body(): receive Message_3, at time = 160.01
+test.body(): Sending back Message_3, at time = 160.01
+user.body(): Receives Ack for Message_2
+user.body(): Receives Ack for Message_3
+
+-------- user ----------------
+Ping information for user
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+user		200.020        200.340        100.000
+test		200.350        200.670        100.000
+user		200.680            N/A            N/A
+
+Round Trip Time : 0.340 seconds
+Number of Hops  : 1
+Bottleneck Bandwidth : 100.0 bits/s
+-------- user ----------------
+
+user:%%%% Exiting body() at time 200.67999999999995
+
+test.body(): exiting ...
+test:%%%% Exiting body() at time 200.67999999999995
+GridInformationService: Notify all GridSim entities for shutting down
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+Finish network example ...

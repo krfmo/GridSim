@@ -1,0 +1,97 @@
+Starting GIS-network examples ...
+Initializing GridSim package
+Initialising...
+Creating a Regional_GIS_0 with id = 5
+Creating a Regional_GIS_1 with id = 9
+Creating a Regional_GIS_2 with id = 13
+
+Creating a Grid resource (name: Res_0 - id: 17)
+Res_0 will register to Regional_GIS_0
+
+Creating a Grid resource (name: Res_1 - id: 22)
+Res_1 will register to Regional_GIS_2
+
+Creating a Grid resource (name: Res_2 - id: 27)
+Res_2 will register to Regional_GIS_1
+
+Creating a Grid resource (name: Res_3 - id: 32)
+Res_3 will register to Regional_GIS_2
+
+Creating an AR Grid resource (name: AR_Res_0 - id: 38)
+AR_Res_0 will register to Regional_GIS_2
+
+Creating an AR Grid resource (name: AR_Res_1 - id: 43)
+AR_Res_1 will register to Regional_GIS_2
+
+Creating an AR Grid resource (name: AR_Res_2 - id: 48)
+AR_Res_2 will register to Regional_GIS_1
+
+Creating an AR Grid resource (name: AR_Res_3 - id: 53)
+AR_Res_3 will register to Regional_GIS_2
+
+
+Creating a grid user entity with name = User_0, and id = 57
+User_0 will communicate to Regional_GIS_1
+
+
+Starting GridSim version 3.1
+Entities started.
+///////////////////////////////////
+User_0: number of Regional GIS = 3
+User_0: receiving info about Regional GIS, name = Regional_GIS_1 (id: 9)
+User_0: receiving info about Regional GIS, name = Regional_GIS_0 (id: 5)
+User_0: receiving info about Regional GIS, name = Regional_GIS_2 (id: 13)
+
+///////////////////////////////////
+User_0: number of local Resource = 2
+User_0: receiving info about local Resource, name = Res_2 (id: 27)
+User_0: receiving info about local Resource, name = AR_Res_2 (id: 48)
+
+///////////////////////////////////
+User_0: number of local AR Resource = 1
+User_0: receiving info about local AR Resource, name = AR_Res_2 (id: 48)
+
+///////////////////////////////////
+User_0: number of Global Resource = 6
+User_0: receiving info about Global Resource, name = Res_0 (id: 17)
+User_0: receiving info about Global Resource, name = Res_3 (id: 32)
+User_0: receiving info about Global Resource, name = Res_1 (id: 22)
+User_0: receiving info about Global Resource, name = AR_Res_0 (id: 38)
+User_0: receiving info about Global Resource, name = AR_Res_3 (id: 53)
+User_0: receiving info about Global Resource, name = AR_Res_1 (id: 43)
+
+///////////////////////////////////
+User_0: number of Global AR Resource = 3
+User_0: receiving info about Global AR Resource, name = AR_Res_0 (id: 38)
+User_0: receiving info about Global AR Resource, name = AR_Res_3 (id: 53)
+User_0: receiving info about Global AR Resource, name = AR_Res_1 (id: 43)
+
+///////////////////////////////////
+User_0: trying to ping Regional_GIS_1
+
+-------- User_0 ----------------
+Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		30.5038        30.5038        100000000.000
+router1		30.5138        30.5139        100000000.000
+router2		30.5239        30.5239        100000000.000
+router3		30.5339        30.5339        100000000.000
+Regional_GIS_1		30.5439        30.5439        100000000.000
+router3		30.5539        30.5539        100000000.000
+router2		30.5639        30.5639        100000000.000
+router1		30.5739        30.5739        100000000.000
+User_0		30.5839            N/A            N/A
+
+Round Trip Time : 0.0801 seconds
+Number of Hops  : 4
+Bottleneck Bandwidth : 1.0E8 bits/s
+-------- User_0 ----------------
+
+User_0:%%%% Exiting body() at time 30.583903600000102
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+Finish GIS-network example ...

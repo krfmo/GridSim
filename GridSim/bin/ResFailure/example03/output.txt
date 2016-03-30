@@ -1,0 +1,920 @@
+Starting failure example 3...
+Initializing GridSim package
+Initialising...
+Reading network from network_ex03.txt
+Created a REGIONAL GIS with name Ex03_Regional_GIS_0 and id = 8, connected to Router1
+Created a REGIONAL GIS with name Ex03_Regional_GIS_1 and id = 12, connected to Router0
+Created a REGIONAL GIS with name Ex03_Regional_GIS_2 and id = 16, connected to Router0
+Created Ex03_Res_0 with id = 20, linked to Router1 and registered to Ex03_Regional_GIS_0
+Created Ex03_Res_1 with id = 25, linked to Router1 and registered to Ex03_Regional_GIS_0
+Created Ex03_Res_2 with id = 30, linked to Router1 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_3 with id = 35, linked to Router0 and registered to Ex03_Regional_GIS_1
+Created Ex03_Res_4 with id = 40, linked to Router0 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_5 with id = 45, linked to Router1 and registered to Ex03_Regional_GIS_0
+Created Ex03_Res_6 with id = 50, linked to Router1 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_7 with id = 55, linked to Router1 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_8 with id = 60, linked to Router1 and registered to Ex03_Regional_GIS_0
+Created Ex03_Res_9 with id = 65, linked to Router1 and registered to Ex03_Regional_GIS_1
+Created Ex03_Res_10 with id = 70, linked to Router0 and registered to Ex03_Regional_GIS_1
+Created Ex03_Res_11 with id = 75, linked to Router1 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_12 with id = 80, linked to Router0 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_13 with id = 85, linked to Router0 and registered to Ex03_Regional_GIS_2
+Created Ex03_Res_14 with id = 90, linked to Router1 and registered to Ex03_Regional_GIS_0
+Created Ex03_User_0 with id = 95, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_1 with id = 99, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_2 with id = 103, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_3 with id = 107, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_4 with id = 111, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_5 with id = 115, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_6 with id = 119, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_7 with id = 123, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_8 with id = 127, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_9 with id = 131, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_10 with id = 135, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_11 with id = 139, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_12 with id = 143, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_13 with id = 147, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_14 with id = 151, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_15 with id = 155, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_16 with id = 159, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_17 with id = 163, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_18 with id = 167, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_19 with id = 171, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_20 with id = 175, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_21 with id = 179, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_22 with id = 183, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_23 with id = 187, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_24 with id = 191, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_25 with id = 195, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_0
+Created Ex03_User_26 with id = 199, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+Created Ex03_User_27 with id = 203, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_28 with id = 207, linked to Router1, and with 5 gridlets. Registered to Ex03_Regional_GIS_2
+Created Ex03_User_29 with id = 211, linked to Router0, and with 5 gridlets. Registered to Ex03_Regional_GIS_1
+
+Starting GridSim version 4.0
+Entities started.
+Ex03_Regional_GIS_0: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock(): 0.0. resTimeFail: 20.918443148412194 seconds
+Ex03_Regional_GIS_1: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock(): 0.0. resTimeFail: 28.914649386070565 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock(): 0.0. resTimeFail: 9.29564320636208 seconds
+Ex03_User_3: initial SUBMIT_GRIDLET event will be at clock: 817. Current clock: 0.0
+Ex03_User_4: initial SUBMIT_GRIDLET event will be at clock: 828. Current clock: 0.0
+Ex03_User_8: initial SUBMIT_GRIDLET event will be at clock: 845. Current clock: 0.0
+Ex03_User_1: initial SUBMIT_GRIDLET event will be at clock: 864. Current clock: 0.0
+Ex03_User_6: initial SUBMIT_GRIDLET event will be at clock: 679. Current clock: 0.0
+Ex03_User_7: initial SUBMIT_GRIDLET event will be at clock: 854. Current clock: 0.0
+Ex03_User_9: initial SUBMIT_GRIDLET event will be at clock: 650. Current clock: 0.0
+Ex03_User_5: initial SUBMIT_GRIDLET event will be at clock: 662. Current clock: 0.0
+Ex03_User_10: initial SUBMIT_GRIDLET event will be at clock: 791. Current clock: 0.0
+Ex03_User_12: initial SUBMIT_GRIDLET event will be at clock: 813. Current clock: 0.0
+Ex03_User_13: initial SUBMIT_GRIDLET event will be at clock: 898. Current clock: 0.0
+Ex03_User_16: initial SUBMIT_GRIDLET event will be at clock: 607. Current clock: 0.0
+Ex03_User_19: initial SUBMIT_GRIDLET event will be at clock: 612. Current clock: 0.0
+Ex03_User_20: initial SUBMIT_GRIDLET event will be at clock: 813. Current clock: 0.0
+Ex03_User_17: initial SUBMIT_GRIDLET event will be at clock: 710. Current clock: 0.0
+Ex03_User_21: initial SUBMIT_GRIDLET event will be at clock: 723. Current clock: 0.0
+Ex03_User_22: initial SUBMIT_GRIDLET event will be at clock: 773. Current clock: 0.0
+Ex03_User_18: initial SUBMIT_GRIDLET event will be at clock: 891. Current clock: 0.0
+Ex03_User_25: initial SUBMIT_GRIDLET event will be at clock: 671. Current clock: 0.0
+Ex03_User_26: initial SUBMIT_GRIDLET event will be at clock: 771. Current clock: 0.0
+Ex03_User_27: initial SUBMIT_GRIDLET event will be at clock: 657. Current clock: 0.0
+Ex03_User_28: initial SUBMIT_GRIDLET event will be at clock: 715. Current clock: 0.0
+Ex03_User_29: initial SUBMIT_GRIDLET event will be at clock: 884. Current clock: 0.0
+Ex03_User_15: initial SUBMIT_GRIDLET event will be at clock: 720. Current clock: 0.0
+Ex03_User_23: initial SUBMIT_GRIDLET event will be at clock: 802. Current clock: 0.0
+Ex03_User_24: initial SUBMIT_GRIDLET event will be at clock: 757. Current clock: 0.0
+Ex03_User_0: initial SUBMIT_GRIDLET event will be at clock: 729. Current clock: 0.0
+Ex03_User_11: initial SUBMIT_GRIDLET event will be at clock: 762. Current clock: 0.0
+Ex03_User_14: initial SUBMIT_GRIDLET event will be at clock: 817. Current clock: 0.0
+Ex03_User_2: initial SUBMIT_GRIDLET event will be at clock: 847. Current clock: 0.0
+------- GRIDRESOURCE_FAILURE received at the Ex03_Regional_GIS_2, but there is no resources available. So, scheduling a new GRIDRESOURCE_FAILURE to GIS in 2 mins.
+Ex03_Res_0.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_0
+Ex03_Res_1.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_0
+Ex03_Res_3.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_1
+Ex03_Res_5.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_0
+Ex03_Res_7.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_9.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_1
+Ex03_Res_11.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_13.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_2.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_4.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_6.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_8.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_0
+Ex03_Res_10.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_1
+Ex03_Res_12.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_2
+Ex03_Res_14.body(): wait for 10 seconds before registering to Ex03_Regional_GIS_0
+
+Ex03_Regional_GIS_2: registering Ex03_Res_4
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+
+
+Ex03_Regional_GIS_1: registering Ex03_Res_3
+Ex03_Regional_GIS_1: list[0] = Ex03_Res_3
+
+
+Ex03_Regional_GIS_0: registering Ex03_Res_0
+Ex03_Regional_GIS_0: list[0] = Ex03_Res_0
+
+
+Ex03_Regional_GIS_2: registering Ex03_Res_13
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+
+
+Ex03_Regional_GIS_0: registering Ex03_Res_1
+Ex03_Regional_GIS_0: list[0] = Ex03_Res_0
+Ex03_Regional_GIS_0: list[1] = Ex03_Res_1
+
+
+Ex03_Regional_GIS_1: registering Ex03_Res_10
+Ex03_Regional_GIS_1: list[0] = Ex03_Res_3
+Ex03_Regional_GIS_1: list[1] = Ex03_Res_10
+
+
+
+Ex03_Regional_GIS_2: registering Ex03_Res_12
+Ex03_Regional_GIS_0: registering Ex03_Res_5
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_0: list[0] = Ex03_Res_0
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_0: list[1] = Ex03_Res_1
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_12
+Ex03_Regional_GIS_0: list[2] = Ex03_Res_5
+
+
+
+Ex03_Regional_GIS_2: registering Ex03_Res_7
+
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_0: registering Ex03_Res_8
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_0: list[0] = Ex03_Res_0
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_12
+Ex03_Regional_GIS_0: list[1] = Ex03_Res_1
+Ex03_Regional_GIS_2: list[3] = Ex03_Res_7
+Ex03_Regional_GIS_0: list[2] = Ex03_Res_5
+
+Ex03_Regional_GIS_0: list[3] = Ex03_Res_8
+
+
+Ex03_Regional_GIS_1: registering Ex03_Res_9
+Ex03_Regional_GIS_1: list[0] = Ex03_Res_3
+Ex03_Regional_GIS_1: list[1] = Ex03_Res_10
+Ex03_Regional_GIS_1: list[2] = Ex03_Res_9
+
+
+Ex03_Regional_GIS_0: registering Ex03_Res_14
+
+Ex03_Regional_GIS_2: registering Ex03_Res_2
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_12
+Ex03_Regional_GIS_0: list[0] = Ex03_Res_0
+Ex03_Regional_GIS_2: list[3] = Ex03_Res_7
+Ex03_Regional_GIS_0: list[1] = Ex03_Res_1
+Ex03_Regional_GIS_2: list[4] = Ex03_Res_2
+Ex03_Regional_GIS_0: list[2] = Ex03_Res_5
+
+Ex03_Regional_GIS_0: list[3] = Ex03_Res_8
+Ex03_Regional_GIS_0: list[4] = Ex03_Res_14
+
+
+Ex03_Regional_GIS_2: registering Ex03_Res_11
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_12
+Ex03_Regional_GIS_2: list[3] = Ex03_Res_7
+Ex03_Regional_GIS_2: list[4] = Ex03_Res_2
+Ex03_Regional_GIS_2: list[5] = Ex03_Res_11
+
+
+Ex03_Regional_GIS_2: registering Ex03_Res_6
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_12
+Ex03_Regional_GIS_2: list[3] = Ex03_Res_7
+Ex03_Regional_GIS_2: list[4] = Ex03_Res_2
+Ex03_Regional_GIS_2: list[5] = Ex03_Res_11
+Ex03_Regional_GIS_2: list[6] = Ex03_Res_6
+
+Ex03_Regional_GIS_0: 3 resources will fail in this simulation. Num of failed machines on each resource will be decided later
+Ex03_Regional_GIS_0: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 20.918443148412194, resTimeFail: 9.592465799264474 seconds
+Ex03_Regional_GIS_0: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 20.918443148412194, resTimeFail: 27.138488245452017 seconds
+Ex03_Regional_GIS_0: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 20.918443148412194, resTimeFail: 0.11300138880392911 seconds
+Ex03_Regional_GIS_1: 3 resources will fail in this simulation. Num of failed machines on each resource will be decided later
+Ex03_Regional_GIS_1: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 28.914649386070565, resTimeFail: 59.484957647287175 seconds
+Ex03_Regional_GIS_1: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 28.914649386070565, resTimeFail: 10.868766127103306 seconds
+Ex03_Regional_GIS_1: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 28.914649386070565, resTimeFail: 53.87156954846081 seconds
+Ex03_Regional_GIS_0: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_8. numMachFailed: 1. Clock: 30.550961197276674. Fail duration: 11.298040716770707 hours. Some machines may still work or may not.
+Ex03_Res_8.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 30.571085997276676. There are STILL working machines in this resource.
+Ex03_Res_8 - Machine: 0 is set to FAILED
+Ex03_Res_8 - Machine: 0 is FAILED
+Ex03_Regional_GIS_1: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_9. numMachFailed: 2. Clock: 187.06005727359997. Fail duration: 5.170199019475016 hours. Some machines may still work or may not.
+Ex03_Regional_GIS_1: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_10. numMachFailed: 3. Clock: 187.11022856319994. Fail duration: 56.156626881462486 hours. Some machines may still work or may not.
+Ex03_Res_10.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 187.13035336319993. There are STILL working machines in this resource.
+Ex03_Res_10 - Machine: 0 is set to FAILED
+Ex03_Res_10 - Machine: 0 is FAILED
+Ex03_Res_10 - Machine: 1 is set to FAILED
+Ex03_Res_10 - Machine: 1 is FAILED
+Ex03_Res_10 - Machine: 2 is set to FAILED
+Ex03_Res_10 - Machine: 2 is FAILED
+Ex03_Regional_GIS_1: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_3. numMachFailed: 2. Clock: 187.4407281599997. Fail duration: 5.4256905381613265 hours. Some machines may still work or may not.
+Ex03_Regional_GIS_0: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_14. numMachFailed: 6. Clock: 287.04005224959997. Fail duration: 2.5561294438510176 hours. Some machines may still work or may not.
+Ex03_Res_14.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 287.06017704959993. There are STILL working machines in this resource.
+Ex03_Res_14 - Machine: 0 is set to FAILED
+Ex03_Res_14 - Machine: 0 is FAILED
+Ex03_Res_14 - Machine: 1 is set to FAILED
+Ex03_Res_14 - Machine: 1 is FAILED
+Ex03_Res_14 - Machine: 2 is set to FAILED
+Ex03_Res_14 - Machine: 2 is FAILED
+Ex03_Res_14 - Machine: 3 is set to FAILED
+Ex03_Res_14 - Machine: 3 is FAILED
+Ex03_Res_14 - Machine: 4 is set to FAILED
+Ex03_Res_14 - Machine: 4 is FAILED
+Ex03_Res_14 - Machine: 5 is set to FAILED
+Ex03_Res_14 - Machine: 5 is FAILED
+Ex03_Regional_GIS_2: 7 resources will fail in this simulation. Num of failed machines on each resource will be decided later
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 35.98444339559455 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 3.723391726069068 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 8.057328677323225 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 26.126491750983476 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 22.674627386361255 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 4.478521513094773 seconds
+Ex03_Regional_GIS_2: sends an autogenerated GRIDRESOURCE_FAILURE to itself. Clock: 387.0, resTimeFail: 7.0901562341288 seconds
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_7. numMachFailed: 1. Clock: 390.783448999669. Fail duration: 10.231395931201995 hours. Some machines may still work or may not.
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_13. numMachFailed: 9. Clock: 391.51857376269476. Fail duration: 33.69363175393453 hours. Some machines may still work or may not.
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_12. numMachFailed: 26. Clock: 394.1302084837288. Fail duration: 7.815610263556723 hours. Some machines may still work or may not.
+Ex03_Res_12.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 394.15033328372874 which will last until clock: 28530.34728208793. There are NO working machines in this resource.
+Ex03_Res_12 - Machine: 0 is set to FAILED
+Ex03_Res_12 - Machine: 0 is FAILED
+Ex03_Res_12 - Machine: 1 is set to FAILED
+Ex03_Res_12 - Machine: 1 is FAILED
+Ex03_Res_12 - Machine: 2 is set to FAILED
+Ex03_Res_12 - Machine: 2 is FAILED
+Ex03_Res_12 - Machine: 3 is set to FAILED
+Ex03_Res_12 - Machine: 3 is FAILED
+Ex03_Res_12 - Machine: 4 is set to FAILED
+Ex03_Res_12 - Machine: 4 is FAILED
+Ex03_Res_12 - Machine: 5 is set to FAILED
+Ex03_Res_12 - Machine: 5 is FAILED
+Ex03_Res_12 - Machine: 6 is set to FAILED
+Ex03_Res_12 - Machine: 6 is FAILED
+Ex03_Res_12 - Machine: 7 is set to FAILED
+Ex03_Res_12 - Machine: 7 is FAILED
+Ex03_Res_12 - Machine: 8 is set to FAILED
+Ex03_Res_12 - Machine: 8 is FAILED
+Ex03_Res_12 - Machine: 9 is set to FAILED
+Ex03_Res_12 - Machine: 9 is FAILED
+Ex03_Res_12 - Machine: 10 is set to FAILED
+Ex03_Res_12 - Machine: 10 is FAILED
+Ex03_Res_12 - Machine: 11 is set to FAILED
+Ex03_Res_12 - Machine: 11 is FAILED
+Ex03_Res_12 - Machine: 12 is set to FAILED
+Ex03_Res_12 - Machine: 12 is FAILED
+Ex03_Res_12 - Machine: 13 is set to FAILED
+Ex03_Res_12 - Machine: 13 is FAILED
+Ex03_Res_12 - Machine: 14 is set to FAILED
+Ex03_Res_12 - Machine: 14 is FAILED
+Ex03_Res_12 - Machine: 15 is set to FAILED
+Ex03_Res_12 - Machine: 15 is FAILED
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_2. numMachFailed: 17. Clock: 395.23754269972306. Fail duration: 22.121378892588098 hours. Some machines may still work or may not.
+Ex03_Res_2.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 395.26767949972304 which will last until clock: 80032.23169281687. There are NO working machines in this resource.
+Ex03_Res_2 - Machine: 0 is set to FAILED
+Ex03_Res_2 - Machine: 0 is FAILED
+Ex03_Res_2 - Machine: 1 is set to FAILED
+Ex03_Res_2 - Machine: 1 is FAILED
+Ex03_Res_2 - Machine: 2 is set to FAILED
+Ex03_Res_2 - Machine: 2 is FAILED
+Ex03_Res_2 - Machine: 3 is set to FAILED
+Ex03_Res_2 - Machine: 3 is FAILED
+Ex03_Res_2 - Machine: 4 is set to FAILED
+Ex03_Res_2 - Machine: 4 is FAILED
+Ex03_Res_2 - Machine: 5 is set to FAILED
+Ex03_Res_2 - Machine: 5 is FAILED
+Ex03_Res_2 - Machine: 6 is set to FAILED
+Ex03_Res_2 - Machine: 6 is FAILED
+Ex03_Res_2 - Machine: 7 is set to FAILED
+Ex03_Res_2 - Machine: 7 is FAILED
+Ex03_Res_2 - Machine: 8 is set to FAILED
+Ex03_Res_2 - Machine: 8 is FAILED
+Ex03_Res_2 - Machine: 9 is set to FAILED
+Ex03_Res_2 - Machine: 9 is FAILED
+Ex03_Res_2 - Machine: 10 is set to FAILED
+Ex03_Res_2 - Machine: 10 is FAILED
+Ex03_Res_2 - Machine: 11 is set to FAILED
+Ex03_Res_2 - Machine: 11 is FAILED
+Ex03_Res_2 - Machine: 12 is set to FAILED
+Ex03_Res_2 - Machine: 12 is FAILED
+Ex03_Res_2 - Machine: 13 is set to FAILED
+Ex03_Res_2 - Machine: 13 is FAILED
+Ex03_Res_2 - Machine: 14 is set to FAILED
+Ex03_Res_2 - Machine: 14 is FAILED
+Ex03_Res_2 - Machine: 15 is set to FAILED
+Ex03_Res_2 - Machine: 15 is FAILED
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_6. numMachFailed: 8. Clock: 409.77473690956117. Fail duration: 19.05205969397969 hours. Some machines may still work or may not.
+Ex03_Res_6.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 409.80487370956115. There are STILL working machines in this resource.
+Ex03_Res_6 - Machine: 0 is set to FAILED
+Ex03_Res_6 - Machine: 0 is FAILED
+Ex03_Res_6 - Machine: 1 is set to FAILED
+Ex03_Res_6 - Machine: 1 is FAILED
+Ex03_Res_6 - Machine: 2 is set to FAILED
+Ex03_Res_6 - Machine: 2 is FAILED
+Ex03_Res_6 - Machine: 3 is set to FAILED
+Ex03_Res_6 - Machine: 3 is FAILED
+Ex03_Res_6 - Machine: 4 is set to FAILED
+Ex03_Res_6 - Machine: 4 is FAILED
+Ex03_Res_6 - Machine: 5 is set to FAILED
+Ex03_Res_6 - Machine: 5 is FAILED
+Ex03_Res_6 - Machine: 6 is set to FAILED
+Ex03_Res_6 - Machine: 6 is FAILED
+Ex03_Res_6 - Machine: 7 is set to FAILED
+Ex03_Res_6 - Machine: 7 is FAILED
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_4. numMachFailed: 1. Clock: 413.3067057733833. Fail duration: 1.7240528118701988 hours. Some machines may still work or may not.
+Ex03_Res_4.processFailure(): receives an event GRIDRESOURCE_FAILURE. Clock: 413.3268305733833. There are STILL working machines in this resource.
+Ex03_Res_4 - Machine: 0 is set to FAILED
+Ex03_Res_4 - Machine: 0 is FAILED
+Ex03_Regional_GIS_2: sends a GRIDRESOURCE_FAILURE event to the resource Ex03_Res_11. numMachFailed: 8. Clock: 423.78527737959405. Fail duration: 95.33914891017757 hours. Some machines may still work or may not.
+
+Ex03_Regional_GIS_2: Resource list after removal
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_7
+Ex03_Regional_GIS_2: list[3] = Ex03_Res_2
+Ex03_Regional_GIS_2: list[4] = Ex03_Res_11
+Ex03_Regional_GIS_2: list[5] = Ex03_Res_6
+
+Ex03_User_0: received an SUBMIT_GRIDLET event. Clock: 729.0
+
+Ex03_Regional_GIS_2: Resource list after removal
+Ex03_Regional_GIS_2: list[0] = Ex03_Res_4
+Ex03_Regional_GIS_2: list[1] = Ex03_Res_13
+Ex03_Regional_GIS_2: list[2] = Ex03_Res_7
+Ex03_Regional_GIS_2: list[3] = Ex03_Res_11
+Ex03_Regional_GIS_2: list[4] = Ex03_Res_6
+
+Ex03_User_0: resource[0] = 20
+Ex03_User_0: resource[1] = 25
+Ex03_User_0: resource[2] = 45
+Ex03_User_0: resource[3] = 60
+Ex03_User_0: resource[4] = 90
+Ex03_User_0: Sending Gridlet #0 to Ex03_Res_5 at clock: 861.2601247999999
+Ex03_User_0: resource[0] = 20
+Ex03_User_0: resource[1] = 25
+Ex03_User_0: resource[2] = 45
+Ex03_User_0: resource[3] = 60
+Ex03_User_0: resource[4] = 90
+Ex03_User_0: Sending Gridlet #1 to Ex03_Res_5 at clock: 862.0103743999994
+Ex03_User_0: resource[0] = 20
+Ex03_User_0: resource[1] = 25
+Ex03_User_0: resource[2] = 45
+Ex03_User_0: resource[3] = 60
+Ex03_User_0: resource[4] = 90
+Ex03_User_0: Sending Gridlet #2 to Ex03_Res_14 at clock: 862.7606239999989
+Ex03_User_0: resource[0] = 20
+Ex03_User_0: resource[1] = 25
+Ex03_User_0: resource[2] = 45
+Ex03_User_0: resource[3] = 60
+Ex03_User_0: resource[4] = 90
+Ex03_User_0: Sending Gridlet #3 to Ex03_Res_14 at clock: 863.5108735999984
+Ex03_User_0: resource[0] = 20
+Ex03_User_0: resource[1] = 25
+Ex03_User_0: resource[2] = 45
+Ex03_User_0: resource[3] = 60
+Ex03_User_0: resource[4] = 90
+Ex03_User_0: Sending Gridlet #4 to Ex03_Res_1 at clock: 864.3012431999979
+Ex03_User_9: Receiving Gridlet #0 with status Success at time = 1608.120146399998 from resource Ex03_Res_9
+Ex03_User_16: Receiving Gridlet #1 with status Success at time = 1609.3503935999972 from resource Ex03_Res_10
+Ex03_User_16: Receiving Gridlet #0 with status Success at time = 1609.4103935999972 from resource Ex03_Res_9
+Ex03_User_21: Receiving Gridlet #1 with status Success at time = 1610.0203935999966 from resource Ex03_Res_10
+Ex03_User_21: Receiving Gridlet #0 with status Success at time = 1610.0803935999966 from resource Ex03_Res_9
+Ex03_User_9: Receiving Gridlet #1 with status Success at time = 1610.7401567999957 from resource Ex03_Res_10
+Ex03_User_16: Receiving Gridlet #2 with status Success at time = 1611.1010151999958 from resource Ex03_Res_9
+Ex03_User_16: Receiving Gridlet #4 with status Success at time = 1611.2410151999957 from resource Ex03_Res_3
+Ex03_User_21: Receiving Gridlet #2 with status Success at time = 1612.0101583999945 from resource Ex03_Res_9
+Ex03_User_16: Receiving Gridlet #3 with status Success at time = 1612.1501583999943 from resource Ex03_Res_9
+Ex03_User_21: Receiving Gridlet #4 with status Success at time = 1612.1501583999943 from resource Ex03_Res_3
+Ex03_User_21: Receiving Gridlet #3 with status Success at time = 1612.8201583999937 from resource Ex03_Res_9
+Ex03_User_9: Receiving Gridlet #2 with status Success at time = 1612.8204199999939 from resource Ex03_Res_9
+Ex03_User_9: Receiving Gridlet #3 with status Success at time = 1613.870419999993 from resource Ex03_Res_9
+Ex03_User_9: Receiving Gridlet #4 with status Success at time = 1614.1604199999927 from resource Ex03_Res_3
+Ex03_User_24: Receiving Gridlet #0 with status Success at time = 1616.4402927999988 from resource Ex03_Res_9
+Ex03_User_24: Receiving Gridlet #1 with status Success at time = 1617.1505183999984 from resource Ex03_Res_10
+Ex03_User_24: Receiving Gridlet #2 with status Success at time = 1617.9007919999979 from resource Ex03_Res_9
+Ex03_User_24: Receiving Gridlet #3 with status Success at time = 1618.5707919999973 from resource Ex03_Res_9
+Ex03_User_24: Receiving Gridlet #4 with status Success at time = 1619.341267199997 from resource Ex03_Res_3
+Ex03_User_11: Receiving Gridlet #0 with status Success at time = 1621.4402927999988 from resource Ex03_Res_9
+Ex03_User_11: Receiving Gridlet #1 with status Success at time = 1622.1505183999984 from resource Ex03_Res_10
+Ex03_User_11: Receiving Gridlet #2 with status Success at time = 1622.9007919999979 from resource Ex03_Res_9
+Ex03_User_11: Receiving Gridlet #3 with status Success at time = 1623.5707919999973 from resource Ex03_Res_9
+Ex03_User_11: Receiving Gridlet #4 with status Success at time = 1624.341267199997 from resource Ex03_Res_3
+Ex03_User_26: Receiving Gridlet #0 with status Success at time = 1630.4402927999988 from resource Ex03_Res_9
+Ex03_User_26: Receiving Gridlet #1 with status Success at time = 1631.1505183999984 from resource Ex03_Res_10
+Ex03_User_26: Receiving Gridlet #2 with status Success at time = 1631.9107919999979 from resource Ex03_Res_9
+Ex03_User_26: Receiving Gridlet #3 with status Success at time = 1632.5807919999972 from resource Ex03_Res_9
+Ex03_User_26: Receiving Gridlet #4 with status Success at time = 1633.341267199997 from resource Ex03_Res_3
+Ex03_User_27: Receiving Gridlet #0 with status Success at time = 1634.5401559999978 from resource Ex03_Res_7
+Ex03_User_28: Receiving Gridlet #0 with status Success at time = 1635.2101559999971 from resource Ex03_Res_7
+Ex03_User_6: Receiving Gridlet #0 with status Success at time = 1635.8901679999965 from resource Ex03_Res_7
+Ex03_User_15: Receiving Gridlet #0 with status Success at time = 1636.8601663999957 from resource Ex03_Res_7
+Ex03_User_6: Receiving Gridlet #4 with status Success at time = 1637.5808951999954 from resource Ex03_Res_13
+Ex03_User_15: Receiving Gridlet #4 with status Success at time = 1637.8908951999952 from resource Ex03_Res_13
+Ex03_User_6: Receiving Gridlet #2 with status Success at time = 1638.050895199995 from resource Ex03_Res_6
+Ex03_User_6: Receiving Gridlet #1 with status Success at time = 1638.3608951999947 from resource Ex03_Res_7
+Ex03_User_27: Receiving Gridlet #1 with status Success at time = 1638.560155999994 from resource Ex03_Res_7
+Ex03_User_15: Receiving Gridlet #2 with status Success at time = 1638.9301679999937 from resource Ex03_Res_6
+Ex03_User_28: Receiving Gridlet #1 with status Success at time = 1639.2301559999935 from resource Ex03_Res_7
+Ex03_User_15: Receiving Gridlet #1 with status Success at time = 1639.5401663999933 from resource Ex03_Res_7
+Ex03_User_27: Receiving Gridlet #2 with status Success at time = 1639.710287999993 from resource Ex03_Res_6
+Ex03_User_6: Receiving Gridlet #3 with status Success at time = 1639.9101679999928 from resource Ex03_Res_6
+Ex03_User_28: Receiving Gridlet #2 with status Success at time = 1640.3802879999923 from resource Ex03_Res_6
+Ex03_User_15: Receiving Gridlet #3 with status Success at time = 1640.5801679999922 from resource Ex03_Res_6
+Ex03_User_27: Receiving Gridlet #3 with status Success at time = 1641.4702879999913 from resource Ex03_Res_6
+Ex03_User_27: Receiving Gridlet #4 with status Success at time = 1641.7202879999911 from resource Ex03_Res_13
+Ex03_User_28: Receiving Gridlet #3 with status Success at time = 1642.1402879999907 from resource Ex03_Res_6
+Ex03_User_28: Receiving Gridlet #4 with status Success at time = 1642.3902879999905 from resource Ex03_Res_13
+Ex03_User_10: Receiving Gridlet #0 with status Success at time = 1650.4602927999988 from resource Ex03_Res_7
+Ex03_User_10: Receiving Gridlet #1 with status Success at time = 1651.1302927999982 from resource Ex03_Res_7
+Ex03_User_10: Receiving Gridlet #2 with status Success at time = 1651.9607919999978 from resource Ex03_Res_6
+Ex03_User_10: Receiving Gridlet #3 with status Success at time = 1652.6307919999972 from resource Ex03_Res_6
+Ex03_User_10: Receiving Gridlet #4 with status Success at time = 1653.441267199997 from resource Ex03_Res_13
+Ex03_User_19: Receiving Gridlet #0 with status Success at time = 1721.8901439999975 from resource Ex03_Res_5
+Ex03_User_25: Receiving Gridlet #0 with status Success at time = 1722.5601439999969 from resource Ex03_Res_5
+Ex03_User_19: Receiving Gridlet #2 with status Success at time = 1722.9506431999969 from resource Ex03_Res_14
+Ex03_User_0: received an GRIDLET_RETURN event. Clock: 1723.2301439999962
+Ex03_User_0: Receiving Gridlet #0 with status Success at time = 1723.2301439999962 from resource Ex03_Res_5
+Ex03_User_25: Receiving Gridlet #2 with status Success at time = 1723.6206431999963 from resource Ex03_Res_14
+Ex03_User_0: received an GRIDLET_RETURN event. Clock: 1724.2906431999957
+Ex03_User_0: Receiving Gridlet #2 with status Success at time = 1724.2906431999957 from resource Ex03_Res_14
+Ex03_User_19: Receiving Gridlet #4 with status Success at time = 1724.7710223999957 from resource Ex03_Res_1
+Ex03_User_19: Receiving Gridlet #1 with status Success at time = 1725.3810223999951 from resource Ex03_Res_5
+Ex03_User_25: Receiving Gridlet #4 with status Success at time = 1725.441022399995 from resource Ex03_Res_1
+Ex03_User_19: Receiving Gridlet #3 with status Success at time = 1725.6910223999948 from resource Ex03_Res_14
+Ex03_User_25: Receiving Gridlet #1 with status Success at time = 1726.0510223999945 from resource Ex03_Res_5
+Ex03_User_0: received an GRIDLET_RETURN event. Clock: 1726.1110223999945
+Ex03_User_0: Receiving Gridlet #4 with status Success at time = 1726.1110223999945 from resource Ex03_Res_1
+Ex03_User_25: Receiving Gridlet #3 with status Success at time = 1726.3610223999942 from resource Ex03_Res_14
+Ex03_User_5: Receiving Gridlet #0 with status Success at time = 1726.680155999993 from resource Ex03_Res_5
+Ex03_User_0: received an GRIDLET_RETURN event. Clock: 1726.721022399994
+Ex03_User_0: Receiving Gridlet #1 with status Success at time = 1726.721022399994 from resource Ex03_Res_5
+Ex03_User_1: Receiving Gridlet #4 with status Success at time = 1726.7820207999944 from resource Ex03_Res_1
+Ex03_User_0: received an GRIDLET_RETURN event. Clock: 1727.0310223999936
+Ex03_User_0: Receiving Gridlet #3 with status Success at time = 1727.0310223999936 from resource Ex03_Res_14
+Ex03_User_1: Receiving Gridlet #2 with status Success at time = 1727.212020799994 from resource Ex03_Res_14
+Ex03_User_17: Receiving Gridlet #0 with status Success at time = 1727.3501559999925 from resource Ex03_Res_5
+Ex03_User_1: Receiving Gridlet #3 with status Success at time = 1727.8820207999934 from resource Ex03_Res_14
+Ex03_User_22: Receiving Gridlet #0 with status Success at time = 1728.0201559999919 from resource Ex03_Res_5
+Ex03_User_23: Receiving Gridlet #0 with status Success at time = 1729.070154399991 from resource Ex03_Res_5
+Ex03_User_1: Receiving Gridlet #0 with status Success at time = 1729.3501439999907 from resource Ex03_Res_5
+Ex03_User_5: Receiving Gridlet #2 with status Success at time = 1729.3601559999906 from resource Ex03_Res_14
+Ex03_User_1: Receiving Gridlet #1 with status Success at time = 1730.02014399999 from resource Ex03_Res_5
+Ex03_User_17: Receiving Gridlet #2 with status Success at time = 1730.03015599999 from resource Ex03_Res_14
+Ex03_User_22: Receiving Gridlet #2 with status Success at time = 1730.9801543999893 from resource Ex03_Res_14
+Ex03_User_5: Receiving Gridlet #1 with status Success at time = 1731.7501543999886 from resource Ex03_Res_5
+Ex03_User_23: Receiving Gridlet #2 with status Success at time = 1732.320154399988 from resource Ex03_Res_14
+Ex03_User_17: Receiving Gridlet #1 with status Success at time = 1733.0901543999873 from resource Ex03_Res_5
+Ex03_User_5: Receiving Gridlet #3 with status Success at time = 1733.6601543999868 from resource Ex03_Res_14
+Ex03_User_22: Receiving Gridlet #1 with status Success at time = 1734.4301543999861 from resource Ex03_Res_5
+Ex03_User_17: Receiving Gridlet #3 with status Success at time = 1735.0001543999856 from resource Ex03_Res_14
+Ex03_User_23: Receiving Gridlet #1 with status Success at time = 1735.770154399985 from resource Ex03_Res_5
+Ex03_User_22: Receiving Gridlet #3 with status Success at time = 1736.0601559999845 from resource Ex03_Res_14
+Ex03_User_23: Receiving Gridlet #3 with status Success at time = 1737.0501543999837 from resource Ex03_Res_14
+Ex03_User_5: Receiving Gridlet #4 with status Success at time = 1737.4001559999833 from resource Ex03_Res_1
+Ex03_User_17: Receiving Gridlet #4 with status Success at time = 1738.0701559999827 from resource Ex03_Res_1
+Ex03_User_22: Receiving Gridlet #4 with status Success at time = 1738.740155999982 from resource Ex03_Res_1
+Ex03_User_23: Receiving Gridlet #4 with status Success at time = 1739.4101559999815 from resource Ex03_Res_1
+Ex03_User_8: Receiving Gridlet #0 with status Success at time = 1795.120146399998 from resource Ex03_Res_9
+Ex03_User_20: Receiving Gridlet #1 with status Success at time = 1797.4703935999962 from resource Ex03_Res_10
+Ex03_User_20: Receiving Gridlet #0 with status Success at time = 1797.4903935999962 from resource Ex03_Res_9
+Ex03_User_2: Receiving Gridlet #1 with status Success at time = 1798.1403935999956 from resource Ex03_Res_10
+Ex03_User_2: Receiving Gridlet #0 with status Success at time = 1798.1603935999956 from resource Ex03_Res_9
+Ex03_User_7: Receiving Gridlet #1 with status Success at time = 1798.810393599995 from resource Ex03_Res_10
+Ex03_User_7: Receiving Gridlet #0 with status Success at time = 1798.830393599995 from resource Ex03_Res_9
+Ex03_User_20: Receiving Gridlet #4 with status Success at time = 1799.1711423999952 from resource Ex03_Res_3
+Ex03_User_29: Receiving Gridlet #1 with status Success at time = 1799.4803935999944 from resource Ex03_Res_10
+Ex03_User_29: Receiving Gridlet #0 with status Success at time = 1799.5003935999944 from resource Ex03_Res_9
+Ex03_User_20: Receiving Gridlet #2 with status Success at time = 1799.6811423999948 from resource Ex03_Res_9
+Ex03_User_2: Receiving Gridlet #4 with status Success at time = 1799.8411423999946 from resource Ex03_Res_3
+Ex03_User_2: Receiving Gridlet #2 with status Success at time = 1800.3511423999942 from resource Ex03_Res_9
+Ex03_User_7: Receiving Gridlet #4 with status Success at time = 1800.511142399994 from resource Ex03_Res_3
+Ex03_User_7: Receiving Gridlet #2 with status Success at time = 1801.0211423999936 from resource Ex03_Res_9
+Ex03_User_29: Receiving Gridlet #4 with status Success at time = 1801.1811423999934 from resource Ex03_Res_3
+Ex03_User_29: Receiving Gridlet #2 with status Success at time = 1801.691142399993 from resource Ex03_Res_9
+Ex03_User_20: Receiving Gridlet #3 with status Success at time = 1802.5401583999912 from resource Ex03_Res_9
+Ex03_User_8: Receiving Gridlet #1 with status Success at time = 1803.1801567999908 from resource Ex03_Res_10
+Ex03_User_2: Receiving Gridlet #3 with status Success at time = 1803.5401583999903 from resource Ex03_Res_9
+Ex03_User_7: Receiving Gridlet #3 with status Success at time = 1804.2101583999897 from resource Ex03_Res_9
+Ex03_User_8: Receiving Gridlet #2 with status Success at time = 1804.9101463999891 from resource Ex03_Res_9
+Ex03_User_29: Receiving Gridlet #3 with status Success at time = 1804.9801567999891 from resource Ex03_Res_9
+Ex03_User_8: Receiving Gridlet #3 with status Success at time = 1806.190146399988 from resource Ex03_Res_9
+Ex03_User_8: Receiving Gridlet #4 with status Success at time = 1806.210146399988 from resource Ex03_Res_3
+Ex03_User_4: Receiving Gridlet #0 with status Success at time = 1921.4001559999974 from resource Ex03_Res_7
+Ex03_User_12: Receiving Gridlet #0 with status Success at time = 1923.2101679999957 from resource Ex03_Res_7
+Ex03_User_3: Receiving Gridlet #0 with status Success at time = 1923.8801679999951 from resource Ex03_Res_7
+Ex03_User_14: Receiving Gridlet #0 with status Success at time = 1924.5501679999945 from resource Ex03_Res_7
+Ex03_User_18: Receiving Gridlet #0 with status Success at time = 1925.220167999994 from resource Ex03_Res_7
+Ex03_User_12: Receiving Gridlet #4 with status Success at time = 1925.4211423999927 from resource Ex03_Res_13
+Ex03_User_13: Receiving Gridlet #0 with status Success at time = 1925.8901679999933 from resource Ex03_Res_7
+Ex03_User_3: Receiving Gridlet #4 with status Success at time = 1926.0911423999921 from resource Ex03_Res_13
+Ex03_User_12: Receiving Gridlet #1 with status Success at time = 1926.5601679999927 from resource Ex03_Res_7
+Ex03_User_14: Receiving Gridlet #4 with status Success at time = 1926.7611423999915 from resource Ex03_Res_13
+Ex03_User_3: Receiving Gridlet #1 with status Success at time = 1927.230167999992 from resource Ex03_Res_7
+Ex03_User_18: Receiving Gridlet #4 with status Success at time = 1927.431142399991 from resource Ex03_Res_13
+Ex03_User_14: Receiving Gridlet #1 with status Success at time = 1927.9001679999915 from resource Ex03_Res_7
+Ex03_User_13: Receiving Gridlet #4 with status Success at time = 1928.1011423999903 from resource Ex03_Res_13
+Ex03_User_18: Receiving Gridlet #1 with status Success at time = 1928.610166399991 from resource Ex03_Res_7
+Ex03_User_12: Receiving Gridlet #2 with status Success at time = 1929.8601663999898 from resource Ex03_Res_6
+Ex03_User_13: Receiving Gridlet #1 with status Success at time = 1929.9501663999897 from resource Ex03_Res_7
+Ex03_User_3: Receiving Gridlet #2 with status Success at time = 1930.580167999989 from resource Ex03_Res_6
+Ex03_User_14: Receiving Gridlet #2 with status Success at time = 1931.2501679999884 from resource Ex03_Res_6
+Ex03_User_18: Receiving Gridlet #2 with status Success at time = 1931.9201679999878 from resource Ex03_Res_6
+Ex03_User_13: Receiving Gridlet #2 with status Success at time = 1932.5901679999872 from resource Ex03_Res_6
+Ex03_User_12: Receiving Gridlet #3 with status Success at time = 1933.2601679999866 from resource Ex03_Res_6
+Ex03_User_3: Receiving Gridlet #3 with status Success at time = 1933.930167999986 from resource Ex03_Res_6
+Ex03_User_4: Receiving Gridlet #1 with status Success at time = 1933.950165599986 from resource Ex03_Res_7
+Ex03_User_14: Receiving Gridlet #3 with status Success at time = 1934.6001679999854 from resource Ex03_Res_6
+Ex03_User_18: Receiving Gridlet #3 with status Success at time = 1935.2701679999848 from resource Ex03_Res_6
+Ex03_User_4: Receiving Gridlet #2 with status Success at time = 1935.8901559999842 from resource Ex03_Res_6
+Ex03_User_13: Receiving Gridlet #3 with status Success at time = 1935.9401679999842 from resource Ex03_Res_6
+Ex03_User_4: Receiving Gridlet #3 with status Success at time = 1937.170155999983 from resource Ex03_Res_6
+Ex03_User_4: Receiving Gridlet #4 with status Success at time = 1937.230155999983 from resource Ex03_Res_13
+GridInformationService: Notify all GridSim entities for shutting down.
+Ex03_Res_1: end of simulation...
+Ex03_Res_0: end of simulation...
+Ex03_Res_2: end of simulation...
+Ex03_Res_4: end of simulation...
+Ex03_Res_6: end of simulation...
+Ex03_Res_3: end of simulation...
+Ex03_Res_8: end of simulation...
+Ex03_Res_5: end of simulation...
+Ex03_Res_10: end of simulation...
+Ex03_Res_7: end of simulation...
+Ex03_Res_9: end of simulation...
+Ex03_Res_11: end of simulation...
+Ex03_Res_13: end of simulation...
+Ex03_Res_12: end of simulation...
+Ex03_Res_14: end of simulation...
+Sim_system: No more future events
+Gathering simulation data.
+
+============== Ex03_User_0. Ending simulation...
+
+============== Ex03_User_2. Ending simulation...
+
+
+============== OUTPUT for Ex03_User_2 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    1        Success        70    2573.4600000000005    857.8200000000002    862.3100191999961
+    0        Success        65    2573.4900000000007    857.8300000000002    863.0602687999956
+    4        Success        35    2573.4600000000005    857.8200000000002    861.8200191999965
+    2        Success        65    2573.4600000000005    857.8200000000002    863.7905183999951
+    3        Success        65    2573.4600000000005    857.8200000000002    866.2492847999918
+====================================================
+
+============== Ex03_User_3. Ending simulation...
+
+============== Ex03_User_4. Ending simulation...
+
+
+============== OUTPUT for Ex03_User_3 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2573.4000000000005    857.8000000000002    862.7700431999954
+    4        Success        85    2573.2200000000007    857.7400000000002    861.9698991999962
+    1        Success        55    2573.2200000000007    857.7400000000002    865.3596735999934
+    2        Success        50    2573.1900000000005    857.7300000000002    867.9594239999913
+    3        Success        50    2573.2200000000007    857.7400000000002    870.5591743999892
+====================================================
+
+
+============== OUTPUT for Ex03_User_4 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2574.0    858.0    860.030009599998
+    1        Success        55    2574.0    858.0    859.3600191999985
+    2        Success        50    2574.0    858.0    860.5297359999979
+    3        Success        50    2571.6891792000033    857.229726400001    861.0394623999978
+    4        Success        85    2574.0    858.0    860.3291887999987
+====================================================
+
+============== Ex03_User_5. Ending simulation...
+
+============== Ex03_User_6. Ending simulation...
+
+============== Ex03_User_7. Ending simulation...
+
+============== Ex03_User_8. Ending simulation...
+
+============== Ex03_User_10. Ending simulation...
+
+============== Ex03_User_11. Ending simulation...
+
+============== Ex03_User_12. Ending simulation...
+
+============== Ex03_User_13. Ending simulation...
+
+============== Ex03_User_14. Ending simulation...
+
+============== Ex03_User_15. Ending simulation...
+
+============== Ex03_User_16. Ending simulation...
+
+============== Ex03_User_17. Ending simulation...
+
+============== Ex03_User_18. Ending simulation...
+
+============== Ex03_User_19. Ending simulation...
+
+============== Ex03_User_20. Ending simulation...
+
+============== Ex03_User_21. Ending simulation...
+
+============== Ex03_User_22. Ending simulation...
+
+============== Ex03_User_23. Ending simulation...
+
+============== Ex03_User_24. Ending simulation...
+
+============== Ex03_User_25. Ending simulation...
+
+============== Ex03_User_26. Ending simulation...
+
+============== Ex03_User_27. Ending simulation...
+
+============== Ex03_User_28. Ending simulation...
+
+============== Ex03_User_29. Ending simulation...
+
+
+============== OUTPUT for Ex03_User_5 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2571.510000000002    857.1700000000008    865.5600191999931
+    2        Success        90    2574.0    858.0    862.3799975999959
+    1        Success        45    2574.0    858.0    867.6899959999912
+    3        Success        90    2574.0    858.0    863.7599959999948
+    4        Success        25    2574.0    858.0    864.5799975999939
+====================================================
+
+
+============== OUTPUT for Ex03_User_6 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2571.630000000002    857.2100000000007    861.7800431999965
+    4        Success        85    2574.0    858.0    860.4200191999978
+    2        Success        50    2574.0    858.0    862.3905183999964
+    1        Success        55    2574.0    858.0    863.5005207999952
+    3        Success        50    2574.0    858.0    863.4995415999947
+====================================================
+
+
+============== OUTPUT for Ex03_User_7 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    1        Success        70    2573.1900000000005    857.7300000000002    862.9398991999955
+    0        Success        65    2573.2800000000007    857.7600000000002    863.700268799995
+    4        Success        35    2573.1900000000005    857.7300000000002    862.4498991999959
+    2        Success        65    2573.100000000001    857.7000000000003    864.4203983999945
+    3        Success        65    2573.1900000000005    857.7300000000002    866.8791647999911
+====================================================
+
+
+============== OUTPUT for Ex03_User_8 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        65    2574.0    858.0    860.030009599998
+    1        Success        70    2574.0    858.0    861.1600199999971
+    2        Success        65    2571.5092152000016    857.1697384000006    861.0197575999971
+    3        Success        65    2571.749179200002    857.2497264000006    861.5494839999965
+    4        Success        35    2574.0    858.0    860.819210399997
+====================================================
+
+
+============== OUTPUT for Ex03_User_10 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2574.0    858.0    859.3800431999987
+    1        Success        55    2571.7492512000017    857.2497504000005    859.2997935999986
+    2        Success        50    2574.0    858.0    859.3800431999987
+    3        Success        50    2571.7492512000017    857.2497504000005    859.2997935999986
+    4        Success        85    2574.0    858.0    859.3600191999988
+====================================================
+
+============== Ex03_User_1. Ending simulation...
+
+============== Ex03_User_9. Ending simulation...
+
+
+============== OUTPUT for Ex03_User_12 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2574.0    858.0    862.1500431999959
+    4        Success        85    2574.0    858.0    861.3600191999967
+    1        Success        55    2574.0    858.0    864.7497935999938
+    2        Success        50    2574.0    858.0    867.2995423999919
+    3        Success        50    2574.0    858.0    869.9492943999896
+====================================================
+
+
+============== OUTPUT for Ex03_User_13 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2571.810000000002    857.2700000000007    864.5800431999937
+    4        Success        85    2571.960000000002    857.3200000000006    863.7798991999946
+    1        Success        55    2571.960000000002    857.3200000000006    867.8796719999912
+    2        Success        50    2571.780000000002    857.2600000000007    869.7694239999896
+    3        Success        50    2571.960000000002    857.3200000000006    872.3691743999875
+====================================================
+
+
+============== OUTPUT for Ex03_User_14 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2572.860000000001    857.6200000000003    863.3900431999948
+    4        Success        85    2572.6200000000013    857.5400000000004    862.5797791999958
+    1        Success        55    2572.6200000000013    857.5400000000004    865.9695535999929
+    2        Success        50    2572.5300000000016    857.5100000000004    868.5693039999908
+    3        Success        50    2572.6200000000013    857.5400000000004    871.1690543999887
+====================================================
+
+
+============== OUTPUT for Ex03_User_15 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2572.0800000000017    857.3600000000006    862.6500415999958
+    4        Success        85    2573.79    857.9300000000001    860.6698991999975
+    2        Success        50    2573.79    857.9300000000001    863.2096711999951
+    1        Success        55    2573.130000000001    857.7100000000003    864.5797919999939
+    3        Success        50    2573.79    857.9300000000001    864.1094215999941
+====================================================
+
+
+============== OUTPUT for Ex03_User_16 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    1        Success        70    2574.0    858.0    860.5800191999977
+    0        Success        65    2572.2600000000016    857.4200000000005    861.3702687999971
+    2        Success        65    2574.0    858.0    861.590518399997
+    4        Success        35    2573.9999999999995    857.9999999999999    860.2700191999978
+    3        Success        65    2574.0    858.0    861.909411999996
+====================================================
+
+
+============== OUTPUT for Ex03_User_17 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2571.750000000002    857.2500000000007    866.0899975999926
+    2        Success        90    2573.5200000000004    857.8400000000001    862.9999975999954
+    1        Success        45    2573.6100000000006    857.8700000000001    868.97999599999
+    3        Success        90    2573.5200000000004    857.8400000000001    865.0499959999936
+    4        Success        25    2573.5200000000004    857.8400000000001    865.1999975999934
+====================================================
+
+
+============== OUTPUT for Ex03_User_18 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2571.780000000002    857.2600000000007    863.9600431999943
+    4        Success        85    2572.170000000002    857.3900000000006    863.1700191999951
+    1        Success        55    2572.170000000002    857.3900000000006    866.5997919999922
+    2        Success        50    2571.6900000000023    857.2300000000007    869.1595439999901
+    3        Success        50    2572.170000000002    857.3900000000006    871.759294399988
+====================================================
+
+
+============== OUTPUT for Ex03_User_19 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2574.0    858.0    860.8300191999974
+    2        Success        90    2574.0    858.0    860.3900191999978
+    4        Success        25    2574.0000000000005    858.0000000000001    860.7000191999977
+    1        Success        45    2574.0    858.0    863.5706479999956
+    3        Success        90    2574.0    858.0    862.3801487999963
+====================================================
+
+
+============== OUTPUT for Ex03_User_20 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    1        Success        70    2574.0    858.0    861.7000191999966
+    0        Success        65    2574.0    858.0    862.4502687999961
+    4        Success        35    2574.0    858.0    861.2100191999971
+    2        Success        65    2574.0    858.0    863.1805183999957
+    3        Success        65    2574.0    858.0    865.3092847999926
+====================================================
+
+
+============== OUTPUT for Ex03_User_21 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    1        Success        70    2573.82    857.94    861.1900191999971
+    0        Success        65    2572.050000000002    857.3500000000006    861.9802687999966
+    2        Success        65    2573.82    857.94    862.4495343999954
+    4        Success        35    2573.8199999999997    857.9399999999999    861.1290351999962
+    3        Success        65    2573.82    857.94    862.5292847999951
+====================================================
+
+
+============== OUTPUT for Ex03_User_22 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2571.600000000002    857.2000000000007    866.5799975999921
+    2        Success        90    2573.1900000000005    857.7300000000002    863.8999959999946
+    1        Success        45    2573.2800000000007    857.7600000000002    870.2699959999889
+    3        Success        90    2573.1900000000005    857.7300000000002    866.0599975999926
+    4        Success        25    2573.1900000000005    857.7300000000002    865.8199975999928
+====================================================
+
+
+============== OUTPUT for Ex03_User_23 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2572.4100000000017    857.4700000000005    867.4799959999914
+    2        Success        90    2573.010000000001    857.6700000000003    865.1899959999935
+    1        Success        45    2572.8900000000012    857.6300000000003    871.4899959999877
+    3        Success        90    2573.010000000001    857.6700000000003    866.9999959999918
+    4        Success        25    2573.010000000001    857.6700000000003    866.4399975999922
+====================================================
+
+
+============== OUTPUT for Ex03_User_24 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        65    2574.0    858.0    859.3800431999987
+    1        Success        70    2574.0    858.0    859.3600191999988
+    2        Success        65    2574.0    858.0    859.3800431999987
+    3        Success        65    2571.809251200001    857.2697504000005    859.3197935999985
+    4        Success        35    2574.0    858.0    859.3600191999988
+====================================================
+
+
+============== OUTPUT for Ex03_User_25 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2573.040000000001    857.6800000000003    861.4000191999969
+    2        Success        90    2573.3400000000006    857.7800000000002    860.9600191999973
+    4        Success        25    2572.950000000001    857.6500000000004    861.1998991999972
+    1        Success        45    2573.0700000000006    857.6900000000003    864.140647999995
+    3        Success        90    2573.370000000001    857.7900000000002    862.9501487999958
+====================================================
+
+
+============== OUTPUT for Ex03_User_26 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        65    2574.0    858.0    859.3800431999987
+    1        Success        70    2574.0    858.0    859.3600191999988
+    2        Success        65    2574.0    858.0    859.3900431999987
+    3        Success        65    2571.8392512000014    857.2797504000005    859.3297935999985
+    4        Success        35    2574.0    858.0    859.3600191999988
+====================================================
+
+
+============== OUTPUT for Ex03_User_27 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2574.0    858.0    860.4700191999978
+    1        Success        55    2571.4800000000023    857.1600000000008    862.0000191999964
+    2        Success        50    2573.9999999999995    857.9999999999999    859.9700191999981
+    3        Success        50    2573.9999999999995    857.9999999999999    860.9497455999971
+    4        Success        85    2574.0    858.0    860.4194719999974
+====================================================
+
+
+============== OUTPUT for Ex03_User_29 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    1        Success        70    2573.040000000001    857.6800000000003    863.5697791999949
+    0        Success        65    2573.1600000000008    857.7200000000003    864.3402687999944
+    4        Success        35    2573.040000000001    857.6800000000003    863.0797791999953
+    2        Success        65    2572.800000000001    857.6000000000004    865.0502783999939
+    3        Success        65    2573.040000000001    857.6800000000003    867.6090431999905
+====================================================
+
+
+============== OUTPUT for Ex03_User_28 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        55    2573.1900000000005    857.7300000000002    861.0100191999973
+    1        Success        55    2572.860000000001    857.6200000000003    862.3000191999961
+    2        Success        50    2573.8199999999997    857.9399999999999    860.5900191999975
+    3        Success        50    2573.8199999999997    857.9399999999999    861.5696255999965
+    4        Success        85    2573.7300000000005    857.9100000000001    861.0093519999969
+====================================================
+
+
+============== OUTPUT for Ex03_User_11 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        65    2574.0    858.0    859.3800431999987
+    1        Success        70    2574.0    858.0    859.3600191999988
+    2        Success        65    2574.0    858.0    859.3800431999987
+    3        Success        65    2571.809251200001    857.2697504000005    859.3197935999985
+    4        Success        35    2574.0    858.0    859.3600191999988
+====================================================
+
+
+============== OUTPUT for Ex03_User_1 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    4        Success        25    2573.9999999999995    857.9999999999999    859.6000191999984
+    2        Success        90    2571.6900000000023    857.2300000000007    861.530518399997
+    3        Success        90    2571.9900000000016    857.3300000000006    861.4502687999969
+    0        Success        45    2574.0    858.0    865.1691407999928
+    1        Success        45    2574.0    858.0    865.0888911999926
+====================================================
+
+
+============== OUTPUT for Ex03_User_9 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        65    2574.0    858.0    860.030009599998
+    1        Success        70    2573.9999999999995    857.9999999999999    861.2597679999969
+    2        Success        65    2571.6899712000018    857.2299904000006    859.9300095999981
+    3        Success        65    2571.749179200002    857.2497264000006    860.2297359999977
+    4        Success        35    2574.0    858.0    859.769462399998
+====================================================
+
+
+============== OUTPUT for Ex03_User_0 ===========
+Gridlet ID    STATUS    Resource ID        Cost        CPU Time        Latency
+    0        Success        45    2572.1100000000015    857.3700000000006    861.9700191999964
+    2        Success        90    2572.710000000001    857.5700000000004    861.5300191999968
+    4        Success        25    2572.7400000000016    857.5800000000005    861.8097791999966
+    1        Success        45    2572.470000000001    857.4900000000005    864.7106479999945
+    3        Success        90    2573.0700000000006    857.6900000000003    863.5201487999952
+====================================================
+Simulation completed.
+
+Finish failure example 3...
+

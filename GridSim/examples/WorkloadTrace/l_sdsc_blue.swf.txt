@@ -1,0 +1,42 @@
+; Version: 2.1
+; Computer: IBM SP
+; Installation: SDSC Blue Horizon
+; Acknowledge: Travis Earheart and Nancy Wilkins-Diehr
+; Information: http://www.sdsc.edu/
+; Information: http://www.cs.huji.ac.il/labs/parallel/workload/
+; Conversion: Dror Feitelson (feit@cs.huji.ac.il) Jan 9 2004
+; UnixStartTime: 956700003
+; TimeZone: -28800
+; StartTime: Tuesday, 25 Apr 2000, 22:00:03
+; EndTime: Wednesday, 1 Jan 2003, 11:25:42
+; MaxNodes: 144 (each an 8-way SMP)
+; MaxProcs: 1152
+; MaxJobs: 250440
+; MaxRecords: 250440
+; Queue: 0 interactive
+; Queue: 1 express     (max 8 nodes 2 hr)
+; Queue: 2 high        (max 36 hr)
+; Queue: 3 normal      (max 36 hr)
+; Queue: 4 low
+; Queue: 5 standby
+; Queue: 6 diagnostics/testing
+; Queue: 7 other       (mainly unknown)
+; Information: 375 MHz Power3 processors
+; Information: 4 GB memory per node (shared by 8 processors)
+;
+; NOTE (Nov 2004 - Anthony):
+; * The original size of this file was 19.7MB uncompressed and 3.7MB gzip compressed
+;   With number of Jobs: 250,440.
+; * It would take lots of memory and time to run from this trace file.
+; * Therefore, I reduce this trace file only to small jobs.
+;
+    1       0 649886   9227 1152  6890 -1 1152 20000 -1 1  34 -1 -1 2 -1 -1 -1
+    2     111 522045   7622 1120  5584 -1 1120 20000 -1 0  34 -1 -1 2 -1 -1 -1
+    3   68486 573957    710 1024   186 -1 1024 10800 -1 1  14 -1 -1 2 -1 -1 -1
+    4  252418 351149     -1    0     0 -1 1024   600 -1 0  28 -1 -1 3 -1 -1 -1
+    5  263801 340477     -1    0     0 -1 1024   600 -1 0  28 -1 -1 3 -1 -1 -1
+    6  265065 281535   3389  800    49 -1  800  7200 -1 1  22 -1 -1 2 -1 -1 -1
+    7  393152     16  48438   64 48168 -1   64 57600 -1 1 132 -1 -1 3 -1 -1 -1
+    8  412251     12  46744   64 46465 -1   64 64800 -1 1 132 -1 -1 3 -1 -1 -1
+    9  430593     13  50866  256 25381 -1  256 64800 -1 1  95 -1 -1 4 -1 -1 -1
+   10  430730     31  10770  256  5343 -1  256 28800 -1 1  95 -1 -1 4 -1 -1 -1

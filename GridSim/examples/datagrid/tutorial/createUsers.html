@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+  
+  <title>Creating users</title>
+</head>
+
+
+<body>
+
+<div style="text-align: center;">
+<h1>CREATING USERS</h1>
+
+<div style="text-align: left;"> Typically many users are created before
+the start of a simulation, but the example code below shows how to
+create just one user. <br>
+<code></code><code><font color="#7f0055"><b><br>
+try&nbsp;</b></font><font color="#000000">{</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">user&nbsp;=&nbsp;</font><font color="#7f0055"><b>new </b></font><font color="#000000">ExampleUser</font><font color="#000000">(</font><font color="#2a00ff">"User_1"</font><font color="#000000">,&nbsp;</font><font color="#990000">1</font><font color="#000000">,</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">baud_rate,&nbsp;propDelay,&nbsp;mtu</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#3f7f5f">//set&nbsp;a&nbsp;replica&nbsp;catalogue,&nbsp;if&nbsp;not&nbsp;set&nbsp;the&nbsp;TopReplica&nbsp;RC&nbsp;will&nbsp;be&nbsp;used</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">user.setReplicaCatalogue</font><font color="#000000">(</font><font color="#2a00ff">"Res_1"</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e2</font><font color="#000000">)&nbsp;{</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">e2.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+<font color="#000000">}</font></code></div>
+
+<br>
+
+</div>
+
+<br>
+
+<h2>Coding the user</h2>
+During the simulation every user can perform different tasks. These
+tasks must be defined in the body of each user. Below you can see an
+example user, which transfers one file, makes one replica, deletes the
+replica and retrieves the attribute (all the information) of a file.<br>
+
+<br>
+
+<code><font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.GridSim;</font><br>
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.datagrid.DataGridUser;</font><br>
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.datagrid.File;</font><br>
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.datagrid.FileAttribute;</font><br>
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.net.SimpleLink;</font><br>
+
+<br>
+
+<br>
+
+<font color="#7f0055"><b>public&nbsp;class </b></font><font color="#000000">ExampleUser </font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">DataGridUser&nbsp;</font><font color="#000000">{</font><br>
+
+<font color="#ffffff">&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp; </font><font color="#000000">ExampleUser</font><font color="#000000">(</font><font color="#000000">String&nbsp;name,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">totalGridlet,&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">baud_rate,&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">delay,</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">MTU</font><font color="#000000">)&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">Exception&nbsp;</font><font color="#000000">{</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">(</font><font color="#000000">name,&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleLink</font><font color="#000000">(</font><font color="#000000">name&nbsp;+&nbsp;</font><font color="#2a00ff">"_link"</font><font color="#000000">,&nbsp;baud_rate,&nbsp;delay,&nbsp;MTU</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;The&nbsp;core&nbsp;method&nbsp;that&nbsp;handles&nbsp;communications&nbsp;among&nbsp;GridSim&nbsp;entities.</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">body</font><font color="#000000">()&nbsp;{</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">experiment</font><font color="#000000">()</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;experiment</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">shutdownUserEntity</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">terminateIOEntities</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp; <br>
+
+&nbsp;&nbsp;&nbsp; </font></code><code><font color="#3f5fbf">/**</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">* This experiment demonstrates the usage of common
+commands, available to the user.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - getting a file from a resource<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - replicating a file to a resource<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - deleting a replica from a resource<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - getting an attribute from a resource<br>
+
+</font><font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font></code><br>
+
+<code><font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">experiment</font><font color="#000000">(){</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//------------getting&nbsp;a&nbsp;file</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//Step&nbsp;1&nbsp;-&nbsp;get&nbsp;the&nbsp;full&nbsp;name&nbsp;of&nbsp;a&nbsp;file</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;name&nbsp;=&nbsp;getFullFilename</font><font color="#000000">(</font><font color="#2a00ff">"testFile1"</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;f&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">location;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">name!=</font><font color="#7f0055"><b>null</b></font><font color="#000000">){</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">location&nbsp;=&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.getReplicaLocation</font><font color="#000000">(</font><font color="#000000">name</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">location!=-</font><font color="#990000">1</font><font color="#000000">){</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f&nbsp;=&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.getFile</font><font color="#000000">(</font><font color="#000000">name,&nbsp;location</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">"user:"</font><font color="#000000">+</font><font color="#7f0055"><b>this</b></font><font color="#000000">.get_name</font><font color="#000000">()</font><font color="#000000">+</font><font color="#2a00ff">":-Transfer&nbsp;of&nbsp;file&nbsp;"</font><font color="#000000">+name+</font><font color="#2a00ff">"&nbsp;succesful"</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//------------replicate a&nbsp;file to Res_0</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">replicateFile</font><font color="#000000">(</font><font color="#000000">f,&nbsp;GridSim.getEntityId</font><font color="#000000">(</font><font color="#2a00ff">"Res_0"</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//------------delete&nbsp;a&nbsp;replica from resource
+Res_0</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">deleteFile</font><font color="#000000">(</font><font color="#000000">name,&nbsp;GridSim.getEntityId</font><font color="#000000">(</font><font color="#2a00ff">"Res_0"</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//------------get&nbsp;attribute&nbsp;of&nbsp;a&nbsp;file</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FileAttribute&nbsp;attr&nbsp;=&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.getFileAttribute</font><font color="#000000">(</font><font color="#000000">name</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+<font color="#000000">}</font></code><br>
+
+<br>
+
+<br>
+
+</body>
+</html>

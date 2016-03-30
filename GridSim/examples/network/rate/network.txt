@@ -1,0 +1,25 @@
+# In this example, the network topology looks like below:
+#
+# User_0 --100Mbps-- r1 ----|
+# User_1 --100Mbps-- r2 --100Mbps-- r4 --1Gbps-- r5 --100Mbps-- GridResource(s)
+# User_2 --100Mbps-- r3 ----|
+        
+# total number of Routers
+5
+
+# specifies each router name and whether to log its activities or not
+# by default no logging is required
+R1 true  # logs this router
+R2       # does not need to log this router
+R3
+R4
+R5
+                
+# specify the link between two routers
+# The format is:
+# router_name1  router_name2    baud_rate(GB/s)     prop_delay(ms)  mtu(byte)
+R1  R4  0.10    10.0    1500
+R2  R4  0.10    10.0    1500
+R3  R4  0.10    10.0    1500
+R5  R4  1.00    10.0    1500
+

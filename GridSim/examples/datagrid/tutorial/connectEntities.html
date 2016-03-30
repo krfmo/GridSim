@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+  
+  <title>Connect the entities to the network</title>
+</head>
+
+
+<body>
+
+<div style="text-align: center;">
+<h1>CONNECTING THE ENTITIES</h1>
+<div style="text-align: left;">When all the entities have been created,
+they need to be connected by a network. The following code demonstrates
+how to connect the resources, the user and the replica catalogue to
+different routers on the network.<br>
+</div>
+
+</div>
+
+<table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+<!-- start source code --> <td align="left" nowrap="nowrap" valign="top"> <code><font color="#ffffff">&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//connect&nbsp;resources</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">GridResource&nbsp;resObj&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#000000">i&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;&nbsp;i&nbsp;&lt;&nbsp;resList.size</font><font color="#000000">()</font><font color="#000000">;&nbsp;i++</font><font color="#000000">)</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FIFOScheduler&nbsp;resSched&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FIFOScheduler</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">resObj&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">GridResource</font><font color="#000000">)&nbsp;</font><font color="#000000">resList.get</font><font color="#000000">(</font><font color="#000000">i</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">r2.attachHost</font><font color="#000000">(</font><font color="#000000">resObj,&nbsp;resSched</font><font color="#000000">)</font><font color="#000000">;</font><font color="#3f7f5f">//attach&nbsp;the&nbsp;resource&nbsp;to&nbsp;router&nbsp;r2</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//connect&nbsp;user</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FIFOScheduler&nbsp;userSched&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FIFOScheduler</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">r1.attachHost</font><font color="#000000">(</font><font color="#000000">user,&nbsp;userSched</font><font color="#000000">)</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//atach&nbsp;the&nbsp;user&nbsp;to&nbsp;router&nbsp;r1</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//connect&nbsp;rc</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FIFOScheduler&nbsp;gisSched&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FIFOScheduler</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">r2.attachHost</font><font color="#000000">(</font><font color="#000000">rc,&nbsp;gisSched</font><font color="#000000">)</font><font color="#000000">;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;attach&nbsp;RC</font><br>
+
+      <font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">ParameterException&nbsp;e4</font><font color="#000000">)&nbsp;{</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e4.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#000000">}</font></code> </td>
+
+<!-- end source code --> </tr>
+
+<!-- start Java2Html link --><!-- end Java2Html link -->
+  
+  </tbody>
+</table>
+
+</body>
+</html>

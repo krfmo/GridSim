@@ -1,0 +1,330 @@
+Initializing GridSim package
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 5)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_1 - id: 10)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_2 - id: 15)
+
+Load_0: Creating a workload object ...
+Load_1: Creating a workload object ...
+Custom: Creating a workload object ...
+Creating a grid user entity with name = User_0, and id = 32
+User_0:Creating 5 Gridlets
+Creating a grid user entity with name = User_1, and id = 36
+User_1:Creating 5 Gridlets
+Starting GridSim version 3.1
+Entities started.
+
+
+
+Load_0.body() :%%%% Start ...
+Load_1.body() :%%%% Start ...
+Custom.body() :%%%% Start ...
+Load_0: Submitting Gridlets to Res_0 ...
+Load_0: Submitting Gridlets to Res_0 ...
+Custom: Submitting Gridlets to Res_0 ...
+Custom: Submitting Gridlets to Res_0 ...
+Custom: Submitting Gridlets to Res_0 ...
+Load_1: Submitting Gridlets to Res_0 ...
+Load_0: Collecting Gridlets ...
+Load_1: Submitting Gridlets to Res_0 ...
+Load_1: Collecting Gridlets ...
+Custom: Collecting Gridlets ...
+User_0Sending Gridlet #0 to Res_2
+User_1Sending Gridlet #0 to Res_0
+User_0Sending Gridlet #1 to Res_2
+User_1Sending Gridlet #1 to Res_0
+ack = true for Gridlet #1
+User_0Sending Gridlet #2 to Res_2
+User_0Sending Gridlet #3 to Res_2
+ack = true for Gridlet #3
+User_0Sending Gridlet #4 to Res_2
+ack = true for Gridlet #1
+User_1Sending Gridlet #2 to Res_0
+User_1Sending Gridlet #3 to Res_0
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #1 from Load_0 user requires 16 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #1 from Custom user requires 3 PEs.
+    Process this Gridlet to 1 PE only.
+
+User_0: Receiving Gridlet #0 at time = 18.234000000000005
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #3 from Custom user requires 4 PEs.
+    Process this Gridlet to 1 PE only.
+
+User_0: Receiving Gridlet #1 at time = 19.234
+User_0: Receiving Gridlet #2 at time = 19.274
+User_0: Receiving Gridlet #3 at time = 19.314
+User_0: Receiving Gridlet #4 at time = 19.36000000000001
+
+-------- User_0 ----------------
+Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		19.360        19.364        1000000.000
+router1		19.374        19.3744        10000000.000
+router2		19.3844        19.3884        1000000.000
+Res_2		19.3984        19.4024        1000000.000
+router2		19.4124        19.4128        10000000.000
+router1		19.4228        19.4268        1000000.000
+User_0		19.4368            N/A            N/A
+
+Round Trip Time : 0.0728 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000000.0 bits/s
+-------- User_0 ----------------
+
+User_0: sending and receiving of Gridlets complete at 19.436800000000023
+ack = true for Gridlet #3
+User_1Sending Gridlet #4 to Res_0
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #4 from Custom user requires 3 PEs.
+    Process this Gridlet to 1 PE only.
+
+User_1: Receiving Gridlet #0 at time = 25.187734400000007
+User_1: Receiving Gridlet #1 at time = 25.187734400000007
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #5 from Custom user requires 4 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #6 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+User_1: Receiving Gridlet #2 at time = 32.7316
+User_1: Receiving Gridlet #3 at time = 33.73159999999999
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #7 from Custom user requires 6 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #10 from Custom user requires 3 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #11 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #12 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #14 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #16 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+User_1: Receiving Gridlet #4 at time = 47.92760000000003
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #20 from Custom user requires 9 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+-------- User_1 ----------------
+Ping information for User_1
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_1		47.9276        47.9316        1000000.000
+router1		47.9416        47.942        10000000.000
+router2		47.952        67.9076        1000000.000
+Res_0		67.9176        67.9216        1000000.000
+router2		67.9376        67.938        10000000.000
+router1		67.948        67.952        1000000.000
+User_1		67.962            N/A            N/A
+
+Round Trip Time : 20.0304 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000000.0 bits/s
+-------- User_1 ----------------
+
+User_1: sending and receiving of Gridlets complete at 67.96199999999993
+Custom.body() : %%%% Exit ...
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #1 from Load_1 user requires 1152 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #2 from Load_1 user requires 1120 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #3 from Load_1 user requires 1024 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #4 from Load_1 user requires 1024 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #5 from Load_1 user requires 1024 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #6 from Load_1 user requires 800 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #7 from Load_1 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #8 from Load_1 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #9 from Load_1 user requires 256 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #10 from Load_1 user requires 256 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #2 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #3 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #4 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #5 from Load_0 user requires 128 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #6 from Load_0 user requires 128 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #7 from Load_0 user requires 48 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #8 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #9 from Load_0 user requires 128 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_TimeShared.gridletSubmit():  Gridlet #10 from Load_0 user requires 16 PEs.
+    Process this Gridlet to 1 PE only.
+
+Load_0.body() : %%%% Exit ...
+Load_1.body() : %%%% Exit ...
+GridInformationService: Notify all GridSim entities for shutting down
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+--- Routing Table for router1 ---
+Load_1		Load_1_link
+Load_0		Load_0_link
+router2		r1_r2_link
+User_1		User_1_link
+User_0		User_0_link
+Custom		Custom_link
+Res_2		router2
+Res_1		router2
+Res_0		router2
+-------------------------------------
+
+
+--- Routing Table for router2 ---
+Res_2		Res_2_link
+Res_1		Res_1_link
+Res_0		Res_0_link
+router1		r1_r2_link
+User_0		router1
+Custom		router1
+Load_1		router1
+Load_0		router1
+User_1		router1
+-------------------------------------
+
+
+============= OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        15        37.5
+    1        Success        15        40.379999999999995
+    2        Success        15        39.26352
+    3        Success        15        39.143519999999995
+    4        Success        15        38.7111168
+
+============= OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        5        37.50000000000001
+    1        Success        5        37.97280000000002
+    2        Success        5        37.500000000000014
+    3        Success        5        40.379999999999995
+    4        Success        5        50.304000000000066
+
+========== OUTPUT for Load_0 ==========
+Gridlet_ID    STATUS    Resource_ID    Cost
+    1        Success        5        2883.1440000000002
+    6        Success        5        51456.0
+    10        Success        5        2843764.5989981727
+    5        Success        5        4080637.855199592
+    3        Success        5        5027461.166397344
+    9        Success        5        5148249.576598328
+    2        Success        5        5873715.201598129
+    7        Success        5        6640025.782295408
+    4        Success        5        7011749.0999993635
+    8        Success        5        7870636.524694696
+
+
+========== OUTPUT for Load_1 ==========
+Gridlet_ID    STATUS    Resource_ID    Cost
+    6        Success        5        3.0
+    3        Success        5        965345.28
+    9        Success        5        3.0
+    10        Success        5        3.0
+    4        Success        5        1843200.0
+    5        Success        5        1843200.0
+    2        Success        5        2775490.5599999996
+    1        Success        5        4695490.56
+    7        Success        5        1.10592E7
+    8        Success        5        1.2441600000000002E7
+
+
+========== OUTPUT for Custom ==========
+Gridlet_ID    STATUS    Resource_ID    Cost
+    1        Success        5        269.59200000000004
+    2        Success        5        283.8960000000001
+    8        Success        5        359.424
+    15        Success        5        359.99999999999994
+    18        Success        5        352.91999999999996
+    17        Success        5        361.29599999999994
+    3        Success        5        529.9200000000001
+    9        Success        5        481.7760000000001
+    5        Success        5        543.996
+    13        Success        5        522.8100000000001
+    19        Success        5        591.4640000000002
+    6        Success        5        728.424
+    11        Success        5        776.8080000000001
+    12        Success        5        791.874
+    14        Success        5        799.7729999999999
+    16        Success        5        800.4689999999999
+    4        Success        5        990.8639999999998
+    10        Success        5        1046.904
+    7        Success        5        1855.404
+    20        Success        5        2740.844
+

@@ -1,0 +1,8 @@
+0.0 Creates test2
+15939.24998779297 test2.body(): receive Message_0, at time = 15939.24998779297
+15939.24998779297 test2.body(): Sending back Message_0, at time = 15939.24998779297
+15987.874992879233 test2.body(): receive Message_1, at time = 15987.874992879233
+15987.874992879233 test2.body(): Sending back Message_1, at time = 15987.874992879233
+16002.370796712241 test2.body(): receive Message_2, at time = 16002.370796712241
+16002.370796712241 test2.body(): Sending back Message_2, at time = 16002.370796712241
+17003.37079671224 test2.body(): exiting ...

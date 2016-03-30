@@ -1,0 +1,169 @@
+#Change log for GridSim Toolkit
+
+Changes from 5.0 to 5.2
+- fix a few bugs
+- Add a new package (i.e. gridsim.fta) for simulating resource failures, and provides:
+	* A failure generator based on the Failure Trace Archive (FTA) format (http://fta.inria.fr).
+	* A new allocation policy for scheduling of bag of tasks on cluster systems in the
+	  presence of resource failures.
+- Includes an implementation of the DAS-2 parallel jobs workload for modelling
+multi-cluster workloads.
+
+=======================================================================
+Changes from 4.2 to 5.0
+- Improvements to make GridSim more compatible with Java 5 and 6
+- Changes in SimJava to enable a simulation to be paused and resumed.
+- Add a new package (i.e. gridsim.parallel) that provides:
+	* A graphical user interface for debugging resource allocation policies
+	* several allocation policies for scheduling parallel jobs on clusters and
+	and supercomputers. The policies include aggressive backfilling, conservative
+	backfilling, advance reservation with conservative backfilling, selective
+	backfilling and agressive backfilling with multiple resource partitions.
+	* A workload model by Lublin and Feitelson for generating jobs for grid resources.
+	* A data structure to facilitate the scheduling of jobs and advance reservations.
+	* Logging features using Java logging API.  
+
+=======================================================================
+Changes from 4.0 to 4.1
+- add a new functionality that supports resource failures during runtime.
+  This work was done in collaboration with Agustin Caminero from
+  Universidad de Castilla La Mancha (UCLM), Spain.
+- fix few bugs in the code and examples.
+
+=======================================================================
+Changes from 3.3 to 4.0
+- add two major new features: auction model and data grid
+- add a new packet scheduler for the network package
+- add a network reader to read a network topology from a file and automatically
+creates and link routers
+- modify some of the network classes to incorporate this new packet scheduler
+- fix few bugs
+
+=======================================================================
+Changes from 3.2 to 3.3
+No new additions, it mainly about bug fixes:
+- for a Regional GIS feature (discovered by Agustin Caminero).
+Classes affected: AbstractGIS and RegionalGIS
+
+- inside GridSim class (discovered by Sai Rahul Reddy) for the below methods:
+  * getResourceCharacteristics()
+  * getResourceDynamicInfo()
+It will cause an exception because waiting for the next incoming event, which
+might not the correct tag. Hence, use filtering instead.
+
+- Example 4, 5, and 6 (discovered by Sai Rahul Reddy) should not have
+gridlet.setResourceParameter( resourceID[id], resourceCost[id] );
+This is because inside the gridresource already call this method.
+It will create a new Resource object inside the gridlet.
+
+- a networked GridSim entity can not send a null data to itself (discovered
+by Uros Cibej).
+
+- a Gridlet must have a ToS for Differentiated network.
+
+- for advanced reservation feature, queryBusyTime() and queryFreeTime()
+needs to know a time zone from user (discovered by Jakub Milkiewicz).
+
+
+=======================================================================
+Changes from 3.1 to 3.2
+- incorporates multiple regional GridInformationService (GIS) entities
+  connected in a network topology. With this functionality, a resource
+  registers to its regional GIS entity. In addition, a regional GIS entity
+  can communicate/query to other GIS entities about their local resources.
+  In summary, this functionality allows a Virtual Organization (VO) scenario.
+
+- incorporates a functionality to select/filter an event from the incoming
+  entity's queue based on some constraints.
+
+- bug fixes in sending and receiving acknowledgement in GridSim and
+  AdvanceReservation class.
+
+=======================================================================
+Changes from 3.0 to 3.1
+- incorporates a network extension into GridSim.
+  Now, resources and other entities can be linked in a network topology.
+  Network elements like routers and links can be extended for more
+  functionality. The schedulers being used can be modified to support
+  other scheduling paradigms like EDF, Delay Jitter regulator etc.
+  In addition, data sent over the network is automatically packetised depending
+  on the Maximum Transmission Unit (MTU) of a link.
+
+  This work was done in collaboration with Gokul Poduval and Chen-Khong Tham
+  from Computer Communication Networks (CCN) Lab,
+  National University of Singapore (NUS).
+
+- incorporates a background traffic functionality based on a probabilistic
+  distribution. This is useful for simulating over a public network
+  where the network is congested.
+
+- incorporates a functionality that reads workload traces taken from
+  supercomputers for simulating a realistic grid environment.
+
+- adds ant build file to compile GridSim source files.
+
+=======================================================================
+Changes from 2.2 to 3.0
+- adds new functionalities, especially regarding to advanced reservation
+  mechanisms. GridSim has the framework / infrastructure to handle
+  advanced reservation functionalities, such as:
+  * create a new reservation
+  * commit a reservation
+  * cancel an existing reservation
+  * modify an existing reservation
+  * query the status of an existing reservation
+
+- make GridResource and GridInformationService class to be more extensible.
+- modify the overall GridSim architecture to incorporate advanced reservation
+  functionalities. In addition, this new architecture is more extensible and
+  easier to create your own GridResource and/or GridInformationService entity.
+- add different ways to initialize GridSim, see GridSim.init() methods for
+  more details.
+- fix minor bugs and encoding problem on example source code.
+
+=======================================================================
+Changes from 2.1 to 2.2
+- adds new functionalities regarding to Job or Gridlet migration.
+  New methods in GridSim class are
+  * gridletCancel(): cancels a Gridlet executed in a GridResource
+  * gridletMove(): moves a Gridlet to a different GridResource
+  * gridletPause(): pauses an executed Gridlet
+  * gridletResume(): resumes a previously paused Gridlet
+  * gridletStatus(): queries the status of a Gridlet
+
+- each Job or Gridlet has its own activity log or history.
+  Therefore, you can view where this Gridlet being assigned to and
+  how long the execution takes.
+
+- decouples both Time-Shared and Space-Shared allocation policy
+  from inside GridResource class into separate classes. This way,
+  new allocation policy can be made and integrated into the GridSim
+  Toolkit easily without the need to recompile and reconstruct
+  the whole package.
+
+- rewritten Time-Shared and Space-Shared allocation policy to
+  incorporate Gridlet migration and new functionalities.
+
+- uses the new version of SimJava, i.e. version 2 instead of 1.2
+- fix minor bugs
+
+
+=======================================================================
+Changes from 2.0 to 2.1
+- clean up GridSim and GridBroker source code.
+- add more documentation to GridSim, GridBroker and VisualModeler source code.
+- use Java's code convention to GridSim and GridBroker. Hence, they are
+  plenty of deprecated methods.
+- fix minor bugs.
+- add examples of how to use GridSim and GridBroker.
+- grouped together the classes into jar file.
+- optimize VisualModeler code especially regarding to generate Java and XML
+  file.
+
+
+=======================================================================
+Changes from 1.1 to 2.0
+- separate GridSim and GridBroker into separate package and directory.
+- add VisualModeler component.
+
+

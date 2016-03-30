@@ -1,0 +1,130 @@
+
+/**
+ * Author: Anthony Sulistio
+ * Date: April 2003
+ * Description: This file contains the output result when you run Example5.
+ * $Id: output.txt,v 1.4 2005/09/20 07:01:00 anthony Exp $
+ *
+ * NOTE: // denotes a comment made to explain some of the values.
+ */
+
+Starting Example6
+Initialising...
+
+//-----------------------------------
+// Creating grid users and resources
+
+Creates one Grid resource with name = Resource_0
+Creates one Grid resource with name = Resource_1
+Creates one Grid resource with name = Resource_2
+Creating a grid user entity with name = User_0, and id = 17
+User_0:Creating 7 Gridlets
+Creating a grid user entity with name = User_1, and id = 20
+User_1:Creating 4 Gridlets
+Creating a grid user entity with name = User_2, and id = 23
+User_2:Creating 7 Gridlets
+
+//-----------------------------------
+// Created by GridSim.Start()
+
+Starting GridSim version 2.2
+Entities started.
+
+//---------------------------------
+// Activities inside Example6.body()
+
+User_2:Waiting to get list of resources ...
+User_1:Waiting to get list of resources ...
+User_0:Waiting to get list of resources ...
+User_2:Waiting to get list of resources ...
+User_1:Waiting to get list of resources ...
+User_0:Waiting to get list of resources ...
+User_2:Received ResourceCharacteristics from Resource_2, with id = 13
+User_2:Received ResourceCharacteristics from Resource_1, with id = 9
+User_1:Received ResourceCharacteristics from Resource_2, with id = 13
+User_2:Received ResourceCharacteristics from Resource_0, with id = 5
+User_2:Sending Gridlet_0 to Resource_0 with id = 5
+User_1:Received ResourceCharacteristics from Resource_1, with id = 9
+User_0:Received ResourceCharacteristics from Resource_2, with id = 13
+User_1:Received ResourceCharacteristics from Resource_0, with id = 5
+User_1:Sending Gridlet_0 to Resource_1 with id = 9
+User_0:Received ResourceCharacteristics from Resource_1, with id = 9
+User_0:Received ResourceCharacteristics from Resource_0, with id = 5
+User_0:Sending Gridlet_0 to Resource_0 with id = 5
+User_2:Receiving Gridlet 0
+User_2:Sending Gridlet_1 to Resource_2 with id = 13
+User_1:Receiving Gridlet 0
+User_1:Sending Gridlet_1 to Resource_1 with id = 9
+User_0:Receiving Gridlet 0
+User_0:Sending Gridlet_1 to Resource_1 with id = 9
+User_2:Receiving Gridlet 1
+User_2:Sending Gridlet_2 to Resource_2 with id = 13
+User_1:Receiving Gridlet 1
+User_1:Sending Gridlet_2 to Resource_0 with id = 5
+User_0:Receiving Gridlet 1
+User_0:Sending Gridlet_2 to Resource_0 with id = 5
+User_2:Receiving Gridlet 2
+User_2:Sending Gridlet_3 to Resource_2 with id = 13
+User_1:Receiving Gridlet 2
+User_1:Sending Gridlet_3 to Resource_0 with id = 5
+User_2:Receiving Gridlet 3
+User_2:Sending Gridlet_4 to Resource_0 with id = 5
+User_0:Receiving Gridlet 2
+User_0:Sending Gridlet_3 to Resource_2 with id = 13
+User_1:Receiving Gridlet 3
+User_1:%%%% Exiting body()
+User_0:Receiving Gridlet 3
+User_0:Sending Gridlet_4 to Resource_2 with id = 13
+User_2:Receiving Gridlet 4
+User_2:Sending Gridlet_5 to Resource_2 with id = 13
+User_0:Receiving Gridlet 4
+User_0:Sending Gridlet_5 to Resource_0 with id = 5
+User_2:Receiving Gridlet 5
+User_2:Sending Gridlet_6 to Resource_0 with id = 5
+User_0:Receiving Gridlet 5
+User_0:Sending Gridlet_6 to Resource_2 with id = 13
+User_2:Receiving Gridlet 6
+User_2:%%%% Exiting body()
+User_0:Receiving Gridlet 6
+User_0:%%%% Exiting body()
+
+//-----------------------------------
+// When there are no more events to process, then SimJava will exit the program
+// Then GridSim will exit as well
+
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+//-----------------------------------
+// Printing the result of this example
+
+========== OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        SUCCESS        5        27.851458885941668
+    1        SUCCESS        9        39.78779840848807
+    2        SUCCESS        5        74.61803713527843
+    3        SUCCESS        13        5.646993347024534
+    4        SUCCESS        13        30.720166181190564
+    5        SUCCESS        5        31.909796570078697
+    6        SUCCESS        13        20.15000142026645
+
+========== OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        SUCCESS        9        27.851458885941668
+    1        SUCCESS        9        39.78779840848807
+    2        SUCCESS        5        74.61803713527843
+    3        SUCCESS        5        19.13397071165417
+
+========== OUTPUT for User_2 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        SUCCESS        5        27.851458885941646
+    1        SUCCESS        13        39.78779840848807
+    2        SUCCESS        13        71.6180371352786
+    3        SUCCESS        13        11.294498366210348
+    4        SUCCESS        5        35.989037635265674
+    5        SUCCESS        13        28.99582660444878
+    6        SUCCESS        5        37.982726335804955
+Finish Example6
+

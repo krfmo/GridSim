@@ -1,0 +1,120 @@
+0.0 Creating a grid user entity with name = User_0, and id = 55
+0.0 User_0:Creating 40 Gridlets
+3.0 User_0Sending Gridlet #0 to Res_5
+3.0 User_0Sending Gridlet #1 to Res_5
+83.12200000000001 ack = true for Gridlet #1
+83.12200000000001 User_0Sending Gridlet #2 to Res_5
+83.12200000000001 User_0Sending Gridlet #3 to Res_5
+238.208599469496 ack = true for Gridlet #3
+238.208599469496 User_0Sending Gridlet #4 to Res_5
+238.208599469496 User_0Sending Gridlet #5 to Res_5
+395.071198938992 ack = true for Gridlet #5
+395.071198938992 User_0Sending Gridlet #6 to Res_5
+395.071198938992 User_0Sending Gridlet #7 to Res_5
+556.797798408488 ack = true for Gridlet #7
+556.797798408488 User_0Sending Gridlet #8 to Res_5
+556.797798408488 User_0Sending Gridlet #9 to Res_5
+715.9803978779839 ack = true for Gridlet #9
+715.9803978779839 User_0Sending Gridlet #10 to Res_5
+715.9803978779839 User_0Sending Gridlet #11 to Res_5
+876.5309973474799 ack = true for Gridlet #11
+876.5309973474799 User_0Sending Gridlet #12 to Res_5
+876.5309973474799 User_0Sending Gridlet #13 to Res_5
+1036.369596816976 ack = true for Gridlet #13
+1036.369596816976 User_0Sending Gridlet #14 to Res_5
+1036.369596816976 User_0Sending Gridlet #15 to Res_5
+1197.088196286472 ack = true for Gridlet #15
+1197.088196286472 User_0Sending Gridlet #16 to Res_5
+1197.088196286472 User_0Sending Gridlet #17 to Res_5
+1356.9427957559683 ack = true for Gridlet #17
+1356.9427957559683 User_0Sending Gridlet #18 to Res_5
+1356.9427957559683 User_0Sending Gridlet #19 to Res_5
+1517.1973952254643 ack = true for Gridlet #19
+1517.1973952254643 User_0Sending Gridlet #20 to Res_5
+1517.1973952254643 User_0Sending Gridlet #21 to Res_5
+1677.0519946949605 ack = true for Gridlet #21
+1677.0519946949605 User_0Sending Gridlet #22 to Res_5
+1677.0519946949605 User_0Sending Gridlet #23 to Res_5
+1837.3065941644566 ack = true for Gridlet #23
+1837.3065941644566 User_0Sending Gridlet #24 to Res_5
+1837.3065941644566 User_0Sending Gridlet #25 to Res_5
+1997.1611936339527 ack = true for Gridlet #25
+1997.1611936339527 User_0Sending Gridlet #26 to Res_5
+1997.1611936339527 User_0Sending Gridlet #27 to Res_5
+2157.4157931034497 ack = true for Gridlet #27
+2157.4157931034497 User_0Sending Gridlet #28 to Res_5
+2157.4157931034497 User_0Sending Gridlet #29 to Res_5
+2316.2543925729456 ack = true for Gridlet #29
+2316.2543925729456 User_0Sending Gridlet #30 to Res_5
+2316.2543925729456 User_0Sending Gridlet #31 to Res_5
+2477.0369920424414 ack = true for Gridlet #31
+2477.0369920424414 User_0Sending Gridlet #32 to Res_5
+2477.0369920424414 User_0Sending Gridlet #33 to Res_5
+2636.8675915119375 ack = true for Gridlet #33
+2636.8675915119375 User_0Sending Gridlet #34 to Res_5
+2636.8675915119375 User_0Sending Gridlet #35 to Res_5
+2797.1461909814334 ack = true for Gridlet #35
+2797.1461909814334 User_0Sending Gridlet #36 to Res_5
+2797.1461909814334 User_0Sending Gridlet #37 to Res_5
+2956.9767904509295 ack = true for Gridlet #37
+2956.9767904509295 User_0Sending Gridlet #38 to Res_5
+2956.9767904509295 User_0Sending Gridlet #39 to Res_5
+3117.2553899204254 ack = true for Gridlet #39
+3122.2553899204254 User_0: Receiving Gridlet #0 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #1 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #2 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #3 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #4 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #5 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #7 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #6 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #9 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #8 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #10 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #11 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #13 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #12 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #14 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #15 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #16 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #17 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #19 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #18 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #21 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #20 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #22 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #23 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #25 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #24 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #26 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #27 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #28 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #29 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #31 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #30 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #33 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #32 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #35 at time = 3122.2553899204254
+3122.2553899204254 User_0: Receiving Gridlet #34 at time = 3122.2553899204254
+3124.0873899204253 User_0: Receiving Gridlet #36 at time = 3124.0873899204253
+3124.0873899204253 User_0: Receiving Gridlet #37 at time = 3124.0873899204253
+3211.3259893899212 User_0: Receiving Gridlet #38 at time = 3211.3259893899212
+3211.3259893899212 User_0: Receiving Gridlet #39 at time = 3211.3259893899212
+3211.3859893899225 
+-------- User_0 ----------------
+3211.3859893899225 Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		3211.326        3211.326        1000.000
+router1		3211.336        3211.336        10000.000
+router2		3211.346        3211.346        1000.000
+Res_5		3211.356        3211.356        1000.000
+router2		3211.366        3211.366        10000.000
+router1		3211.376        3211.376        1000.000
+User_0		3211.386            N/A            N/A
+
+Round Trip Time : 0.060 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000.0 bits/s
+3211.3859893899225 -------- User_0 ----------------
+

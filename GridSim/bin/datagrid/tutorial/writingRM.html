@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Custom Replica Manager</title>
+
+
+</head>
+
+
+<body>
+
+<h1 style="text-align: center;">CUSTOM REPLICA MANAGER</h1>
+
+<br>
+
+<br>
+
+<h2>Methods to be implemented</h2>
+
+<font color="#7f0055"><b>protected&nbsp;abstract&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">addFile</font><font color="#000000">(</font><font color="#000000">File&nbsp;file</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#7f0055"><b>protected&nbsp;abstract&nbsp;</b></font><font color="#000000">File&nbsp;getFile</font><font color="#000000">(</font><font color="#000000">String&nbsp;fileName</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#7f0055"><b>protected&nbsp;abstract&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">deleteFile</font><font color="#000000">(</font><font color="#000000">String&nbsp;fileName</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#7f0055"><b>public&nbsp;abstract&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">processEvent</font><font color="#000000">(</font><font color="#000000">Sim_event&nbsp;ev</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+<font color="#7f0055"><b>public&nbsp;abstract&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">registerAllMasterFiles</font><font color="#000000">()</font><font color="#000000">;</font>
+<h2>Implementing processEvent()</h2>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">processEvent</font><font color="#000000">(</font><font color="#000000">Sim_event&nbsp;ev</font><font color="#000000">)&nbsp;{</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">result&nbsp;=&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>switch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">ev.get_tag</font><font color="#000000">())&nbsp;{</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//----USER&nbsp;REQUESTS------</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_ADD_MASTER:</font><br>
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_DELETE_MASTER:</font><br>
+
+<font color="#ffffff">&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_ADD_REPLICA:</font><br>
+
+<font color="#ffffff"></font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_DELETE_REPLICA:</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_REQUEST:</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_MODIFY:</font><br>
+
+<font color="#ffffff">&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//------------CATALOGUE&nbsp;RESULTS/RESPONSES----------</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.CTLG_ADD_REPLICA_RESULT:</font><br>
+
+<font color="#ffffff"></font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.CTLG_DELETE_REPLICA_RESULT:</font><br>
+
+<font color="#ffffff">&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.CTLG_ADD_MASTER_RESULT:</font><br>
+
+<font color="#ffffff"></font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.CTLG_DELETE_MASTER_RESULT:</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>case&nbsp;</b></font><font color="#000000">DataGridTags.FILE_DELETE_SUCCESSFUL:</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//it&nbsp;is&nbsp;not&nbsp;an&nbsp;event&nbsp;for&nbsp;the&nbsp;ReplicaManager</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>default</b></font><font color="#000000">:</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">result&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>break</b></font><font color="#000000">;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+<br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">result;</font><br>
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font>
+</body>
+</html>

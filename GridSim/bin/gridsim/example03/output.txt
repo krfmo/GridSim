@@ -1,0 +1,78 @@
+
+/**
+ * Author: Anthony Sulistio
+ * Date: April 2003
+ * Description: This file contains the output result when you run Example3.
+ * $Id: output.txt,v 1.5 2005/09/16 07:02:00 anthony Exp $
+ *
+ * NOTE: // denotes a comment made to explain some of the values.
+ */
+
+Starting Example3
+
+Initializing GridSim package
+Initialising...
+Creating 8 Gridlets
+... Creating a new Test object
+
+//-----------------------------------
+// Created by GridSim.Start()
+
+Starting GridSim version 3.2
+
+//------------------------------------
+// Created when the program calls GridSim.Start(). Then GridSim.Start()
+// refers to Sim_system.run(). Therefore, the below three statements denote
+// start of running a simulation.
+
+Entities started.
+
+//------------------------------------
+// Output from running the simulation
+
+Inside Example3.body() => Sending Gridlet 0
+... Inside Test.body() => Receiving Gridlet 0 from Example3 object
+GridInformationService: Notify all GridSim entities for shutting down.
+Inside Example3.body() => Receiving Gridlet 0
+Inside Example3.body() => Sending Gridlet 1
+... Inside Test.body() => Receiving Gridlet 1 from Example3 object
+Inside Example3.body() => Receiving Gridlet 1
+Inside Example3.body() => Sending Gridlet 2
+... Inside Test.body() => Receiving Gridlet 2 from Example3 object
+Inside Example3.body() => Receiving Gridlet 2
+Inside Example3.body() => Sending Gridlet 3
+... Inside Test.body() => Receiving Gridlet 3 from Example3 object
+Inside Example3.body() => Receiving Gridlet 3
+Inside Example3.body() => Sending Gridlet 4
+... Inside Test.body() => Receiving Gridlet 4 from Example3 object
+Inside Example3.body() => Receiving Gridlet 4
+Inside Example3.body() => Sending Gridlet 5
+... Inside Test.body() => Receiving Gridlet 5 from Example3 object
+Inside Example3.body() => Receiving Gridlet 5
+Inside Example3.body() => Sending Gridlet 6
+... Inside Test.body() => Receiving Gridlet 6 from Example3 object
+Inside Example3.body() => Receiving Gridlet 6
+Inside Example3.body() => Sending Gridlet 7
+... Inside Test.body() => Receiving Gridlet 7 from Example3 object
+Inside Example3.body() => Receiving Gridlet 7
+
+//-----------------------------------
+// When there are no more events to process, then SimJava will exit the program
+// Then GridSim will exit as well
+
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+========== OUTPUT ==========
+Gridlet ID    STATUS
+    0        SUCCESS
+    1        SUCCESS
+    2        SUCCESS
+    3        SUCCESS
+    4        SUCCESS
+    5        SUCCESS
+    6        SUCCESS
+    7        SUCCESS
+Finish Example3
+

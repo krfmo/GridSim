@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+
+<!-- 
+
+Build file or Makefile for GridSim.
+NOTE: Make sure you have installed 'ant' and put the location of it into
+      your path so you can access it anywhere.
+      'ant' can be downloadable from http://ant.apache.org/
+      
+Usage: 
+* type 'ant' to compile all gridsim source files and put them into 
+  classes/ directory
+* type 'ant makejar' to compile the source files (if necessary) and to create 
+  a jar file into jar/ directory
+
+-->
+
+<project name="GridSim" basedir="." default="build">
+    <description>
+            This is the build file for GridSim
+    </description>
+    
+    <!-- GridSim version number and release year for javadoc -->
+    <property name="version" value="5.2"/>
+    <property name="year" value="2010"/>
+
+    <!-- location to store Java classes -->         
+    <property name="class.dir" location="./classes" />
+    
+    <!-- location to store GridSim source files -->
+    <property name="src.dir" location="./source" />
+    
+    <!-- location to store jar files -->
+    <property name="jar.dir" location="./jars" />
+    
+    <!-- location to store Javadoc files -->
+    <property name="doc.dir" location="./doc" />
+    
+    <!-- location to use SimJava libraries -->
+    <property name="classpath" location="${jar.dir}/simjava2.jar" /> 
+	
+	<!-- the website where the SimJava2 documentation is maintained -->
+	<property name="sjdoc" value="http://www.icsa.informatics.ed.ac.uk/research/groups/hase/simjava/doc" />
+
+    <target name="prepare">
+        <mkdir dir="${class.dir}" />
+    </target>
+
+    <!-- rule to compile GridSim source files -->
+    <target name="build" depends="prepare">
+        <javac srcdir="${src.dir}" destdir="${class.dir}" classpath="${classpath}" />
+        <copy todir="${class.dir}">
+            <fileset dir="${src.dir}/" includes="**/*.properties"/>
+        </copy>
+    </target>
+
+    <!-- rule for making a jar file. 
+         NOTE:
+         * The new jar file is named as "new_gridsim.jar" to avoid overriding 
+           the existing jar file.
+         * The new jar file only contains gridsim classes NOT SimJava2. 
+    -->
+    <target name="makejar" depends="build">
+        <echo>Compiling a new jar file, named: "gridsim.jar".</echo>
+    	
+    	<!--
+        <echo>This jar file only contains GridSim classes but not SimJava2.</echo>
+        -->
+    	
+    	<echo>Unpacking SimJava2 jar file.</echo>
+    	<delete file="${jar.dir}/gridsim.jar"/>
+		<delete dir="tmp"/>
+		<mkdir dir="tmp"/>
+		
+    	<unjar dest="tmp">
+			<fileset dir="jars" includes="simjava2.jar"/>
+		</unjar>
+		
+    	<echo>Creating GridSim jar file including SimJava2 classes.</echo>
+    	<delete dir="tmp/META-INF"/>
+    	<jar jarfile="${jar.dir}/gridsim.jar" basedir="${class.dir}">
+			<fileset dir="tmp"/>
+		</jar>
+    	<delete dir="tmp"/>
+    	
+        <!--
+        <jar destfile="${jar.dir}/gridsim.jar" basedir="${class.dir}"/>
+         -->
+    	
+    </target>        
+    
+    <target name="clean" description="clean up" >
+        <delete dir="${class.dir}/gridsim"/>
+    </target>
+    
+    <target name="javadoc" description="Create Javadocs">
+        <mkdir dir="${doc.dir}" />
+        <javadoc access="package"   author="true"
+                version="true"      use="true"
+                noqualifier="all"
+                windowtitle="GridSim ${version} API Specification"
+                doctitle="GridSim ${version} API Specification"
+                header="GridSim ${version}"
+                bottom="The University of Melbourne, Australia, ${year}"
+                destdir="${doc.dir}" classpath="${classpath}">
+            
+            <tag name="invariant" scope="all" description="Invariant:"/>
+            <tag name="pre"  scope="all" description="Pre Condition:"/>
+            <tag name="post" scope="all" description="Post Condition:"/>
+
+   			<link href="${sjdoc}" offline="true" packagelistLoc="${jar.dir}"/>
+            <fileset dir="${src.dir}" includes="**/*.java"/>
+            
+        </javadoc>
+    </target>
+    
+</project>
+
+

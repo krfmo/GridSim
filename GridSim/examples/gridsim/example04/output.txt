@@ -1,0 +1,88 @@
+
+/**
+ * Author: Anthony Sulistio
+ * Date: April 2003
+ * Description: This file contains the output result when you run Example4.
+ * $Id: output.txt,v 1.5 2005/09/19 05:19:33 anthony Exp $
+ *
+ * NOTE: // denotes a comment made to explain some of the values.
+ */
+
+Starting Example4
+Initializing GridSim package
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Creates a Machine list
+Creates a PE list for the 1st Machine
+Creates 4 PEs with same MIPS Rating and put them into the PE list
+Creates the 1st Machine that has 4 PEs and stores it into the Machine list
+
+Creates a PE list for the 2nd Machine
+Creates 4 PEs with same MIPS Rating and put them into the PE list
+Creates the 2nd Machine that has 4 PEs and stores it into the Machine list
+
+Creates a PE list for the 3rd Machine
+Creates 2 PEs with same MIPS Rating and put them into the PE list
+Creates the 3rd Machine that has 2 PEs and stores it into the Machine list
+
+Creates the properties of a Grid resource and stores the Machine list
+Finally, creates one Grid resource and stores the properties of a Grid resource
+
+Creating a grid user entity with name = Example4, and id = 9
+Creating 8 Gridlets
+
+//-----------------------------------
+// Created by GridSim.startGridSimulation()
+
+Starting GridSim version 3.2
+
+//------------------------------------
+// Created when the program calls GridSim.startGridSimulation().
+// Then GridSim.startGridSimulation()
+// refers to Sim_system.run(). Therefore, the below three statements denote
+// start of running a simulation.
+
+Entities started.
+
+//------------------------------------
+// The output from running the experiment
+
+Received ResourceCharacteristics from Resource_0, with id = 5
+Sending Gridlet_0 to Resource_0 with id = 5
+Receiving Gridlet 0
+Sending Gridlet_1 to Resource_0 with id = 5
+Receiving Gridlet 1
+Sending Gridlet_2 to Resource_0 with id = 5
+Receiving Gridlet 2
+Sending Gridlet_3 to Resource_0 with id = 5
+Receiving Gridlet 3
+Sending Gridlet_4 to Resource_0 with id = 5
+Receiving Gridlet 4
+Sending Gridlet_5 to Resource_0 with id = 5
+Receiving Gridlet 5
+Sending Gridlet_6 to Resource_0 with id = 5
+Receiving Gridlet 6
+Sending Gridlet_7 to Resource_0 with id = 5
+Receiving Gridlet 7
+
+//-----------------------------------
+// When there are no more events to process, then SimJava will exit the program
+// Then GridSim will exit as well
+
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+========== OUTPUT ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        SUCCESS        5        27.851458885941646
+    1        SUCCESS        5        39.78779840848807
+    2        SUCCESS        5        71.6180371352786
+    3        SUCCESS        5        12.260185925286578
+    4        SUCCESS        5        32.160803970344375
+    5        SUCCESS        5        26.989166622345806
+    6        SUCCESS        5        16.721823905496365
+    7        SUCCESS        5        20.974565689486667
+Finish Example4

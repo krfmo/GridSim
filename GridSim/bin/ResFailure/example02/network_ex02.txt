@@ -1,0 +1,15 @@
+# The topology of this example is as follows (with 20 users and 6 resources)
+#
+#  user --- Router0 ---- Resource0
+#
+# total number of Routers
+1
+
+# specifies each router name and whether to log its activities or not
+# by default no logging is required
+Router0
+
+# specify the link between two Routers
+# The format is:
+# Router_name1  Router_name2    baud_rate(GB/s)     prop_delay(ms)  mtu(byte)
+

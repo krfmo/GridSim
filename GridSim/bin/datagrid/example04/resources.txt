@@ -1,0 +1,6 @@
+#the description of resources in a grid
+#the format of the file:
+#resource_name storage_size(in GB) bandwidth router_name list_of_containing_files
+Res_0 100 0.1 router1 fileH testFile1
+Res_1 100 0.1 router2 testFile2
+Res_2 100 0.1 router5 fileF fileG

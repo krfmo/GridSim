@@ -1,0 +1,106 @@
+Initializing GridSim package
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Resource_0 - id: 6)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Resource_1 - id: 12)
+
+User_0 creating a FPSA to acquire resource to execute job 0 from user 22
+User_0 creating an EA to acquire resource to execute job 1 from user 22
+User_0 creating a DA to acquire resource to execute job 2 from user 22
+User_1 creating a FPSA to acquire resource to execute job 0 from user 33
+User_1 creating an EA to acquire resource to execute job 1 from user 33
+User_1 creating a DA to acquire resource to execute job 2 from user 33
+User_2 creating a FPSA to acquire resource to execute job 0 from user 44
+User_2 creating an EA to acquire resource to execute job 1 from user 44
+User_2 creating a DA to acquire resource to execute job 2 from user 44
+Starting GridSim version 4.0
+Entities started.
+Broker_0 starting the auction 0 to acquire resource to execute job 0 from user 22
+Broker_1 starting the auction 3 to acquire resource to execute job 0 from user 33
+Broker_2 starting the auction 6 to acquire resource to execute job 0 from user 44
+Broker_1 starting the auction 4 to acquire resource to execute job 1 from user 33
+Broker_2 starting the auction 7 to acquire resource to execute job 1 from user 44
+Broker_0 starting the auction 1 to acquire resource to execute job 1 from user 22
+Broker_2 starting the auction 8 to acquire resource to execute job 2 from user 44
+Broker_1 starting the auction 5 to acquire resource to execute job 2 from user 33
+Broker_0 starting the auction 2 to acquire resource to execute job 2 from user 22
+Resource_1 bidding for auction 2 round 2 and price 22.5
+Resource_0 bidding for auction 2 round 2 and price 22.5
+Resource_1 bidding for auction 5 round 2 and price 22.5
+Resource_0 bidding for auction 5 round 2 and price 22.5
+Resource_1 bidding for auction 8 round 2 and price 22.5
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 2: 22.5
+Submitted by user 22
+Resource_0 bidding for auction 8 round 2 and price 22.5
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 2: 22.5
+Submitted by user 33
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 2: 22.5
+Submitted by user 44
+Resource_1 bidding for auction 0 round 1 and price 7.62717866897583
+Resource_0 bidding for auction 0 round 1 and price 7.62717866897583
+Resource_1 bidding for auction 3 round 1 and price 7.017467021942139
+Resource_0 bidding for auction 3 round 1 and price 7.017467021942139
+Resource_1 bidding for auction 6 round 1 and price 2.2087604999542236
+Resource_0 bidding for auction 6 round 1 and price 2.2087604999542236
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 0: 7.62717866897583
+Submitted by user 22
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 0: 7.017467021942139
+Submitted by user 33
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 0: 2.2087604999542236
+Submitted by user 44
+Resource_1 bidding for auction 1 round 1 and price 90.0
+Resource_0 bidding for auction 1 round 1 and price 90.0
+Resource_1 bidding for auction 4 round 1 and price 90.0
+Resource_1 bidding for auction 7 round 1 and price 90.0
+Resource_0 bidding for auction 7 round 1 and price 90.0
+Resource_0 bidding for auction 4 round 1 and price 90.0
+Resource_1 bidding for auction 4 round 2 and price 67.5
+Resource_0 bidding for auction 1 round 2 and price 67.5
+Resource_1 bidding for auction 7 round 2 and price 67.5
+Resource_0 bidding for auction 4 round 2 and price 67.5
+Resource_1 bidding for auction 1 round 2 and price 67.5
+Resource_0 bidding for auction 7 round 2 and price 67.5
+Resource_1 bidding for auction 1 round 3 and price 45.0
+Resource_1 bidding for auction 4 round 3 and price 45.0
+Resource_0 bidding for auction 7 round 3 and price 45.0
+Resource_0 bidding for auction 1 round 3 and price 45.0
+Resource_1 bidding for auction 7 round 3 and price 45.0
+Resource_0 bidding for auction 4 round 3 and price 45.0
+Resource_1 bidding for auction 1 round 4 and price 22.5
+Resource_0 bidding for auction 1 round 4 and price 22.5
+Resource_1 bidding for auction 7 round 4 and price 22.5
+Resource_0 bidding for auction 7 round 4 and price 22.5
+Resource_1 bidding for auction 4 round 4 and price 22.5
+Resource_0 bidding for auction 4 round 4 and price 22.5
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 1: 22.5
+Submitted by user 22
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 1: 22.5
+Submitted by user 33
+Results of the auction
+Winner ID: 12
+Price paid for executing the job 1: 22.5
+Submitted by user 44
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.

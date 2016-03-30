@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+
+
+
+
+
+  <title>Simulation</title>
+</head>
+
+
+<body>
+
+
+
+
+
+<div style="text-align: center;">
+<h1>SIMULATION PACKAGE</h1>
+
+
+
+
+
+<div style="text-align: left;">To make the construction of
+simulations&nbsp;easier, we created few file readers in the <br>
+<b>$GRIDSIM/examples/DataGridExample/example4</b> directory. <br>
+Hence, it is possible to design and run a
+simulation without any programming, only by defining a set of
+configuration files.<br>
+
+<br>
+
+To run the simulation, type the following in the command line:<br>
+
+<br>
+<code>cd $GRIDSIM/examples/DataGridExample</code><br>
+<code>javac -classpath $GRIDSIM/jars/gridsim.jar:. DataGridSim.java</code><br>
+<code>java -cp $GRIDSIM/jars/gridsim.jar:. DataGridSim parameters.txt</code><br>
+
+<br>
+
+<br>
+
+<h2>EXAMPLE<br>
+
+</h2>
+
+To demonstrate the functionality of this package we construct the same topology as in the "<a href="getting_started.html">Getting started</a>" example.<br>
+
+
+
+
+
+<br>
+
+
+
+
+
+<h2>Parameters configuration file</h2>
+
+This file is &nbsp;the main configuration file, which is passed as a
+parameter to the &nbsp;gridsim.datagrid.simulation,Sim class.<br>
+
+In this file we describe which files describe our experiment, how many
+users will be present in the simulation and on which router the Top
+replica catalogue will be connected to. We also define whether each resource has its own replica catalogue or not.<br>
+
+
+
+
+<span style="font-weight: bold;">Warning: </span>the number of users has to be the same as the actual number of users in the user configuration file.<br>
+
+
+
+
+<br>
+
+
+
+
+<span style="font-weight: bold;">Example:</span><span style="font-family: Courier New,Courier,monospace;">
+<br>
+
+
+
+numUsers=1</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+files=files.txt</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+resources=resources.txt</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+network=network.txt</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+users=users.txt<br>
+
+
+topRCrouter=router1<br>
+</span><span style="font-family: Courier New,Courier,monospace;">
+
+useLocalRC=false</span><span style="font-weight: bold;"></span>
+<h2> Files configuration file</h2>
+
+
+
+
+<span style="font-weight: bold;">Format of the file<br>
+
+
+
+
+<span style="font-style: italic;"></span></span><span style="font-style: italic;">filename1 size<br>
+
+
+
+
+</span><span style="font-style: italic;">filename2 size<br>
+
+
+
+
+.<br>
+
+
+
+
+.</span><span style="font-style: italic;"><br>
+
+
+
+
+filenameN size</span><span style="font-weight: bold;"><br>
+
+
+
+
+<br>
+
+
+
+
+Description of parameters</span><span style="font-style: italic;"><br>
+
+
+
+
+filename1 </span>............ the name of the file - arbitrary string (no spaces)<br>
+
+
+
+
+<span style="font-style: italic;">size </span>...................... the size of the file in MB<br>
+
+
+
+
+<span style="font-weight: bold;"><br>
+
+
+
+
+Example:</span><span style="font-family: Courier New,Courier,monospace;"></span> <br>
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">testFile1 10</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">testFile2 10</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">fileM 10</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">fileK 10</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">fileH 10</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">fileD 10</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">fileF 1</span>
+<h2>Resources configuration file&nbsp;</h2>
+
+
+
+
+<span style="font-weight: bold;">Format of the file</span><br>
+
+
+
+
+<span style="font-style: italic;">Resource1_name</span> <span style="font-style: italic;">storage_size bandwidth router_name list_of_containing_files<br>
+
+
+
+
+</span><span style="font-style: italic;">Resource2_name</span> <span style="font-style: italic;">storage_size bandwidth router_name list_of_containing_files<br>
+
+
+
+
+.<br>
+
+
+
+
+.<br>
+
+
+
+
+</span><span style="font-style: italic;">ResourceN_name</span> <span style="font-style: italic;">storage_size bandwidth router_name list_of_containing_files</span><br>
+
+
+
+
+<span style="font-style: italic;"><br>
+
+
+
+
+</span><span style="font-weight: bold;">Description of parameters</span><span style="font-style: italic;"><br>
+
+
+
+
+</span><span style="font-style: italic;">Resource1_name </span>.............. the name of the resource - arbitrary string, without spaces - uniquely defining the resource<br>
+
+
+
+
+<span style="font-style: italic;">storage_size</span> ..................... the size of the HarddriveStorage in GB.<br>
+
+
+
+
+<span style="font-style: italic;">bandwidth </span>........................ bandwidth of the connection to the router in GB/s<br>
+
+
+
+
+<span style="font-style: italic;">router_name </span>.................... the name of the router to which this resource is connected (see below network configuration)<br>
+
+
+
+
+<span style="font-style: italic;">list_of_containing_files </span>....
+the list of filenames of files (separated by spaces) which are stored
+on the storage of this resource (see file configuration)<br>
+
+
+
+
+<br>
+
+
+
+
+<span style="font-weight: bold;">Example:</span><span style="font-family: Courier New,Courier,monospace;"></span>&nbsp;<span style="font-family: Courier New,Courier,monospace;"></span><span style="font-family: Courier New,Courier,monospace;">
+<br>
+
+
+
+Res_0 100&nbsp;0.1 router1 fileH testFile1</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+Res_1 100 0.1 router1 testFile2</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+Res_2 100 0.1 router1 fileF fileG</span><br>
+
+
+
+
+
+<h2>Network configuration file</h2>
+
+
+
+
+<br>
+
+
+
+
+<span style="font-weight: bold;">Format of the file</span><br>
+
+
+
+
+<span style="font-style: italic;">Num_routers<br>
+
+
+
+
+router_name1<br>
+
+
+
+
+</span><span style="font-style: italic;">router_name2<br>
+
+
+
+
+.<br>
+
+
+
+
+.<br>
+
+
+
+
+router_nameN<br>
+
+
+
+
+router_nameI router_nameJ &nbsp;bandwidthI_J &nbsp;propDelay MTU</span><br>
+
+
+
+
+<span style="font-style: italic;">router_nameK router_nameL &nbsp;bandwidthK_L &nbsp;propDelay MTU</span><span style="font-style: italic;"></span><br>
+
+
+
+
+<span style="font-style: italic;">.<br>
+
+
+
+
+.<br>
+
+
+
+
+</span><span style="font-style: italic;">router_nameM router_nameR &nbsp;bandwidthM_R &nbsp;propDelay MTU</span><br>
+
+
+
+
+<span style="font-style: italic;"><br>
+
+
+
+
+</span><span style="font-weight: bold;">Description of parameters<br>
+
+
+
+
+</span><span style="font-style: italic;">Num_routers </span>...................... the number of routers (which names follow)<br>
+
+
+
+
+<span style="font-style: italic;">router_name </span>...................... arbitrary string (no spaces) defining the name of the router<br>
+
+
+
+
+<span style="font-style: italic;">bandwidthX_Y </span>................... bandwidth in GB/s between routers whose names are defined in the beginning of the line<br>
+
+
+
+
+<span style="font-style: italic;">&nbsp;propDelay </span>......................... propagation delay in miliseconds<br>
+
+
+
+
+<span style="font-style: italic;"> MTU </span>.................................. minimal transmission unit in bytes<br>
+
+
+
+
+<br>
+
+
+
+
+<span style="font-weight: bold;">Example:</span><span style="font-family: Courier New,Courier,monospace;"></span>&nbsp;<span style="font-family: Courier New,Courier,monospace;">
+<br>
+
+
+
+2</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+router1</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+router2</span><br style="font-family: Courier New,Courier,monospace;">
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">
+router1 router2&nbsp;0.1 10.0 1500</span><br>
+
+
+
+
+
+<h2>User configuration file</h2>
+
+
+
+
+<span style="font-weight: bold;">Format of the file<br>
+
+
+
+
+</span><span style="font-style: italic;">user1_name router_name RC_name bandwidth list_of_operations<br>
+
+
+
+
+</span><span style="font-style: italic;">user2_name router_name RC_name bandwidth list_of_operations<br>
+
+
+
+
+.<br>
+
+
+
+
+.<br>
+
+
+
+
+</span><span style="font-style: italic;">userN_name router_name RC_name bandwidth list_of_operations</span><br>
+
+
+
+
+<span style="font-weight: bold;"><br>
+
+
+
+
+</span><span style="font-weight: bold;">Description of parameters<br>
+
+
+
+
+</span><span style="font-style: italic;">user1_name </span>........................... the name of the user<br>
+
+
+
+
+<span style="font-style: italic;">router_name </span>.......................... the name of the router to which this user is connected<span style="font-style: italic;"><br>
+
+
+
+
+RC_name </span>............................... the name of the entity
+that acts as the users Replica Catalogue - it can be a resource which
+has a local RC<br>
+
+
+
+
+<span style="font-style: italic;"> bandwidth </span>.............................. bandwith to the router in MB/s<br>
+
+
+
+
+<span style="font-style: italic;">list_of_operations </span>..................
+&nbsp;list of operations which the user will perform during the
+simulation separated by spaces (see Available operations below)<br>
+
+
+
+
+<br>
+
+
+
+
+<span style="font-weight: bold;">Available operations<br>
+
+
+
+
+</span><span style="font-style: italic;">get filename </span>............. transfer the file with this filename to the user<br>
+
+
+
+
+<span style="font-style: italic;">replicate filename resource_name </span>.......... make a replica of the file with this <span style="font-style: italic;">filename</span> on the resource <span style="font-style: italic;">resource_name<br>
+
+</span><span style="font-style: italic;">delete filename resource_name </span>.......... delete a replica of the file with this <span style="font-style: italic;">filename</span> on the resource <span style="font-style: italic;">resource_name</span><br>
+
+<span style="font-style: italic;">
+
+
+attribute filename </span>.................................... get the file attribute (with all the information about a certain file)<br>
+
+
+
+
+<span style="font-weight: bold;"></span><span style="font-style: italic;"><br>
+
+
+
+
+</span><span style="font-weight: bold;">Example:</span><br>
+
+
+
+
+<span style="font-family: Courier New,Courier,monospace;">user1 router2 Res_0 500.0 get testFile2 get testFile1 attribute testFile1 replicate testFile1 Res_0<br>
+
+
+
+
+<br>
+
+
+
+
+<a href="index.html"><span style="font-family: Times New Roman,Times,serif;">&lt;home&gt;</span></a></span></div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

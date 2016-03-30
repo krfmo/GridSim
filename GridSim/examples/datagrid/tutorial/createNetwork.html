@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+  
+  <title>Creating the network</title>
+</head>
+
+
+<body>
+
+<div style="text-align: center;">
+<h1>CREATING THE NETWORK</h1>
+
+<br>
+
+<div style="text-align: left;">The following code shows how to create a simple network, with only two routers.<br>
+</div>
+
+<br>
+
+</div>
+
+<table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+<!-- start source code --> <td align="left" nowrap="nowrap" valign="top"> <code><font color="#ffffff">&nbsp;</font><font color="#000000">Router&nbsp;r1&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">RIPRouter</font><font color="#000000">(</font><font color="#2a00ff">"router1"</font><font color="#000000">)</font><font color="#000000">;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;router&nbsp;1</font><br>
+
+      <font color="#ffffff">&nbsp;</font><font color="#000000">Router&nbsp;r2&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">RIPRouter</font><font color="#000000">(</font><font color="#2a00ff">"router2"</font><font color="#000000">)</font><font color="#000000">;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;router&nbsp;2</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+      <font color="#ffffff">&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//connect&nbsp;the&nbsp;routers</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">baud_rate&nbsp;=&nbsp;</font><font color="#990000">100000000</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Link&nbsp;link&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleLink</font><font color="#000000">(</font><font color="#2a00ff">"r1_r2_link"</font><font color="#000000">,&nbsp;baud_rate,&nbsp;propDelay,&nbsp;mtu</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FIFOScheduler&nbsp;r1Sched&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FIFOScheduler</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FIFOScheduler&nbsp;r2Sched&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FIFOScheduler</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;attach&nbsp;r2&nbsp;to&nbsp;r1</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">r1.attachRouter</font><font color="#000000">(</font><font color="#000000">r2,&nbsp;link,&nbsp;r1Sched,&nbsp;r2Sched</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+      <font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e3</font><font color="#000000">)&nbsp;{</font><br>
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e3.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+      <font color="#000000">}</font></code> </td>
+
+<!-- end source code --> </tr>
+
+<!-- start Java2Html link --><!-- end Java2Html link -->
+  
+  </tbody>
+</table>
+
+</body>
+</html>

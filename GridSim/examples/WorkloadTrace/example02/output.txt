@@ -1,0 +1,254 @@
+Initializing GridSim package
+Initialising...
+Creates one Grid resource with name = Res_0
+Creates one Grid resource with name = Res_1
+Load_0: Creating a workload object ...
+Load_1: Creating a workload object ...
+Custom: Creating a workload object ...
+Creating a grid user entity with name = User_0, and id = 21
+User_0:Creating 5 Gridlets
+Creating a grid user entity with name = User_1, and id = 24
+User_1:Creating 5 Gridlets
+Starting GridSim version 3.1
+Entities started.
+
+Load_0.body() :%%%% Start ...
+
+Custom.body() :%%%% Start ...
+Load_0: Submitting Gridlets to Res_0 ...
+Load_0: Submitting Gridlets to Res_0 ...
+Load_0: Collecting Gridlets ...
+Custom: Submitting Gridlets to Res_0 ...
+
+Load_1.body() :%%%% Start ...
+Load_1: Submitting Gridlets to Res_0 ...
+Load_1: Submitting Gridlets to Res_0 ...
+Load_1: Collecting Gridlets ...
+Custom: Submitting Gridlets to Res_0 ...
+Custom: Submitting Gridlets to Res_0 ...
+Custom: Collecting Gridlets ...
+User_0: Sending Gridlet #0 with NO ACK so status = false to Res_1
+User_1: Sending Gridlet #0 with NO ACK so status = false to Res_0
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #1 from Load_0 user requires 16 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #1 from Load_1 user requires 1152 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #1 from Custom user requires 3 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #3 from Custom user requires 4 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #4 from Custom user requires 3 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #5 from Custom user requires 4 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #6 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #7 from Custom user requires 6 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #10 from Custom user requires 3 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #11 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #12 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #14 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #16 from Custom user requires 2 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #20 from Custom user requires 9 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #2 from Load_1 user requires 1120 PEs.
+    Process this Gridlet to 1 PE only.
+
+User_1: Sending Gridlet #1 with status = true to Res_0
+User_1: Sending Gridlet #2 with NO ACK so status = false to Res_0
+User_0: Sending Gridlet #1 with status = true to Res_1
+User_0: Sending Gridlet #2 with NO ACK so status = false to Res_1
+User_1: Sending Gridlet #3 with status = true to Res_0
+User_1: Sending Gridlet #4 with NO ACK so status = false to Res_0
+User_0: Sending Gridlet #3 with status = true to Res_1
+User_0: Sending Gridlet #4 with NO ACK so status = false to Res_1
+User_0: Receiving Gridlet #0 at time = 308.16
+User_0: Receiving Gridlet #1 at time = 308.16
+User_0: Receiving Gridlet #2 at time = 308.16
+User_0: Receiving Gridlet #3 at time = 353.16
+User_0: Receiving Gridlet #4 at time = 453.16
+User_0:%%%% Exiting body() at time 453.16
+User_1: Receiving Gridlet #0 at time = 1038.6666666666665
+Custom.body() : %%%% Exit ...
+User_1: Receiving Gridlet #1 at time = 8217.666666666668
+User_1: Receiving Gridlet #2 at time = 8268.666666666668
+User_1: Receiving Gridlet #3 at time = 8318.666666666668
+User_1: Receiving Gridlet #4 at time = 8368.666666666668
+User_1:%%%% Exiting body() at time 8368.666666666668
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #3 from Load_1 user requires 1024 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #4 from Load_1 user requires 1024 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #5 from Load_1 user requires 1024 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #6 from Load_1 user requires 800 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #7 from Load_1 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #8 from Load_1 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #9 from Load_1 user requires 256 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #10 from Load_1 user requires 256 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #2 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #3 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #4 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #5 from Load_0 user requires 128 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #6 from Load_0 user requires 128 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #7 from Load_0 user requires 48 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #8 from Load_0 user requires 64 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #9 from Load_0 user requires 128 PEs.
+    Process this Gridlet to 1 PE only.
+
+
+Res_0_SpaceShared.gridletSubmit():  Gridlet #10 from Load_0 user requires 16 PEs.
+    Process this Gridlet to 1 PE only.
+
+Load_1.body() : %%%% Exit ...
+Load_0.body() : %%%% Exit ...
+GridInformationService: Notify all GridSim entities for shutting down
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+========== OUTPUT for Load_0 ==========
+Gridlet_ID    STATUS    Resource_ID    Cost
+    1        Success        4        2784.0
+    2        Success        4        5736960.0
+    3        Success        4        4885632.0
+    4        Success        4        6836736.0
+    5        Success        4        3894528.0
+    6        Success        4        25728.0
+    7        Success        4        6385536.0
+    8        Success        4        7628352.0
+    9        Success        4        3956736.0
+    10        Success        4        1654896.0
+
+
+========== OUTPUT for Load_1 ==========
+Gridlet_ID    STATUS    Resource_ID    Cost
+    1        Success        4        3.0
+    2        Success        4        3.0
+    3        Success        4        3.31776E7
+    4        Success        4        1843200.0
+    5        Success        4        1843200.0
+    6        Success        4        1.728E7
+    7        Success        4        1.10592E7
+    8        Success        4        1.24416E7
+    9        Success        4        4.97664E7
+    10        Success        4        2.21184E7
+
+
+========== OUTPUT for Custom ==========
+Gridlet_ID    STATUS    Resource_ID    Cost
+    1        Success        4        10647.000000000002
+    2        Success        4        180.0
+    3        Success        4        360.0
+    4        Success        4        810.0
+    5        Success        4        360.0
+    6        Success        4        540.0
+    7        Success        4        1620.0
+    8        Success        4        180.0
+    9        Success        4        240.0
+    10        Success        4        810.0
+    11        Success        4        540.0
+    12        Success        4        540.0
+    13        Success        4        270.0
+    14        Success        4        540.0
+    15        Success        4        180.0
+    16        Success        4        540.0
+    17        Success        4        180.0
+    18        Success        4        150.0
+    19        Success        4        270.0
+    20        Success        4        2430.0
+
+
+============= OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        8        150.0
+    1        Success        8        150.0
+    2        Success        8        150.0
+    3        Success        8        150.00000000000009
+    4        Success        8        150.0
+
+============= OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        4        150.0
+    1        Success        4        150.0
+    2        Success        4        150.00000000000273
+    3        Success        4        150.0
+    4        Success        4        150.0

@@ -1,0 +1,16 @@
+# event_id component_id node_id platform_id node_name event_type event_start_time event_stop_time event_end_reason
+    0	    0	    0	    1	    0	         1	     0.000	200.000	       NULL
+    0	    0	    0	    1	    0	         0	     200.000	700.000	       NULL
+    0	    0	    0	    1	    0	         1	     700.000	750.000	       NULL
+    0	    0	    0	    1	    0	         0	     750.000	900.000	       NULL
+    0	    0	    0	    1	    0	         1	     900.000	2000.000	NULL
+    0	    0	    1	    1	    1	         1	     0.000	100.000	       NULL
+    0	    0	    1	    1	    1	         0	     100.000	150.000	       NULL
+    0	    0	    1	    1	    1	         1	     150.000	800.000	 NULL
+    0	    0	    1	    1	    1	         0	     800.000	1000.000	 NULL
+    0	    0	    1	    1	    1	         1	     1000.000	2000.000	 NULL
+    0	    0	    2	    1	    2	         1	     0.000	400.000	       NULL
+    0	    0	    2	    1	    2	         0	     400.000	450.000	       NULL
+    0	    0	    2	    1	    2	         1	     450.000	1000.000	 NULL
+    0	    0	    2	    1	    2	         0	     1000.000	1850.000	 NULL
+    0	    0	    2	    1	    2	         1	     1850.000	2000.000	 NULL

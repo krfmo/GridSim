@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+  
+  
+  <title>Initialization</title>
+</head>
+
+
+<body>
+
+
+<h1 style="text-align: center;">INITIALIZATION</h1>
+
+
+First, we define a couple of variables needed for initialization.<br>
+
+
+<br>
+
+
+<div style="margin-left: 40px;"><code><font color="#000000">DataGIS&nbsp;gis&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font></code><br>
+
+
+<code> <font color="#000000">ExampleUser&nbsp;user&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font></code><br>
+
+
+<code> <font color="#000000">TopRegionalRC&nbsp;rc&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;
+</font></code><code><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">num_user&nbsp;=&nbsp;</font><font color="#990000">1</font><font color="#000000">;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;number&nbsp;of&nbsp;grid&nbsp;users</font></code><br>
+
+
+<code> <font color="#000000">Calendar&nbsp;calendar&nbsp;=&nbsp;Calendar.getInstance</font><font color="#000000">()</font><font color="#000000">;</font></code><br>
+
+
+<code> <font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">trace_flag&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;means
+do not trace&nbsp;GridSim&nbsp;events</font></code><br>
+
+
+<code> <font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">gisFlag&nbsp;= </font><font color="#7f0055"><b>false</b></font><font color="#000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">// use DataGIS instead of ordinary GIS</font></code>
+</div>
+
+
+<br>
+
+
+Second, we initialize the GridSim engine.<br>
+
+
+<div style="margin-left: 40px;"><code></code><code><font color="#3f7f5f"></font></code><br>
+
+
+<code> <font color="#000000">GridSim.init</font><font color="#000000">(</font><font color="#000000">num_user,&nbsp;calendar,&nbsp;trace_flag,&nbsp;gisFlag</font><font color="#000000">)</font><font color="#000000">;</font></code>
+</div>
+
+
+<br>
+
+
+By default, GridSim initializes a normal GridInformation system, but
+for Data Grid simulations we need to define a DataGIS, which can handle
+some specific requests of a Data Grid.<br>
+
+
+<br>
+
+
+<div style="margin-left: 40px;"><code><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font></code><br>
+
+
+<code> <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">gis&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">DataGIS</font><font color="#000000">()</font><font color="#000000">;</font></code><br>
+
+
+<code> <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">GridSim.setGIS</font><font color="#000000">(</font><font color="#000000">gis</font><font color="#000000">)</font><font color="#000000">;</font></code><br>
+
+
+<code> <font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e</font><font color="#000000">)&nbsp;{</font></code><br>
+
+
+<code> <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp; </font><font color="#000000">e.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font></code><br>
+
+
+<code> <font color="#000000">}</font></code>
+</div>
+
+
+
+</body>
+</html>

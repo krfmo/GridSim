@@ -1,0 +1,10 @@
+#this files contains the description of possible files than are on the grid in the current experiment
+#the format of the file is:
+#file_name file_size (in MB)
+testFile1 10
+testFile2 10
+fileM 10
+fileK 10
+fileH 10
+fileD 10
+fileF 1

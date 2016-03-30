@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+
+
+  
+  
+  
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+  
+  
+  
+  
+  
+  <title>Creating top level RC</title>
+</head>
+
+
+<body>
+
+
+
+
+
+<div style="text-align: center;">
+<h1>CREATING THE TOP REPLICA CATALOGUE</h1>
+
+
+
+
+<div style="text-align: left;"><br>
+
+There should be one TopRegionalRC in
+every simulation. All the local replica catalogues query this entity
+about the information on files.<br>
+
+
+<code><font color="#7f0055"><b><br>
+
+
+double&nbsp;</b></font><font color="#000000">baud_rate&nbsp;=&nbsp;</font><font color="#990000">100000000</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">// 100 MB/s</font><br>
+
+
+
+
+
+      <font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">propDelay&nbsp;=&nbsp;</font><font color="#990000">10</font><font color="#000000">;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;propagation&nbsp;delay&nbsp;in&nbsp;millisecond</font><br>
+
+
+
+
+
+      <font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">mtu&nbsp;=&nbsp;</font><font color="#990000">1500</font><font color="#000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;max.&nbsp;transmission&nbsp;unit&nbsp;in&nbsp;byte</font><br>
+
+
+
+
+
+      <font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br>
+
+
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">SimpleLink&nbsp;l&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleLink</font><font color="#000000">(</font><font color="#2a00ff">"rc_link"</font><font color="#000000">,&nbsp;baud_rate,&nbsp;propDelay,&nbsp;mtu</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">rc&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">TopRegionalRC</font><font color="#000000">(</font><font color="#000000">l</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+
+
+      <font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e1</font><font color="#000000">)&nbsp;{</font><br>
+
+
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e1.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+
+
+      <font color="#000000">}<br>
+
+<br>
+
+</font></code><code></code>
+<h2>Why do we need a TopRegionalRC?</h2>
+
+The TopRegionalRC acts either as a central replica catalogue or (as the
+name implies) the top replica catalogue in a tree of &nbsp;replica
+catalogues.<br>
+
+<br>
+
+<span style="font-weight: bold;"><br>
+
+</span>
+<h3>Centralized RC</h3>
+
+<img style="width: 263px; height: 197px;" alt="" src="img/CentralRC.png"><br>
+<br>
+<h3>Hierarchical RC</h3>
+Example 1:<img style="width: 424px; height: 257px;" alt="" src="img/TwoLevelRC1.png"><br>
+<br>
+<br>
+Example 2:<br>
+<img style="width: 476px; height: 342px;" alt="" src="img/TwoLevelRC2.png"><br>
+<br>
+<br>
+<br>
+</div>
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

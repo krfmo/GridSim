@@ -1,0 +1,49 @@
+Starting network example ...
+Initializing GridSim package
+Initialising...
+Starting GridSim version 4.2
+Entities started.
+user1.body(): Sending Message_0, at time = 5.0
+user1.body(): Sending Message_1, at time = 15.0
+user2.body(): Sending Message_0, at time = 20.0
+user1.body(): Sending Message_2, at time = 25.0
+user2.body(): Sending Message_1, at time = 30.0
+user2.body(): Sending Message_2, at time = 40.0
+
+test2.body(): receive Message_0, at time = 15939.24998779297
+test2.body(): Sending back Message_0, at time = 15939.24998779297
+user1.body(): Receives Ack for Message_0
+
+test2.body(): receive Message_1, at time = 15987.874992879233
+test2.body(): Sending back Message_1, at time = 15987.874992879233
+user1.body(): Receives Ack for Message_1
+
+test1.body(): receive Message_0, at time = 15997.508293660483
+test1.body(): Sending back Message_0, at time = 15997.508293660483
+user2.body(): Receives Ack for Message_0
+
+test2.body(): receive Message_2, at time = 16002.370796712241
+test2.body(): Sending back Message_2, at time = 16002.370796712241
+user1.body(): Receives Ack for Message_2
+
+test1.body(): receive Message_1, at time = 16004.815793863934
+test1.body(): Sending back Message_1, at time = 16004.815793863934
+user2.body(): Receives Ack for Message_1
+
+test1.body(): receive Message_2, at time = 16006.797457885745
+test1.body(): Sending back Message_2, at time = 16006.797457885745
+user2.body(): Receives Ack for Message_2
+user1:%%%% Exiting body() at time 17003.37079671224
+
+test2.body(): exiting ...
+test2:%%%% Exiting body() at time 17003.37079671224
+user2:%%%% Exiting body() at time 17007.797457885747
+
+test1.body(): exiting ...
+test1:%%%% Exiting body() at time 17007.797457885747
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+Finish network example ...

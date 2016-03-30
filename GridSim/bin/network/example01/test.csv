@@ -1,0 +1,10 @@
+0.0, Creates test
+40.01, test.body(): receive Message_0, at time = 40.01
+40.01, test.body(): Sending back Message_0, at time = 40.01
+80.01, test.body(): receive Message_1, at time = 80.01
+80.01, test.body(): Sending back Message_1, at time = 80.01
+120.01, test.body(): receive Message_2, at time = 120.01
+120.01, test.body(): Sending back Message_2, at time = 120.01
+160.01, test.body(): receive Message_3, at time = 160.01
+160.01, test.body(): Sending back Message_3, at time = 160.01
+200.67999999999995, test.body(): exiting ...

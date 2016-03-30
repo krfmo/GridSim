@@ -1,0 +1,55 @@
+
+/**
+ * Author: Anthony Sulistio
+ * Date: April 2003
+ * Description: This file contains statistical data produced during the GridSim
+ *              simulation. This file got created when a program, i.e.
+ *              Example6.java calls GridSim.Init(). During initialization,
+ *              GridSim object creates few entities, one of them is
+ *              GridStatistics object with default file name is "stat.txt"
+ * $Id: GridSim_stat.txt,v 1.4 2005/09/20 07:01:00 anthony Exp $
+ *
+ * NOTE: // denotes a comment made to explain some of the values.
+ */
+
+// the field is as follows:
+// time  category   name    data/value (in this example, it represents Gridlet
+//                          processing cost, if not empty)
+
+
+13.56	"Received ResourceCharacteristics from Resource_2"	User_2
+24.12	"Received ResourceCharacteristics from Resource_1"	User_2
+24.12	"Received ResourceCharacteristics from Resource_2"	User_1
+34.68	"Received ResourceCharacteristics from Resource_0"	User_2
+34.68	"Submit Gridlet_0 to Resource_0"	User_2
+34.68	"Received ResourceCharacteristics from Resource_1"	User_1
+34.68	"Received ResourceCharacteristics from Resource_2"	User_0
+45.24	"Received ResourceCharacteristics from Resource_0"	User_1
+45.24	"Submit Gridlet_0 to Resource_1"	User_1
+45.24	"Received ResourceCharacteristics from Resource_1"	User_0
+55.800000000000004	"Received ResourceCharacteristics from Resource_0"	User_0
+55.800000000000004	"Submit Gridlet_0 to Resource_0"	User_0
+91.96381962864722	"Received Gridlet_0 from Resource_0"	User_2	27.851458885941646
+91.96381962864722	"Submit Gridlet_1 to Resource_2"	User_2
+102.52381962864723	"Received Gridlet_0 from Resource_1"	User_1	27.851458885941668
+102.52381962864723	"Submit Gridlet_1 to Resource_1"	User_1
+115.96381962864723	"Received Gridlet_0 from Resource_0"	User_0	27.851458885941668
+115.96381962864723	"Submit Gridlet_1 to Resource_1"	User_0
+185.22641909814325	"Received Gridlet_1 from Resource_2"	User_2	39.78779840848807
+185.22641909814325	"Submit Gridlet_2 to Resource_2"	User_2
+195.78641909814326	"Received Gridlet_1 from Resource_1"	User_1	39.78779840848807
+195.78641909814326	"Submit Gridlet_2 to Resource_0"	User_1
+235.78641909814326	"Received Gridlet_1 from Resource_1"	User_0	39.78779840848807
+235.78641909814326	"Submit Gridlet_2 to Resource_0"	User_0
+353.0990981432361	"Received Gridlet_2 from Resource_2"	User_2	71.6180371352786
+353.0990981432361	"Submit Gridlet_3 to Resource_2"	User_2
+364.65909814323606	"Received Gridlet_2 from Resource_0"	User_1	74.61803713527843
+364.65909814323606	"Submit Gridlet_3 to Resource_0"	User_1
+397.02393093197287	"Received Gridlet_3 from Resource_2"	User_2	11.294498366210348
+397.02393093197287	"Submit Gridlet_4 to Resource_0"	User_2
+436.65909814323606	"Received Gridlet_2 from Resource_0"	User_0	74.61803713527843
+436.65909814323606	"Submit Gridlet_3 to Resource_2"	User_0
+458.3390981432361	"Received Gridlet_3 from Resource_0"	User_1	19.13397071165417
+
+// --- End of Experiment --
+

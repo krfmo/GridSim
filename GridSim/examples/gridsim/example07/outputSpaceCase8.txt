@@ -1,0 +1,255 @@
+Starting Test Cases
+Initialising...
+Creates one Grid resource with name = GridResource_0
+Creates one Grid resource with name = GridResource_1
+Creates one Grid resource with name = GridResource_2
+Creating a grid user entity with name = User_0, and id = 19
+User_0:Creating 4 Gridlets
+Creating a grid user entity with name = User_1, and id = 22
+User_1:Creating 4 Gridlets
+Starting GridSim version 2.2
+Entities started.
+User_0: Sending Gridlet #0 with status = true to GridResource_1
+User_0: Sending Gridlet #1 with NO ACK so status = false to GridResource_1
+User_1: Sending Gridlet #0 with status = true to GridResource_1
+User_1: Sending Gridlet #1 with NO ACK so status = false to GridResource_1
+User_1: Sending Gridlet #2 with status = true to GridResource_1
+User_1: Sending Gridlet #3 with NO ACK so status = false to GridResource_1
+User_0: Sending Gridlet #2 with status = true to GridResource_1
+User_0: Sending Gridlet #3 with NO ACK so status = false to GridResource_1
+<<<<<<<<< pause for 15 >>>>>>>>>>>
+User_1: Pausing Gridlet #0 at time = 22.206 success = true
+User_1: Pausing Gridlet #3 at time = 22.2104 success = true
+<<<<<<<<< pause for 15 >>>>>>>>>>>
+User_0: Pausing Gridlet #0 at time = 25.229999999999997 success = true
+User_0: Pausing Gridlet #3 at time = 25.251999999999995 success = true
+<<<<<<<<< pause for 15 >>>>>>>>>>>
+GridResource_1TimeShared.gridletResume(): Gridlet #0 with User ID #22 has been sucessfully RESUMED.
+User_1: Resume Gridlet #0 at time = 37.214800000000004 success = true
+GridResource_1TimeShared.gridletResume(): Gridlet #3 with User ID #22 has been sucessfully RESUMED.
+User_1: Resume Gridlet #3 at time = 37.21920000000001 success = true
+<<<<<<<<< pause for 15 >>>>>>>>>>>
+GridResource_1TimeShared.gridletResume(): Gridlet #0 with User ID #19 has been sucessfully RESUMED.
+User_0: Resume Gridlet #0 at time = 40.274 success = true
+GridResource_1TimeShared.gridletResume(): Gridlet #3 with User ID #19 has been sucessfully RESUMED.
+User_0: Resume Gridlet #3 at time = 40.29600000000001 success = true
+<<<<<<<<< pause for 45 >>>>>>>>>>>
+User_1: Move Gridlet #0 at time = 83.22999999999999 success = true
+<<<<<<<<< pause for 45 >>>>>>>>>>>
+User_1: Move Gridlet #3 at time = 87.24079999999998 success = true
+User_0: Move Gridlet #0 at time = 88.24079999999998 success = true
+User_0: Move Gridlet #3 at time = 92.26279999999997 success = true
+<<<<<<<<< pause for 25 >>>>>>>>>>>
+GridResource_1.SpaceShared.gridletCancel(): Cannot find Gridlet #0 for User #22
+User_1: Canceling Gridlet #0 at time = 112.24359999999997 result = NULL
+User_1: Canceling Gridlet #2 at time = 112.84639999999996 result = NOT null
+GridResource_1.SpaceShared.gridletCancel(): Cannot find Gridlet #3 for User #22
+User_1: Canceling Gridlet #3 at time = 112.84919999999995 result = NULL
+<<<<<<<<< pause for 25 >>>>>>>>>>>
+GridResource_1.SpaceShared.gridletCancel(): Cannot find Gridlet #0 for User #19
+User_0: Canceling Gridlet #0 at time = 117.27679999999997 result = NULL
+User_0: Canceling Gridlet #2 at time = 120.29079999999996 result = NOT null
+GridResource_1.SpaceShared.gridletCancel(): Cannot find Gridlet #3 for User #19
+User_0: Canceling Gridlet #3 at time = 120.30479999999996 result = NULL
+<<<<<<<<< pause for 1000 >>>>>>>>>>>
+User_1: Receiving Gridlet #0 at time = 1112.8491999999999
+User_1: Receiving Gridlet #1 at time = 1112.8491999999999
+User_1: Receiving Gridlet #3 at time = 1112.8491999999999
+User_1:%%%% Exiting body() at time 1112.8491999999999
+
+============= OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    2        Canceled        11        435.12199999999984
+    0        Success        7        405.0544
+    1        Success        11        1008.9780000000001
+    3        Success        7        1200.0
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #2
+------------------------------------------
+0.00   Creates Gridlet ID #2
+0.00   Assigns the Gridlet to User_1 (ID #22)
+7.20   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+7.20   Sets the submission time to 7.20
+7.20   Sets Gridlet status from Created to Queued
+25.222   Sets Gridlet status from Queued to InExec
+25.222   Sets the execution start time to 25.222
+112.246   Sets Gridlet status from InExec to Canceled
+112.246   Sets the wall clock time to 105.046 and the actual CPU time to 87.024
+112.246   Sets the length's finished so far to 870.2439999999997
+
+Gridlet #2, length = 3000.0, finished so far = 870.2439999999997
+===========================================
+
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #0
+------------------------------------------
+0.00   Creates Gridlet ID #0
+0.00   Assigns the Gridlet to User_1 (ID #22)
+4.20   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+4.20   Sets the submission time to 4.20
+4.20   Sets Gridlet status from Created to InExec
+4.20   Sets the execution start time to 4.20
+22.204   Sets Gridlet status from InExec to Paused
+37.213   Sets Gridlet status from Paused to Resumed
+37.213   Sets the execution start time to 37.213
+37.213   Sets Gridlet status from Resumed to Queued
+82.222   Sets Gridlet status from Queued to Canceled
+82.222   Sets the wall clock time to 78.022 and the actual CPU time to 18.004
+82.222   Sets the length's finished so far to 180.04399999999998
+83.222   Moves Gridlet from GridResource_1 (ID #11) to GridResource_0 (ID #7) with cost = $3.0/sec
+83.222   Sets the submission time to 83.222
+83.222   Sets Gridlet status from Canceled to InExec
+83.222   Sets the execution start time to 83.222
+188.233   Sets Gridlet status from InExec to Success
+188.233   Sets the wall clock time to 105.011 and the actual CPU time to 105.011
+188.233   Sets the length's finished so far to 1000.0
+
+Gridlet #0, length = 1000.0, finished so far = 1000.0
+===========================================
+
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #1
+------------------------------------------
+0.00   Creates Gridlet ID #1
+0.00   Assigns the Gridlet to User_1 (ID #22)
+6.60   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+6.60   Sets the submission time to 6.60
+6.60   Sets Gridlet status from Created to Queued
+22.204   Sets Gridlet status from Queued to InExec
+22.204   Sets the execution start time to 22.204
+224.00   Sets Gridlet status from InExec to Success
+224.00   Sets the wall clock time to 217.40 and the actual CPU time to 201.796
+224.00   Sets the length's finished so far to 2000.0
+
+Gridlet #1, length = 2000.0, finished so far = 2000.0
+===========================================
+
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #3
+------------------------------------------
+0.00   Creates Gridlet ID #3
+0.00   Assigns the Gridlet to User_1 (ID #22)
+11.00   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+11.00   Sets the submission time to 11.00
+11.00   Sets Gridlet status from Created to Queued
+22.209   Sets Gridlet status from Queued to Paused
+37.218   Sets Gridlet status from Paused to Resumed
+37.218   Sets the execution start time to 37.218
+37.218   Sets Gridlet status from Resumed to Queued
+83.233   Sets Gridlet status from Queued to Canceled
+83.233   Sets the wall clock time to 72.233 and the actual CPU time to 0.00
+83.233   Sets the length's finished so far to 0.0
+87.233   Moves Gridlet from GridResource_1 (ID #11) to GridResource_0 (ID #7) with cost = $3.0/sec
+87.233   Sets the submission time to 87.233
+87.233   Sets Gridlet status from Canceled to InExec
+87.233   Sets the execution start time to 87.233
+487.233   Sets Gridlet status from InExec to Success
+487.233   Sets the wall clock time to 400.00 and the actual CPU time to 400.00
+487.233   Sets the length's finished so far to 4000.0
+
+Gridlet #3, length = 4000.0, finished so far = 4000.0
+===========================================
+
+<<<<<<<<< pause for 1000 >>>>>>>>>>>
+User_0: Receiving Gridlet #0 at time = 1120.3048
+User_0: Receiving Gridlet #1 at time = 1120.3048
+User_0: Receiving Gridlet #3 at time = 1120.3048
+User_0:%%%% Exiting body() at time 1120.3048
+
+============= OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    2        Canceled        11        25.22199999999998
+    0        Success        7        406.11
+    1        Success        11        1000.0
+    3        Success        7        1200.0
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #2
+------------------------------------------
+0.00   Creates Gridlet ID #2
+0.00   Assigns the Gridlet to User_0 (ID #19)
+10.20   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+10.20   Sets the submission time to 10.20
+10.20   Sets Gridlet status from Created to Queued
+112.246   Sets Gridlet status from Queued to InExec
+112.246   Sets the execution start time to 112.246
+117.291   Sets Gridlet status from InExec to Canceled
+117.291   Sets the wall clock time to 107.091 and the actual CPU time to 5.044
+117.291   Sets the length's finished so far to 50.44399999999996
+
+Gridlet #2, length = 3000.0, finished so far = 50.44399999999996
+===========================================
+
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #0
+------------------------------------------
+0.00   Creates Gridlet ID #0
+0.00   Assigns the Gridlet to User_0 (ID #19)
+4.00   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+4.00   Sets the submission time to 4.00
+4.00   Sets Gridlet status from Created to InExec
+4.00   Sets the execution start time to 4.00
+25.222   Sets Gridlet status from InExec to Paused
+40.266   Sets Gridlet status from Paused to Resumed
+40.266   Sets the execution start time to 40.266
+40.266   Sets Gridlet status from Resumed to Queued
+85.31   Sets Gridlet status from Queued to Canceled
+85.31   Sets the wall clock time to 81.31 and the actual CPU time to 21.222
+85.31   Sets the length's finished so far to 212.21999999999997
+88.233   Moves Gridlet from GridResource_1 (ID #11) to GridResource_0 (ID #7) with cost = $3.0/sec
+88.233   Sets the submission time to 88.233
+88.233   Sets Gridlet status from Canceled to InExec
+88.233   Sets the execution start time to 88.233
+188.233   Sets Gridlet status from InExec to Success
+188.233   Sets the wall clock time to 100.00 and the actual CPU time to 100.00
+188.233   Sets the length's finished so far to 1000.0
+
+Gridlet #0, length = 1000.0, finished so far = 1000.0
+===========================================
+
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #1
+------------------------------------------
+0.00   Creates Gridlet ID #1
+0.00   Assigns the Gridlet to User_0 (ID #19)
+6.20   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+6.20   Sets the submission time to 6.20
+6.20   Sets Gridlet status from Created to InExec
+6.20   Sets the execution start time to 6.20
+206.20   Sets Gridlet status from InExec to Success
+206.20   Sets the wall clock time to 200.00 and the actual CPU time to 200.00
+206.20   Sets the length's finished so far to 2000.0
+
+Gridlet #1, length = 2000.0, finished so far = 2000.0
+===========================================
+
+Time below denotes the simulation time.
+Time (sec)       Description Gridlet #3
+------------------------------------------
+0.00   Creates Gridlet ID #3
+0.00   Assigns the Gridlet to User_0 (ID #19)
+15.00   Allocates this Gridlet to GridResource_1 (ID #11) with cost = $5.0/sec
+15.00   Sets the submission time to 15.00
+15.00   Sets Gridlet status from Created to Queued
+25.244   Sets Gridlet status from Queued to Paused
+40.288   Sets Gridlet status from Paused to Resumed
+40.288   Sets the execution start time to 40.288
+40.288   Sets Gridlet status from Resumed to Queued
+88.255   Sets Gridlet status from Queued to Canceled
+88.255   Sets the wall clock time to 73.255 and the actual CPU time to 0.00
+88.255   Sets the length's finished so far to 0.0
+92.255   Moves Gridlet from GridResource_1 (ID #11) to GridResource_0 (ID #7) with cost = $3.0/sec
+92.255   Sets the submission time to 92.255
+92.255   Sets Gridlet status from Canceled to Queued
+188.233   Sets Gridlet status from Queued to InExec
+188.233   Sets the execution start time to 188.233
+588.233   Sets Gridlet status from InExec to Success
+588.233   Sets the wall clock time to 495.978 and the actual CPU time to 400.00
+588.233   Sets the length's finished so far to 4000.0
+
+Gridlet #3, length = 4000.0, finished so far = 4000.0
+===========================================
+
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+=============== END OF TEST ====================

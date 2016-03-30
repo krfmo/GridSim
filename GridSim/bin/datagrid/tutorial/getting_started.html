@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+  
+  
+  
+  <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  <title>Getting started</title>
+  <meta name="author" content="Uros Cibej">
+</head>
+
+
+<body>
+
+
+
+
+
+<h1 style="text-align: center;">GETTING STARTED</h1>
+
+
+
+
+
+
+
+
+
+This is a short example on how to use the gridsim.datagrid packages.
+Through this tutorial we will learn how to properly set up the
+simulation&nbsp; and how to write your custom simulation scenario.
+The
+figure below demonstrates the network topology we are going to set up.<br>
+
+
+
+
+
+<span style="font-weight: bold;"><br>
+
+
+
+
+
+<br>
+
+
+
+
+
+
+</span>
+<div style="text-align: center;"><span style="font-weight: bold;"><img alt="" src="img/ExampleTopology.png" style="width: 464px; height: 292px;"></span><br>
+
+
+
+
+
+<span style="font-weight: bold;"></span></div>
+
+
+
+
+
+<span style="font-weight: bold;"><br>
+
+
+
+
+
+
+</span><span style="font-weight: bold;"></span>
+<h2>Simulation framework</h2>
+
+
+
+Below is an example Java program, that uses the gridsim.datagrid
+package and implement a simple experiment on a grid with the topology
+shown on the figure above. Follow the links in the main method to see
+the description of the various steps needed for a proper simulation
+setup. <br>
+
+
+
+
+
+<span style="font-weight: bold;"><br>
+
+
+
+
+
+
+</span><code><font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">tutorial;</font><br>
+
+
+
+
+
+<br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.*;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.datagrid.*;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.datagrid.index.*;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.datagrid.storage.*;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.net.FIFOScheduler;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.net.Link;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.net.RIPRouter;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.net.Router;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">gridsim.net.SimpleLink;</font><br>
+
+
+
+
+
+<br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.ArrayList;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.Calendar;</font><br>
+
+
+
+
+
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.LinkedList;</font><br>
+
+
+
+
+
+<br>
+
+
+
+
+
+<br>
+
+
+
+
+
+<font color="#7f0055"><b>public&nbsp;class </b></font><font color="#000000">Example </font><font color="#000000">{</font><br>
+
+
+
+
+
+<br>
+
+
+
+
+
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;{</font></code><br>
+
+
+
+
+
+<div style="margin-left: 80px;">
+<ol>
+
+
+
+
+  <li><a href="initialization.html">Initialize
+the simulation</a> </li>
+
+
+
+
+  <li>
+    <a href="createTopLevelRC.html">Create a top level Replica
+Catalogue</a> </li>
+
+
+
+
+  <li>
+    <a href="creatingResources.html">Create the Data Grid
+resources</a></li>
+
+
+
+
+  <li>
+    <a href="createUsers.html">Create users</a> </li>
+
+
+
+
+  <li>
+    <a href="createNetwork.html">Create network</a> </li>
+
+
+
+
+  <li>
+    <a href="connectEntities.html">Connect the created
+entities to
+the network</a> </li>
+
+
+
+
+  <li>
+Start the simulation - GridSim.startGridSimulation();</li>
+
+
+
+
+</ol>
+
+
+
+
+</div>
+
+
+
+
+
+<code><font color="#000000">
+</font><font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+
+
+
+
+<font color="#000000">}</font></code><br>
+
+
+
+
+
+<span style="font-weight: bold;"></span><br>
+
+
+<br>
+
+
+<br>
+
+
+<a href="index.html">&lt;home&gt;</a><span style="font-style: italic;"></span>
+
+
+</body>
+</html>

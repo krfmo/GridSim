@@ -1,0 +1,109 @@
+
+               CLOUDS Lab to Release GridSim Toolkit 5.2
+                            November 2010
+
+
+The Cloud Computing and Distributed Systems (CLOUDS) Laboratory at 
+the University of Melbourne, Australia has released the next-version of 
+Grid simulation software, the GridSim Toolkit 5.2.
+
+This new version of GridSim brings a new package (i.e. gridsim.fta) that 
+provides:
+
+* A failure generator based on the Failure Trace Archive (FTA) format.
+The provided packages read the tabbed version of the failure traces and generate 
+a list of events that show the availability/unavailability pattern for each machine 
+in a grid resource. For more details, see the FTA web site (http://fta.inria.fr) and 
+the following publication:
+
+	Derrick Kondo, Bahman Javadi, Alex Iosup, Dick Epema, The Failure Trace Archive: 
+	Enabling Comparative Analysis of Failures in Diverse Distributed Systems, 
+	In the 10th IEEE/ACM CCGrid, Melbourne, Australia, May, 2010.
+
+* one allocation policy for scheduling of bag of tasks on cluster systems in the
+presence of resource failures.
+
+* An implementation of the parallel jobs workload model of DAS-2 for modelling
+the workload of clusters. Details about the workload model are available in the 
+following publication:
+
+	Hui Li, David Groep, and Lex Wolters, "Workload Characteristics of a 
+	Multi-cluster Supercomputer", LNCS 2005, Volume 3277/2005, 176-193.
+
+
+The version 5.0 of GridSim brings a new package (i.e. gridsim.parallel) that 
+provides:
+
+* A graphical user interface for debugging resource allocation policies.
+* Several allocation policies for scheduling parallel jobs on clusters and
+and supercomputers. The policies include aggressive backfilling, conservative
+backfilling, advance reservation with conservative backfilling, selective
+backfilling and agressive backfilling with multiple resource partitions. The 
+allocation policies implemented are based on the following research papers:
+	
+	Ahuva W. Mu'alem and Dror G. Feitelson, Utilization, Predictability, 
+ 	Workloads, and User Runtime Estimates in Scheduling the IBM SP2
+ 	with Backfilling. IEEE Transactions on Parallel and Distributed 
+ 	Systems, 12:(6), pp. 529-543, 2001.
+ 	
+ 	Barry G. Lawson and Evgenia Smirni, Multiple-Queue Backfilling 
+ 	Scheduling with Priorities and Reservations for Parallel Systems, 
+ 	2002 Workshop on Job Scheduling Strategies for Parallel 
+ 	Processing (JSSPP), pp. 72-87, 2002.
+ 	
+ 	Srividya Srinivasan, Rajkumar Kettimuthu, Vijay Subramani, and
+ 	Ponnuswamy Sadayappan. Selective Reservation Strategies for Backfill
+ 	Job Scheduling. In JSSPP 2002, LNCS 2537, Springer-Verlag Berlin Heidelberg,
+ 	pp. 55-71, 2002. 
+	
+	
+* An implementation of the workload model by Lublin and Feitelson for modelling
+the workload of clusters and supercomputers. Details about the workload model 
+are available in the following publication:
+
+	Uri Lublin and Dror G. Feitelson, The Workload on Parallel Supercomputers: 
+ 	Modeling the Characteristics of Rigid Jobs. J. Parallel & Distributed 
+ 	Comput. 63(11), pp. 1105-1122, Nov 2003.
+
+* A data structure to facilitate the scheduling of jobs and advance reservations.
+This data structure is described as an appendix on Marcos Assuncao's PhD thesis.	
+
+* Logging features using Java logging API.  
+
+
+In addition, other improvements have made GridSim more compatible with 
+Java 5 and 6. Some bugs have been fixed and some changes in SimJava were 
+required to enable a simulation to be paused and resumed.
+
+All components developed as part of the GridSim Toolkit are released as
+"open source" under the GPL license to encourage innovation and pass full
+freedom to our users.
+
+The early version of our GridSim toolkit has been used/downloaded by several
+academic and commercial organizations around the world including:
+University of Southern California (USA), California Institute of Technology (USA),
+Argonne National Labs (USA), University of Manchester (UK), CERN,
+Universidad de Santiago de Compostela (Spain), Indian Institute of Technology,
+Tsinghua University (China), Sun Microsystems, IBM Research, Unisys, HP,
+Northrop Grumman Information Technology, British Telecom and EMC Corp.
+
+The contributors to the GridSim software (from early to new versions) are:
+* Rajkumar Buyya, CLOUDS Lab @ The University of Melbourne.
+* Manzur Murshed, GSCIT @ Monash University, Australia.
+* Anthony Sulistio, CLOUDS Lab @ The University of Melbourne.
+* Gokul Poduval and Chen-Khong Tham,
+  Dept. of Electrical & Computer Engineering @ National University of Singapore.
+* Marcos Dias de Assuncao, INRIA Lyon @ Ecole Normale Superieure de Lyon
+* Uros Cibej and Borut Robic, Faculty of Computer and Information Service,
+  The University of Ljubljana, Slovenia.
+* Agustin Caminero, Department of Computing Systems,
+  Universidad de Castilla La Mancha (UCLM), Spain.
+* James Broberg, CLOUDS Lab @ The University of Melbourne. 
+* Saurabh Garg, CLOUDS Lab @ The University of Melbourne.
+* Bahman Javadi, CLOUDS Lab @ The University of Melbourne.
+
+To download the GridSim software, please visit the CLOUDS Lab web site at
+http://www.cloudbus.org/gridsim/
+
+Join the GridSim mailing lists at
+http://sourceforge.net/projects/gridsim

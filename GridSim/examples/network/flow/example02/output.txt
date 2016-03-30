@@ -1,0 +1,416 @@
+Starting network example ...
+Initializing GridSim package
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 5)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_1 - id: 10)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_2 - id: 15)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_3 - id: 20)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_4 - id: 25)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_5 - id: 30)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_6 - id: 35)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_7 - id: 40)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_8 - id: 45)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_9 - id: 50)
+
+Creating a grid user entity with name = User_0, and id = 55
+User_0:Creating 40 Gridlets
+Creating a grid user entity with name = User_1, and id = 59
+User_1:Creating 40 Gridlets
+Output_User_0.setBackgroundTraffic(): Warning - can not send junk packets to itself.
+Starting GridSim version 4.2
+Entities started.
+Output_User_0: background traffic will start at time 14
+Output_User_1: background traffic will start at time 18
+User_0Sending Gridlet #0 to Res_5
+User_0Sending Gridlet #1 to Res_5
+User_1Sending Gridlet #0 to Res_1
+User_1Sending Gridlet #1 to Res_1
+ack = true for Gridlet #1
+User_0Sending Gridlet #2 to Res_5
+User_0Sending Gridlet #3 to Res_5
+ack = true for Gridlet #1
+User_1Sending Gridlet #2 to Res_1
+User_1Sending Gridlet #3 to Res_1
+ack = true for Gridlet #3
+User_1Sending Gridlet #4 to Res_1
+User_1Sending Gridlet #5 to Res_1
+ack = true for Gridlet #3
+User_0Sending Gridlet #4 to Res_5
+User_0Sending Gridlet #5 to Res_5
+ack = true for Gridlet #5
+User_0Sending Gridlet #6 to Res_5
+User_0Sending Gridlet #7 to Res_5
+ack = true for Gridlet #5
+User_1Sending Gridlet #6 to Res_1
+User_1Sending Gridlet #7 to Res_1
+ack = true for Gridlet #7
+User_0Sending Gridlet #8 to Res_5
+User_0Sending Gridlet #9 to Res_5
+ack = true for Gridlet #7
+User_1Sending Gridlet #8 to Res_1
+User_1Sending Gridlet #9 to Res_1
+ack = true for Gridlet #9
+User_0Sending Gridlet #10 to Res_5
+User_0Sending Gridlet #11 to Res_5
+ack = true for Gridlet #9
+User_1Sending Gridlet #10 to Res_1
+User_1Sending Gridlet #11 to Res_1
+ack = true for Gridlet #11
+User_0Sending Gridlet #12 to Res_5
+User_0Sending Gridlet #13 to Res_5
+ack = true for Gridlet #11
+User_1Sending Gridlet #12 to Res_1
+User_1Sending Gridlet #13 to Res_1
+ack = true for Gridlet #13
+User_0Sending Gridlet #14 to Res_5
+User_0Sending Gridlet #15 to Res_5
+ack = true for Gridlet #13
+User_1Sending Gridlet #14 to Res_1
+User_1Sending Gridlet #15 to Res_1
+ack = true for Gridlet #15
+User_0Sending Gridlet #16 to Res_5
+User_0Sending Gridlet #17 to Res_5
+ack = true for Gridlet #15
+User_1Sending Gridlet #16 to Res_1
+User_1Sending Gridlet #17 to Res_1
+ack = true for Gridlet #17
+User_0Sending Gridlet #18 to Res_5
+User_0Sending Gridlet #19 to Res_5
+ack = true for Gridlet #17
+User_1Sending Gridlet #18 to Res_1
+User_1Sending Gridlet #19 to Res_1
+ack = true for Gridlet #19
+User_0Sending Gridlet #20 to Res_5
+User_0Sending Gridlet #21 to Res_5
+ack = true for Gridlet #19
+User_1Sending Gridlet #20 to Res_1
+User_1Sending Gridlet #21 to Res_1
+ack = true for Gridlet #21
+User_0Sending Gridlet #22 to Res_5
+User_0Sending Gridlet #23 to Res_5
+ack = true for Gridlet #21
+User_1Sending Gridlet #22 to Res_1
+User_1Sending Gridlet #23 to Res_1
+ack = true for Gridlet #23
+User_0Sending Gridlet #24 to Res_5
+User_0Sending Gridlet #25 to Res_5
+ack = true for Gridlet #23
+User_1Sending Gridlet #24 to Res_1
+User_1Sending Gridlet #25 to Res_1
+ack = true for Gridlet #25
+User_0Sending Gridlet #26 to Res_5
+User_0Sending Gridlet #27 to Res_5
+ack = true for Gridlet #25
+User_1Sending Gridlet #26 to Res_1
+User_1Sending Gridlet #27 to Res_1
+ack = true for Gridlet #27
+User_0Sending Gridlet #28 to Res_5
+User_0Sending Gridlet #29 to Res_5
+ack = true for Gridlet #27
+User_1Sending Gridlet #28 to Res_1
+User_1Sending Gridlet #29 to Res_1
+ack = true for Gridlet #29
+User_0Sending Gridlet #30 to Res_5
+User_0Sending Gridlet #31 to Res_5
+ack = true for Gridlet #29
+User_1Sending Gridlet #30 to Res_1
+User_1Sending Gridlet #31 to Res_1
+ack = true for Gridlet #31
+User_0Sending Gridlet #32 to Res_5
+User_0Sending Gridlet #33 to Res_5
+ack = true for Gridlet #31
+User_1Sending Gridlet #32 to Res_1
+User_1Sending Gridlet #33 to Res_1
+ack = true for Gridlet #33
+User_0Sending Gridlet #34 to Res_5
+User_0Sending Gridlet #35 to Res_5
+ack = true for Gridlet #33
+User_1Sending Gridlet #34 to Res_1
+User_1Sending Gridlet #35 to Res_1
+ack = true for Gridlet #35
+User_0Sending Gridlet #36 to Res_5
+User_0Sending Gridlet #37 to Res_5
+ack = true for Gridlet #35
+User_1Sending Gridlet #36 to Res_1
+User_1Sending Gridlet #37 to Res_1
+ack = true for Gridlet #37
+User_0Sending Gridlet #38 to Res_5
+User_0Sending Gridlet #39 to Res_5
+ack = true for Gridlet #37
+User_1Sending Gridlet #38 to Res_1
+User_1Sending Gridlet #39 to Res_1
+ack = true for Gridlet #39
+User_0: Receiving Gridlet #0 at time = 3122.2553899204254
+User_0: Receiving Gridlet #1 at time = 3122.2553899204254
+User_0: Receiving Gridlet #2 at time = 3122.2553899204254
+User_0: Receiving Gridlet #3 at time = 3122.2553899204254
+User_0: Receiving Gridlet #4 at time = 3122.2553899204254
+User_0: Receiving Gridlet #5 at time = 3122.2553899204254
+User_0: Receiving Gridlet #7 at time = 3122.2553899204254
+User_0: Receiving Gridlet #6 at time = 3122.2553899204254
+User_0: Receiving Gridlet #9 at time = 3122.2553899204254
+User_0: Receiving Gridlet #8 at time = 3122.2553899204254
+User_0: Receiving Gridlet #10 at time = 3122.2553899204254
+User_0: Receiving Gridlet #11 at time = 3122.2553899204254
+User_0: Receiving Gridlet #13 at time = 3122.2553899204254
+User_0: Receiving Gridlet #12 at time = 3122.2553899204254
+User_0: Receiving Gridlet #14 at time = 3122.2553899204254
+User_0: Receiving Gridlet #15 at time = 3122.2553899204254
+User_0: Receiving Gridlet #16 at time = 3122.2553899204254
+User_0: Receiving Gridlet #17 at time = 3122.2553899204254
+User_0: Receiving Gridlet #19 at time = 3122.2553899204254
+User_0: Receiving Gridlet #18 at time = 3122.2553899204254
+User_0: Receiving Gridlet #21 at time = 3122.2553899204254
+User_0: Receiving Gridlet #20 at time = 3122.2553899204254
+User_0: Receiving Gridlet #22 at time = 3122.2553899204254
+User_0: Receiving Gridlet #23 at time = 3122.2553899204254
+User_0: Receiving Gridlet #25 at time = 3122.2553899204254
+User_0: Receiving Gridlet #24 at time = 3122.2553899204254
+User_0: Receiving Gridlet #26 at time = 3122.2553899204254
+User_0: Receiving Gridlet #27 at time = 3122.2553899204254
+User_0: Receiving Gridlet #28 at time = 3122.2553899204254
+User_0: Receiving Gridlet #29 at time = 3122.2553899204254
+User_0: Receiving Gridlet #31 at time = 3122.2553899204254
+User_0: Receiving Gridlet #30 at time = 3122.2553899204254
+User_0: Receiving Gridlet #33 at time = 3122.2553899204254
+User_0: Receiving Gridlet #32 at time = 3122.2553899204254
+User_0: Receiving Gridlet #35 at time = 3122.2553899204254
+User_0: Receiving Gridlet #34 at time = 3122.2553899204254
+User_0: Receiving Gridlet #36 at time = 3124.0873899204253
+User_0: Receiving Gridlet #37 at time = 3124.0873899204253
+ack = true for Gridlet #39
+User_1: Receiving Gridlet #0 at time = 3138.199389920424
+User_1: Receiving Gridlet #1 at time = 3138.199389920424
+User_1: Receiving Gridlet #3 at time = 3138.199389920424
+User_1: Receiving Gridlet #2 at time = 3138.199389920424
+User_1: Receiving Gridlet #4 at time = 3138.199389920424
+User_1: Receiving Gridlet #5 at time = 3138.199389920424
+User_1: Receiving Gridlet #6 at time = 3138.199389920424
+User_1: Receiving Gridlet #7 at time = 3138.199389920424
+User_1: Receiving Gridlet #8 at time = 3138.199389920424
+User_1: Receiving Gridlet #9 at time = 3138.199389920424
+User_1: Receiving Gridlet #10 at time = 3138.199389920424
+User_1: Receiving Gridlet #11 at time = 3138.199389920424
+User_1: Receiving Gridlet #12 at time = 3138.199389920424
+User_1: Receiving Gridlet #13 at time = 3138.199389920424
+User_1: Receiving Gridlet #15 at time = 3138.199389920424
+User_1: Receiving Gridlet #14 at time = 3138.199389920424
+User_1: Receiving Gridlet #16 at time = 3138.199389920424
+User_1: Receiving Gridlet #17 at time = 3138.199389920424
+User_1: Receiving Gridlet #19 at time = 3138.199389920424
+User_1: Receiving Gridlet #18 at time = 3138.199389920424
+User_1: Receiving Gridlet #20 at time = 3138.199389920424
+User_1: Receiving Gridlet #21 at time = 3138.199389920424
+User_1: Receiving Gridlet #22 at time = 3138.199389920424
+User_1: Receiving Gridlet #23 at time = 3138.199389920424
+User_1: Receiving Gridlet #24 at time = 3138.199389920424
+User_1: Receiving Gridlet #25 at time = 3138.199389920424
+User_1: Receiving Gridlet #26 at time = 3138.199389920424
+User_1: Receiving Gridlet #27 at time = 3138.199389920424
+User_1: Receiving Gridlet #29 at time = 3138.199389920424
+User_1: Receiving Gridlet #28 at time = 3138.199389920424
+User_1: Receiving Gridlet #30 at time = 3138.199389920424
+User_1: Receiving Gridlet #31 at time = 3138.199389920424
+User_1: Receiving Gridlet #32 at time = 3138.199389920424
+User_1: Receiving Gridlet #33 at time = 3138.199389920424
+User_1: Receiving Gridlet #34 at time = 3138.199389920424
+User_1: Receiving Gridlet #35 at time = 3138.199389920424
+User_1: Receiving Gridlet #36 at time = 3140.175389920424
+User_1: Receiving Gridlet #37 at time = 3140.175389920424
+User_0: Receiving Gridlet #38 at time = 3211.3259893899212
+User_0: Receiving Gridlet #39 at time = 3211.3259893899212
+
+-------- User_0 ----------------
+Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		3211.326        3211.326        1000.000
+router1		3211.336        3211.336        10000.000
+router2		3211.346        3211.346        1000.000
+Res_5		3211.356        3211.356        1000.000
+router2		3211.366        3211.366        10000.000
+router1		3211.376        3211.376        1000.000
+User_0		3211.386            N/A            N/A
+
+Round Trip Time : 0.060 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000.0 bits/s
+-------- User_0 ----------------
+
+User_0: sending and receiving of Gridlets complete at 3211.3859893899225
+User_1: Receiving Gridlet #38 at time = 3227.26998938992
+User_1: Receiving Gridlet #39 at time = 3227.26998938992
+
+-------- User_1 ----------------
+Ping information for User_1
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_1		3227.270        3227.270        1000.000
+router1		3227.280        3227.280        10000.000
+router2		3227.290        3227.290        1000.000
+Res_1		3227.300        3227.300        1000.000
+router2		3227.310        3227.310        10000.000
+router1		3227.320        3227.320        1000.000
+User_1		3227.330            N/A            N/A
+
+Round Trip Time : 0.060 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000.0 bits/s
+-------- User_1 ----------------
+
+User_1: sending and receiving of Gridlets complete at 3227.329989389921
+GridInformationService: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+--- Routing Table for router1 ---
+router2		r1_r2_link
+User_1		User_1_link
+User_0		User_0_link
+Res_8		router2
+Res_7		router2
+Res_6		router2
+Res_5		router2
+Res_4		router2
+Res_3		router2
+Res_2		router2
+Res_1		router2
+Res_0		router2
+Res_9		router2
+-------------------------------------
+
+
+--- Routing Table for router2 ---
+Res_9		Res_9_link
+Res_6		Res_6_link
+Res_3		Res_3_link
+Res_0		Res_0_link
+Res_7		Res_7_link
+Res_4		Res_4_link
+router1		r1_r2_link
+Res_1		Res_1_link
+Res_8		Res_8_link
+Res_5		Res_5_link
+Res_2		Res_2_link
+User_0		router1
+User_1		router1
+-------------------------------------
+
+
+============= OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        30        39.78779840848807
+    1        Success        30        39.78779840848807
+    2        Success        30        39.78779840848807
+    3        Success        30        39.78779840848807
+    4        Success        30        39.78779840848807
+    5        Success        30        42.71579840848807
+    7        Success        30        42.7877984084879
+    6        Success        30        42.7877984084879
+    9        Success        30        42.7157984084879
+    8        Success        30        42.7877984084879
+    10        Success        30        42.7877984084879
+    11        Success        30        42.7157984084879
+    13        Success        30        39.78779840848824
+    12        Success        30        39.78779840848824
+    14        Success        30        39.78779840848824
+    15        Success        30        39.78779840848824
+    16        Success        30        39.78779840848824
+    17        Success        30        39.78779840848824
+    19        Success        30        39.78779840848824
+    18        Success        30        39.78779840848824
+    21        Success        30        39.78779840848824
+    20        Success        30        39.78779840848824
+    22        Success        30        39.78779840848824
+    23        Success        30        39.78779840848824
+    25        Success        30        39.78779840848824
+    24        Success        30        39.78779840848824
+    26        Success        30        42.78779840848756
+    27        Success        30        42.78779840848756
+    28        Success        30        42.78779840848756
+    29        Success        30        42.78779840848756
+    31        Success        30        42.78779840848756
+    30        Success        30        42.78779840848756
+    33        Success        30        42.78779840848756
+    32        Success        30        42.78779840848756
+    35        Success        30        42.78779840848756
+    34        Success        30        42.78779840848756
+    36        Success        30        42.78779840848756
+    37        Success        30        42.78779840848756
+    38        Success        30        42.78779840848756
+    39        Success        30        42.78779840848756
+
+============= OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        10        39.78779840848807
+    1        Success        10        39.78779840848807
+    3        Success        10        39.78779840848807
+    2        Success        10        39.78779840848807
+    4        Success        10        39.78779840848807
+    5        Success        10        39.78779840848807
+    6        Success        10        42.7877984084879
+    7        Success        10        42.7877984084879
+    8        Success        10        42.7877984084879
+    9        Success        10        42.7157984084879
+    10        Success        10        42.7877984084879
+    11        Success        10        42.7157984084879
+    12        Success        10        39.78779840848824
+    13        Success        10        42.71579840848858
+    15        Success        10        39.78779840848824
+    14        Success        10        39.78779840848824
+    16        Success        10        39.78779840848824
+    17        Success        10        42.71579840848858
+    19        Success        10        39.78779840848824
+    18        Success        10        39.78779840848824
+    20        Success        10        39.78779840848824
+    21        Success        10        39.78779840848824
+    22        Success        10        39.78779840848824
+    23        Success        10        42.71579840848858
+    24        Success        10        39.78779840848824
+    25        Success        10        42.71579840848858
+    26        Success        10        42.78779840848756
+    27        Success        10        42.7157984084879
+    29        Success        10        42.7157984084879
+    28        Success        10        42.78779840848756
+    30        Success        10        42.78779840848756
+    31        Success        10        42.7157984084879
+    32        Success        10        42.78779840848756
+    33        Success        10        42.7157984084879
+    34        Success        10        42.78779840848756
+    35        Success        10        42.78779840848756
+    36        Success        10        42.78779840848756
+    37        Success        10        42.78779840848756
+    38        Success        10        42.78779840848756
+    39        Success        10        42.78779840848756
+
+Finish network example ...

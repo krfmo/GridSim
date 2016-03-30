@@ -1,0 +1,11 @@
+User  		 Event 	 GridletID 	 Resource 	 GridletStatus 			 Clock
+Ex01_User0	 Sending	0	Ex01_Res_2	Created		374.04012479999994	
+Ex01_User0	 Sending	1	Ex01_Res_1	Created		374.77037439999924	
+Ex01_User0	 Sending	2	Ex01_Res_2	Created		375.50062399999854	
+Ex01_User0	 Sending	3	Ex01_Res_2	Created		376.23087359999784	
+Ex01_User0	 Sending	4	Ex01_Res_0	Created		376.96112319999713	
+Ex01_User0	 Receiving	0	Ex01_Res_2	Success		1233.4001439999986	
+Ex01_User0	 Receiving	1	Ex01_Res_1	Success		1234.130393599998	
+Ex01_User0	 Receiving	2	Ex01_Res_2	Success		1234.8606431999972	
+Ex01_User0	 Receiving	3	Ex01_Res_2	Success		1235.5306431999966	
+Ex01_User0	 Receiving	4	Ex01_Res_0	Success		1236.3211423999958	

@@ -1,0 +1,33 @@
+#
+# Nov 2004 - Anthony
+# This is a custom tag.
+# You need to tell gridsim.util.Workload entity what to expect, by
+# calling Workload.setField() and/or Workload.setComment()
+# For example: for this file, 
+#   // parameters: maxField, job_num, submit_time, run_time, num_processors
+#   Workload.setField(4, 1, 2, 3, 4);   
+#   Workload.setComment("#");
+#
+# Format of each row is:
+# job_num  submit_time  run_time  number_of_processors
+
+1   5   20  3
+2   8   60  1
+3   10  30  4
+4   12  90  3
+5   15  30  4
+6   20  90  2
+7   20  90  6
+8   20  60  1
+9   21  80  1
+10  22  90  3
+11  23  90  2
+12  23  90  2
+13  23  90  1
+14  24  90  2
+15  25  60  1
+16  26  90  2
+17  27  60  1
+18  28  50  1  
+19  29  90  1
+20  30  90  9

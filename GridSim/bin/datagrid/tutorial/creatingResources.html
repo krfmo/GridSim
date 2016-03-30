@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+  
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+  
+  
+  
+  <title>Creating resources</title>
+</head>
+
+
+<body>
+
+
+
+<div style="text-align: center;">
+<h1>CREATING RESOURCES</h1>
+
+<div style="text-align: left;">This is a code, demonstrating how to create 3 resources, with the same characteristics.</div>
+
+
+<div style="text-align: left;"><code><font color="#7f0055"><b><br>
+
+int&nbsp;</b></font><font color="#000000">i&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">totalResource&nbsp;=&nbsp;</font><font color="#990000">3</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#000000">ArrayList&nbsp;resList&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ArrayList</font><font color="#000000">(</font><font color="#000000">totalResource</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#000000">i&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;&nbsp;i&nbsp;&lt;&nbsp;totalResource;&nbsp;i++</font><font color="#000000">)</font><br>
+
+
+
+      <font color="#000000">{</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DataGridResource&nbsp;res&nbsp;=&nbsp;createGridResource</font><font color="#000000">(</font><font color="#2a00ff">"Res_"</font><font color="#000000">+i,&nbsp;baud_rate,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">propDelay,&nbsp;mtu</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">resList.add</font><font color="#000000">(</font><font color="#000000">res</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#000000">}</font></code></div>
+
+
+
+</div>
+
+
+
+<h3>How to create a DataGridResource?</h3>
+
+
+
+DataGridResource is a GridResource with some additional features:<br>
+
+
+
+<ol>
+
+
+
+  <li>A Replica Manager <br>
+
+
+
+  </li>
+
+
+
+  <li>a storage list</li>
+
+
+
+  <li>(optionally) a local Replica Catalogue</li>
+
+
+
+</ol>
+
+
+
+<img alt="" src="img/Resource.png" style="width: 380px; height: 306px;"><br>
+
+
+
+<br>
+
+
+
+<br>
+
+
+
+The differences between creating a regular GridResource and a
+DataGridResource in the addition of these entities and below it is
+shown how this creation is done.<br>
+
+
+
+<code><font color="#000000"><br>
+
+DataGridResource&nbsp;gridRes&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font><br>
+
+
+
+      <font color="#3f7f5f">//create&nbsp;the&nbsp;replica&nbsp;manager</font><br>
+
+
+
+      <font color="#000000">SimpleReplicaManager&nbsp;rm&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleReplicaManager</font><font color="#000000">(</font><font color="#2a00ff">"RM_"&nbsp;</font><font color="#000000">+&nbsp;name,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">name</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#3f7f5f">//create&nbsp;a&nbsp;storage</font><br>
+
+
+
+      <font color="#000000">Storage&nbsp;storage&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">HarddriveStorage</font><font color="#000000">(</font><font color="#2a00ff">"storage"</font><font color="#000000">,&nbsp;</font><font color="#990000">10000</font><font color="#000000">0)</font><font color="#000000">;&nbsp;</font></code><code><font color="#3f7f5f">//100GB</font></code><code><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#000000">gridRes&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">DataGridResource</font><font color="#000000">(</font><font color="#000000">name,&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleLink</font><font color="#000000">(</font><font color="#000000">name&nbsp;+&nbsp;</font><font color="#2a00ff">"_link"</font><font color="#000000">,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">baud_rate,&nbsp;delay,&nbsp;MTU</font><font color="#000000">)</font><font color="#000000">,&nbsp;resConfig,&nbsp;cal,&nbsp;rm</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#000000">gridRes.addStorage</font><font color="#000000">(</font><font color="#000000">storage</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#3f7f5f">//create&nbsp;a&nbsp;local&nbsp;replica&nbsp;catalogue</font><br>
+
+
+
+      <font color="#000000">gridRes.createLocalRC</font><font color="#000000">()</font><font color="#000000">;<br>
+
+</font></code><code><font color="#3f7f5f">//set the higher level</font></code><br>
+
+<code>
+
+      <font color="#000000">gridRes.setHigherReplicaCatalogue</font><font color="#000000">(</font><font color="#000000">TopRegionalRC.DEFAULT_NAME</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      </code><code><font color="#3f7f5f">//adding files to the resource</font></code><br>
+
+<code><font color="#000000">File&nbsp;f1
+=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">"testFile1"</font><font color="#000000">,&nbsp;</font><font color="#990000">100</font><font color="#000000">)</font><font color="#000000">;</font></code><code><font color="#3f7f5f">//100MB</font></code><code><br>
+
+
+
+      <font color="#000000">gridRes.addFile</font><font color="#000000">(</font><font color="#000000">f</font><font color="#000000">1)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#000000">File&nbsp;f2&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">"testFile2"</font><font color="#000000">,&nbsp;</font><font color="#990000">100</font><font color="#000000">)</font><font color="#000000">;</font></code><code><font color="#3f7f5f">//100MB</font></code><code><br>
+
+
+
+gridRes<font color="#000000">.addFile</font><font color="#000000">(</font><font color="#000000">f2</font><font color="#000000">)</font><font color="#000000">;</font></code><br>
+
+<br>
+
+
+
+<br>
+
+<br>
+
+<br>
+
+
+
+Below is the full source code for the function createGridResource()<br>
+
+
+
+<br>
+
+<code><font color="#ffffff">&nbsp;</font><font color="#7f0055"><b>private&nbsp;static&nbsp;</b></font><font color="#000000">DataGridResource&nbsp;createGridResource</font><font color="#000000">(</font><font color="#000000">String&nbsp;name,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">baud_rate,&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">delay,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">MTU</font><font color="#000000">)&nbsp;{</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">"Starting&nbsp;to&nbsp;create&nbsp;one&nbsp;Grid&nbsp;resource&nbsp;with&nbsp;"</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">"3&nbsp;Machines"</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Here&nbsp;are&nbsp;the&nbsp;steps&nbsp;needed&nbsp;to&nbsp;create&nbsp;a&nbsp;Grid&nbsp;resource:</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;1.&nbsp;We&nbsp;need&nbsp;to&nbsp;create&nbsp;an&nbsp;object&nbsp;of&nbsp;MachineList&nbsp;to&nbsp;store&nbsp;one&nbsp;or&nbsp;more</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;Machines</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">MachineList&nbsp;mList&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">MachineList</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;a&nbsp;Machine&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;2.&nbsp;A&nbsp;Machine&nbsp;contains&nbsp;one&nbsp;or&nbsp;more&nbsp;PEs&nbsp;or&nbsp;CPUs.&nbsp;Therefore,&nbsp;should</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;an&nbsp;object&nbsp;of&nbsp;PEList&nbsp;to&nbsp;store&nbsp;these&nbsp;PEs&nbsp;before&nbsp;creating</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;Machine.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PEList&nbsp;peList1&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PEList</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;a&nbsp;PE&nbsp;list&nbsp;for&nbsp;the&nbsp;1st&nbsp;Machine");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;3.&nbsp;Create&nbsp;PEs&nbsp;and&nbsp;add&nbsp;these&nbsp;into&nbsp;an&nbsp;object&nbsp;of&nbsp;PEList.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;this&nbsp;example,&nbsp;we&nbsp;are&nbsp;using&nbsp;a&nbsp;resource&nbsp;from</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;hpc420.hpcc.jp,&nbsp;AIST,&nbsp;Tokyo,&nbsp;Japan</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;Note:&nbsp;these&nbsp;data&nbsp;are&nbsp;taken&nbsp;the&nbsp;from&nbsp;GridSim&nbsp;paper,&nbsp;page&nbsp;25.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;this&nbsp;example,&nbsp;all&nbsp;PEs&nbsp;has&nbsp;the&nbsp;same&nbsp;MIPS&nbsp;(Millions</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruction&nbsp;Per&nbsp;Second)&nbsp;Rating&nbsp;for&nbsp;a&nbsp;Machine.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList1.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;need&nbsp;to&nbsp;store&nbsp;PE&nbsp;id&nbsp;and&nbsp;MIPS&nbsp;Rating</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList1.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">1</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList1.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">2</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList1.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">3</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;4&nbsp;PEs&nbsp;with&nbsp;same&nbsp;MIPS&nbsp;Rating&nbsp;and&nbsp;put</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;them"+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;into&nbsp;the&nbsp;PE&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;4.&nbsp;Create&nbsp;one&nbsp;Machine&nbsp;with&nbsp;its&nbsp;id&nbsp;and&nbsp;list&nbsp;of&nbsp;PEs&nbsp;or&nbsp;CPUs</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mList.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Machine</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">,&nbsp;peList1</font><font color="#000000">))</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;First&nbsp;Machine</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;the&nbsp;1st&nbsp;Machine&nbsp;that&nbsp;has&nbsp;4&nbsp;PEs&nbsp;and&nbsp;"&nbsp;+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"stores&nbsp;it&nbsp;into&nbsp;the&nbsp;Machine&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println();</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;5.&nbsp;Repeat&nbsp;the&nbsp;process&nbsp;from&nbsp;2&nbsp;if&nbsp;we&nbsp;want&nbsp;to&nbsp;create&nbsp;more&nbsp;Machines</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;this&nbsp;example,&nbsp;the&nbsp;AIST&nbsp;in&nbsp;Japan&nbsp;has&nbsp;3&nbsp;Machines&nbsp;with&nbsp;same</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;MIPS&nbsp;Rating&nbsp;but&nbsp;different&nbsp;PEs.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;NOTE:&nbsp;if&nbsp;you&nbsp;only&nbsp;want&nbsp;to&nbsp;create&nbsp;one&nbsp;Machine&nbsp;for&nbsp;one&nbsp;Grid&nbsp;resource,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then&nbsp;you&nbsp;could&nbsp;skip&nbsp;this&nbsp;step.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PEList&nbsp;peList2&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PEList</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;a&nbsp;PE&nbsp;list&nbsp;for&nbsp;the&nbsp;2nd&nbsp;Machine");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList2.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList2.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">1</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList2.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">2</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList2.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">3</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;4&nbsp;PEs&nbsp;with&nbsp;same&nbsp;MIPS&nbsp;Rating&nbsp;and&nbsp;put</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;them"+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;into&nbsp;the&nbsp;PE&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mList.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Machine</font><font color="#000000">(</font><font color="#990000">1</font><font color="#000000">,&nbsp;peList2</font><font color="#000000">))</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;Second&nbsp;Machine</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;the&nbsp;2nd&nbsp;Machine&nbsp;that&nbsp;has&nbsp;4&nbsp;PEs&nbsp;and&nbsp;"&nbsp;+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"stores&nbsp;it&nbsp;into&nbsp;the&nbsp;Machine&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println();</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PEList&nbsp;peList3&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PEList</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;a&nbsp;PE&nbsp;list&nbsp;for&nbsp;the&nbsp;3rd&nbsp;Machine");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList3.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">peList3.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PE</font><font color="#000000">(</font><font color="#990000">1</font><font color="#000000">,&nbsp;</font><font color="#990000">377</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;2&nbsp;PEs&nbsp;with&nbsp;same&nbsp;MIPS&nbsp;Rating&nbsp;and&nbsp;put</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;them"+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"&nbsp;into&nbsp;the&nbsp;PE&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mList.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Machine</font><font color="#000000">(</font><font color="#990000">2</font><font color="#000000">,&nbsp;peList3</font><font color="#000000">))</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;Third&nbsp;Machine</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;the&nbsp;3rd&nbsp;Machine&nbsp;that&nbsp;has&nbsp;2&nbsp;PEs&nbsp;and&nbsp;"&nbsp;+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"stores&nbsp;it&nbsp;into&nbsp;the&nbsp;Machine&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println();</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;6.&nbsp;Create&nbsp;a&nbsp;ResourceCharacteristics&nbsp;object&nbsp;that&nbsp;stores&nbsp;the</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;properties&nbsp;of&nbsp;a&nbsp;Grid&nbsp;resource:&nbsp;architecture,&nbsp;OS,&nbsp;list&nbsp;of</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;Machines,&nbsp;allocation&nbsp;policy:&nbsp;time-&nbsp;or&nbsp;space-shared,&nbsp;time&nbsp;zone</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;its&nbsp;price&nbsp;(G$/PE&nbsp;time&nbsp;unit).</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;arch&nbsp;=&nbsp;</font><font color="#2a00ff">"Sun&nbsp;Ultra"</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;system&nbsp;architecture</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;os&nbsp;=&nbsp;</font><font color="#2a00ff">"Solaris"</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;operating&nbsp;system</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">time_zone&nbsp;=&nbsp;</font><font color="#990000">9.0</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;time&nbsp;zone&nbsp;this&nbsp;resource&nbsp;located</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">cost&nbsp;=&nbsp;</font><font color="#990000">3.0</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;the&nbsp;cost&nbsp;of&nbsp;using&nbsp;this&nbsp;resource</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ResourceCharacteristics&nbsp;resConfig&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ResourceCharacteristics</font><font color="#000000">(</font><font color="#000000">arch,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">os,&nbsp;mList,&nbsp;ResourceCharacteristics.TIME_SHARED,&nbsp;time_zone,&nbsp;cost</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//System.out.println("Creates&nbsp;the&nbsp;properties&nbsp;of&nbsp;a&nbsp;Grid&nbsp;resource&nbsp;and&nbsp;"&nbsp;+</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"stores&nbsp;the&nbsp;Machine&nbsp;list");</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;7.&nbsp;Finally,&nbsp;we&nbsp;need&nbsp;to&nbsp;create&nbsp;a&nbsp;GridResource&nbsp;object.</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>long&nbsp;</b></font><font color="#000000">seed&nbsp;=&nbsp;</font><font color="#990000">11L&nbsp;</font><font color="#000000">*&nbsp;</font><font color="#990000">13&nbsp;</font><font color="#000000">*&nbsp;</font><font color="#990000">17&nbsp;</font><font color="#000000">*&nbsp;</font><font color="#990000">19&nbsp;</font><font color="#000000">*&nbsp;</font><font color="#990000">23&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#990000">1</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">peakLoad&nbsp;=&nbsp;</font><font color="#990000">0.0</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;the&nbsp;resource&nbsp;load&nbsp;during&nbsp;peak&nbsp;hour</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">offPeakLoad&nbsp;=&nbsp;</font><font color="#990000">0.0</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;the&nbsp;resource&nbsp;load&nbsp;during&nbsp;off-peak&nbsp;hr</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>double&nbsp;</b></font><font color="#000000">holidayLoad&nbsp;=&nbsp;</font><font color="#990000">0.0</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;the&nbsp;resource&nbsp;load&nbsp;during&nbsp;holiday</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;incorporates&nbsp;weekends&nbsp;so&nbsp;the&nbsp;grid&nbsp;resource&nbsp;is&nbsp;on&nbsp;7&nbsp;days&nbsp;a&nbsp;week</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">LinkedList&nbsp;Weekends&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">LinkedList</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Weekends.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Integer</font><font color="#000000">(</font><font color="#000000">Calendar.SATURDAY</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Weekends.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Integer</font><font color="#000000">(</font><font color="#000000">Calendar.SUNDAY</font><font color="#000000">))</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;incorporates&nbsp;holidays.&nbsp;However,&nbsp;no&nbsp;holidays&nbsp;are&nbsp;set&nbsp;in&nbsp;this&nbsp;example</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">LinkedList&nbsp;Holidays&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">LinkedList</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DataGridResource&nbsp;gridRes&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;create&nbsp;the&nbsp;replica&nbsp;manager</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">SimpleReplicaManager&nbsp;rm&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleReplicaManager</font><font color="#000000">(</font><font color="#2a00ff">"RM_"&nbsp;</font><font color="#000000">+&nbsp;name,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">name</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;create&nbsp;the&nbsp;resource&nbsp;calendar</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ResourceCalendar&nbsp;cal&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ResourceCalendar</font><font color="#000000">(</font><font color="#000000">time_zone,&nbsp;peakLoad,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">offPeakLoad,&nbsp;holidayLoad,&nbsp;Weekends,&nbsp;Holidays,&nbsp;seed</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//create&nbsp;a&nbsp;storage</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Storage&nbsp;storage&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">HarddriveStorage</font><font color="#000000">(</font><font color="#2a00ff">"storage"</font><font color="#000000">,&nbsp;</font><font color="#990000">100000</font><font color="#000000">)</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//100GB</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gridRes&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">DataGridResource</font><font color="#000000">(</font><font color="#000000">name,&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleLink</font><font color="#000000">(</font><font color="#000000">name&nbsp;+&nbsp;</font><font color="#2a00ff">"_link"</font><font color="#000000">,</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">baud_rate,&nbsp;delay,&nbsp;MTU</font><font color="#000000">)</font><font color="#000000">,&nbsp;resConfig,&nbsp;cal,&nbsp;rm</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gridRes.addStorage</font><font color="#000000">(</font><font color="#000000">storage</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//create&nbsp;a&nbsp;local&nbsp;replica&nbsp;catalogue</font><br>
+
+
+
+      <font
+      color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gridRes.createLocalRC</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gridRes.setHigherReplicaCatalogue</font><font color="#000000">(</font><font color="#000000">TopRegionalRC.DEFAULT_NAME</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;f1 =&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">"testFile1"</font><font color="#000000">,&nbsp;</font><font color="#990000">100</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">storage.addFile</font><font color="#000000">(</font><font color="#000000">f</font><font color="#000000">1)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;f2&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">"testFile2"</font><font color="#000000">,&nbsp;</font><font color="#990000">100</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">storage.addFile</font><font color="#000000">(</font><font color="#000000">f2</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e</font><font color="#000000">)&nbsp;{</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">"Finally,&nbsp;creates&nbsp;one&nbsp;Grid&nbsp;resource&nbsp;(name:&nbsp;"&nbsp;</font><font color="#000000">+&nbsp;name</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">"&nbsp;-&nbsp;id:&nbsp;"&nbsp;</font><font color="#000000">+&nbsp;gridRes.get_id</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">")"</font><font color="#000000">)</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">()</font><font color="#000000">;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">gridRes;</font><br>
+
+
+
+      <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font></code><br>
+
+
+
+<br>
+
+</body>
+</html>

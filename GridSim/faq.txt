@@ -1,0 +1,292 @@
+# Frequently Asked Questions (FAQ)
+# Maintained by Anthony Sulistio
+
+Please read this document, FAQ, examples, API, etc before contacting us.
+Moreover, look at the previous questions at the below website:
+http://sourceforge.net/mail/?group_id=94592
+
+Send any queries and feedbacks to gridsim-users @ lists.sourceforge.net
+
+---------------------------------------------------------
+Q: Where can I find gridbroker, visual modeler, ... ?
+
+A: Gridbroker and Visual Modeler are no longer supported. 
+
+---------------------------------------------------------
+Q: I would like to do some experiments for my research work on grid computing
+   using the simulator package that you have. Using the simulator,
+   can I simulate a grid environment with service providers requestors,
+   administrators, etc. on a PC environment? Please pass on some resources,
+   links, and white papers and links where from I should download.
+
+A: The best way to learn GridSim is by downloading it from the link below:
+   http://www.gridbus.org/gridsim/
+
+   Go through the provided examples directory.
+   GridSim's website contains links to papers that have used GridSim.
+
+   As long as you have JDK version 1.5 onwards, you can run GridSim
+   on a PC. However, if you run a large simulation, you'd probably need
+   bigger RAM and CPU.
+
+---------------------------------------------------------
+Q: How do you compile and run GridSim application?
+
+A: For example, if you want to run Example1
+
+   In Unix/Linux:
+   * go to the examples directory, i.e.
+     at command prompt type: cd $GRIDSIM/examples
+   * to compile type: 
+   		javac -cp $GRIDSIM/jars/gridsim.jar:. gridsim/example01/Example1.java
+   * to run type: 
+   		java -cp $GRIDSIM/jars/gridsim.jar:. gridsim.example01.Example1
+
+   In Windows:
+   * go to the examples directory, i.e.
+     at command prompt type: cd %GRIDSIM%\examples
+   * to compile type:  javac -cp %GRIDSIM%\jars\gridsim.jar;. gridsim\example01\Example1.java
+   * to run type: java -cp %GRIDSIM%\jars\gridsim.jar;. gridsim.example01.Example1
+
+   The main difference is the use of ":" for Unix/Linux, and ";" for Windows
+   NOTE: $GRIDSIM or %GRIDSIM% is the location of the GridSim Toolkit package.
+         Also, gridsim.jar contains SimJava v2.0 classes. Hence,
+         you do not need to install SimJava libraries.
+
+---------------------------------------------------------
+Q: When I run GridSim application, I have the following error message:
+        Exception in thread "main" java.lang.NoClassDefFoundError: Example1
+
+A: You need the classpath to refer to the directory where Example1.java
+   located. For Example, to run in Windows:
+        java -classpath gridsim.jar;. gridsim.example01.Example1
+
+   where gridsim.example01.Example1 is the classname you want to execute
+
+---------------------------------------------------------
+Q: My GridSim application runs perfectly, however, after the end of simulation
+   it just hang without exiting properly.
+
+A: The problem may be caused by not closing GridSim entities, such as
+   GridStatistics, I/O ports, etc. Each class that extends GridSim with
+   a networked I/O ports must use terminate the I/O entities by using
+   terminateIOEntities() before exiting body() method.
+
+   Another cause for this problem is the number of Grid user entities.
+   Before the start of a GridSim application, you need to intialize the GridSim
+   package using GridSim.init(). The method requires to have the number of
+   Grid user entities. If the number is different from the actual Grid user
+   entities, your GridSim application will hang or can't exit properly.
+
+---------------------------------------------------------
+Q: I am creating a network topology using GridSim. When I run the experiment,
+I have the following exception message:
+
+java.lang.NullPointerException
+   at gridsim.net.RIPRouter.getScheduler(RIPRouter.java:451)
+   at gridsim.net.RIPRouter.getScheduler(RIPRouter.java:401)
+   at gridsim.net.RIPRouter.processNetPacket(RIPRouter.java:302)
+   at gridsim.net.RIPRouter.processEvent(RIPRouter.java:270)
+   at gridsim.net.Router.body(Router.java:267)
+   at eduni.simjava.Sim_entity.run(Sim_entity.java:603)
+
+A: Network exception message is generally caused by 2 things:
+- If you created a new router or link entity, it hasn't been registered to
+GridInformationService class; OR
+
+- GridSim needs few seconds for all network entities to be registered and
+for the network entity to fill in its routing table dynamically.
+Currently, GridSim uses a flooding approach for locating the neighbour
+routers. Hence, these routers need time to receive all the replies.
+I think this could be the main cause of the exception message.
+
+---------------------------------------------------------
+Q: When running GridSim Example 4, 5 and 6 I got an infinite loop
+   saying: "Waiting to get list of resources".
+
+A: In GridSim 2.1, GridSim.getGridResourceList() uses a message event
+   to tell GIS (GridInformationService) entity to send the GridResource
+   list. This causes a significant delay and a bit redundant.
+
+   In GridSim 2.2, GridSim.getGridResourceList() directly uses a
+   method call to GIS entity rather than a message passing.
+   This makes the operation a lot faster. However, during the early stage
+   of simulation, a GridResource might be slow in registering its service
+   to GIS. Hence, the GridResource list is always empty and causing
+   an infinite loop.
+
+   To solve this problem, inside the while() loop, put the following
+   code:
+            // need to pause for a while to wait GridResources finish
+            // registering to GIS
+            super.gridSimHold(1.0);    // hold by 1 second
+
+   So, you wait 1 second later to get GridResource list.
+
+---------------------------------------------------------
+Q: When I tried to run GridSim Example4, I have the following error message:
+    java.lang.IncompatibleClassChangeError
+        at Example4.body(Example4.java:70)
+        at eduni.simjava.Sim_entity.run(Sim_entity.java:603)
+
+A: I am not sure what is the exact problem. However, this is mainly
+   caused by older release of SimJava. GridSim Toolkit 2.2 and above now use
+   SimJava2. Simply recompile the Example4.java will solve this
+   problem.
+
+   NOTE: This problem is also effected GridSim Example6.
+
+---------------------------------------------------------
+Q: When I tried to run GridSim Example1, I have the following error message:
+    Exception in thread "main" eduni.simjava.Sim_exception:
+    Sim_entity: Entity names can't contain spaces.
+        at eduni.simjava.Sim_entity.<init>(Sim_entity.java:154)
+        at gridsim.GridSim.<init>(GridSim.java:149)
+        at gridsim.GridResource.<init>(GridResource.java:93)
+        at Example1.createGridResource(Example1.java:188)
+        at Example1.main(Example1.java:57)
+
+A: GridSim Toolkit 2.2 and above now use SimJava2. SimJava2 is more strict about
+   a valid entity name compare to previous release. Hence, to fix this
+   problem is to remove the unnecessary empty space, i.e.
+   "GridResource 0" becomes "GridResource_0"
+
+---------------------------------------------------------
+Q: Are there any type of applications that I can simulate with GridSim?
+
+A: GridSim provides the grid simulation environment (with resources and
+   users), but you need to write codes specifically for the application you
+   want to simulate, e.g. a resource broker Nimrod/G is written to call
+   GridSim classes.
+
+---------------------------------------------------------
+Q: How do I create Gridlets with compute I/O requirements?
+
+A: Gridlets with compute I/O requirements are simulated through their file
+   sizes (input) and output size (output) parameters.
+   See Figure 16 of the GridSim paper.
+
+---------------------------------------------------------
+Q: I have a question on network simulation in Gridsim.
+   In my understanding, entities with networking capability must define
+   input and output port. Both ports are "connected" to a simulated network.
+   How does Gridsim models network link and its characteristics, especially
+   bandwidth, since I couldn't find class that models this network link?
+   Does Gridsim also simulate bandwidth-sharing if there are several IOdata
+   are sent using the same link?
+
+A: Not supported in the older versions. Currently GridSim uses very
+   simple network model.
+
+   Since GridSim 3.1, it has a realistic network model. However,
+   advanced network features are not supported.
+
+---------------------------------------------------------
+Q: Is GridSim tool kit provides any help in solving problems for dynamic
+   resource allocation upon failure?
+
+A: GridSim provides mechanism to reserve, but policy of reservation and
+   how to handle failures etc. is up to server's provider and consumers
+   to define.
+
+---------------------------------------------------------
+Q: How do you model the gridlet execution in time_shared resource?
+
+A: Just creating a Gridlet is sufficient. It runs on both time and space
+   shared machines.
+
+---------------------------------------------------------
+Q: Does each gridlet can only be processed by only one PE?
+
+A: For older GridSim versions, it runs one PE.
+   Since GridSim 3.0, each Gridlet can ask to be run on multiple PEs.
+   However, it is up to the scheduler to handle this.
+   At the moment, by default, TimeShared and SpaceShared scheduler executes
+   an incoming Gridlet to only 1 PE.
+
+---------------------------------------------------------
+Q: Is the model for parallel job included inside the GridSim?
+
+A: It is up users to model parallel application job at the higher level
+   (develop on top of gridsim).
+
+---------------------------------------------------------
+Q: When I run GridSim, I have the following error message:
+        Sim_system:Error - past event detected!
+        Time: 0.0, event time: -XXXXX.X event type: 1
+        Where XXXXX.X is a negative number that varies.
+
+A: It appears like this error comes up for one of the following scenarios:
+   - an entity or object waits for a specific event. However, the response
+     event type is different.
+   - some events are not captured.
+   - GridSim runs under multi-threaded environment. Hence, some events might
+     be accidentally deleted or being changed by other thread to wait for
+     a different response that doesn't exist, etc ...
+
+---------------------------------------------------------
+Q: Does GridSim currently support the usage of any wireless network standard
+when specifying network topology?
+
+A: No. We have NOT done so much about wireless network support in GridSim.
+   But if you are willing, we could explore this with you.
+
+---------------------------------------------------------
+Q: Does GridSim support multiple simulations or runs in a single program?
+
+A: No. Currently, GridSim only allows a single experiment to run in a main()
+   method. Hence, to calculate a confidence interval, you need to do this
+   manually.
+
+---------------------------------------------------------
+Q: Does GridSim run in a cluster or a PC?
+
+A: GridSim runs in a PC as a stand-alone program with multiple threads.
+   This means if you want to run in a cluster, you just need to request 1 node.
+
+---------------------------------------------------------
+Q: I came across three variables: peak load, off-peak load and holiday load.
+   I understand from the study I have done that these variables represent
+   the load factor. I do not fully get what this means and was hoping that
+   you could help me out so I can progress further with my work.
+
+A: These load factors are influencing the total execution time
+   of a job in a given resource.
+   If you set these loads to zero, means this resource is idle / free.
+   If you want to write a resource scheduler, like SpaceShared or TimeShared
+   then these load factors are important.
+
+---------------------------------------------------------
+Q: for the Gridlet class, what are the units of file size, length, and output?
+
+A: the unit of file size and output is in byte.
+   For the Gridlet length, the unit is in MI (Millions Instructions).
+   A CPU clock is measured in MIPS (Millions Instructions Per Second) as
+   suggested by SPEC.
+
+---------------------------------------------------------
+Q: In the previous releases of GridSim you had to use
+GridSim class to send messages to other entities. The provided "send" methods
+included a parameter to indicate the sender of the request. It is no clear how
+to indicate this with the "send" methods provided by the GridSimCore class. The
+lack of ID information in the event raises an exception in the GridResource
+class. Reading the source code of the GridResource class I've realized that the
+way to send the ID of the sender could be the following:
+
+super.send(resourceId, GridSimTags.SCHEDULE_NOW,
+GridSimTags.RESOURCE_CHARACTERISTICS, new Integer(this.get_id()));
+
+This solves the first problem but generates a new exception in other class:
+Exception in thread "Thread-7" java.lang.ArrayIndexOutOfBoundsException: -1
+       at java.util.ArrayList.get(ArrayList.java:323)
+       at eduni.simjava.Sim_system.send(Sim_system.java:600)
+       at eduni.simjava.Sim_entity.sim_schedule(Sim_entity.java:342)
+       at gridsim.net.Output.defaultSend(Unknown Source)
+       at gridsim.net.Output.body(Unknown Source)
+       at eduni.simjava.Sim_entity.run(Sim_entity.java:603)
+
+I've read the source of the Output class, but I've not found a solution to the
+problem. Do you know where can be the problem?
+
+A: The problem was in the "baudRate" attribute that wasn't initialized.
+So using GridSim(String name, double baudRate) the problem was solved.

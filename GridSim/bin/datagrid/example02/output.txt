@@ -1,0 +1,34 @@
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 13)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_1 - id: 19)
+
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_2 - id: 25)
+
+Creating a grid user entity with name = File_User, and id = 30
+Starting GridSim version 4.0
+Entities started.
+File_User.addMaster(): file_01 has been added to Res_2
+File_User.addMaster(): file_12 has been added to Res_2
+File_User.addMaster(): file_23 has been added to Res_2
+user:File_User:-Transfer of file file_01 succesful
+File_User.replicateFile(): file_01 has been replicated to Res_0
+File_User.replicateFile(): file_01 has been replicated to Res_1
+File_User.deleteFile(): file_01 has been deleted from Res_0
+File_User.deleteFile(): There was an error in deleting file_01 from Res_2
+File_User.deleteMaster(): There was an error in deleting file_01 from Res_2
+File_User.deleteFile(): file_01 has been deleted from Res_1
+File_User.deleteMaster(): file_01 has been deleted from Res_2
+File_User:%%%% Exiting body() at time 577.3651999997123
+DataGIS: Notify all replica catalog entities for shutting down.
+DataGIS: Notify all GridSim entities for shutting down.
+Sim_system: No more future events
+Gathering simulation data.
+GridInformationService: Notify all GridSim entities for shutting down.
+Simulation completed.

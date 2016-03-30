@@ -1,0 +1,40 @@
+
+
+/**
+ * Author: Anthony Sulistio
+ * Date: April 2003
+ * Description: This file contains statistical data produced during the GridSim
+ *              simulation. This file got created when a program, i.e.
+ *              Example4.java calls GridSim.init(). During initialization,
+ *              GridSim object creates few entities, one of them is
+ *              GridStatistics object with default file name is "GridSim_stat.txt"
+ * $Id: GridSim_stat.txt,v 1.4 2005/09/19 05:19:33 anthony Exp $
+ *
+ * NOTE: // denotes a comment made to explain some of the values.
+ */
+
+// the field is as follows:
+// time  category   name    data/value (in this example, it represents Gridlet
+//                          processing cost, if not empty)
+
+
+11.56	"Received ResourceCharacteristics from Resource_0"	Example4
+11.56	"Submit Gridlet_0 to Resource_0"	Example4
+68.84381962864722	"Received Gridlet_0 from Resource_0"	Example4	27.851458885941646
+68.84381962864722	"Submit Gridlet_1 to Resource_0"	Example4
+162.10641909814325	"Received Gridlet_1 from Resource_0"	Example4	39.78779840848807
+162.10641909814325	"Submit Gridlet_2 to Resource_0"	Example4
+329.9790981432361	"Received Gridlet_2 from Resource_0"	Example4	71.6180371352786
+329.9790981432361	"Submit Gridlet_3 to Resource_0"	Example4
+371.4258267849983	"Received Gridlet_3 from Resource_0"	Example4	12.260185925286578
+371.4258267849983	"Submit Gridlet_4 to Resource_0"	Example4
+417.18609477511313	"Received Gridlet_4 from Resource_0"	Example4	32.160803970344375
+417.18609477511313	"Submit Gridlet_5 to Resource_0"	Example4
+465.0624836492284	"Received Gridlet_5 from Resource_0"	Example4	26.989166622345806
+465.0624836492284	"Submit Gridlet_6 to Resource_0"	Example4
+502.15642495106056	"Received Gridlet_6 from Resource_0"	Example4	16.721823905496365
+502.15642495106056	"Submit Gridlet_7 to Resource_0"	Example4
+543.9479468475561	"Received Gridlet_7 from Resource_0"	Example4	20.974565689486667
+
+// ------ END OF Experiment ------
+

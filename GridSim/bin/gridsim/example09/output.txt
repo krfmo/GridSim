@@ -1,0 +1,63 @@
+
+/**
+ * Author: Anthony Sulistio
+ * Date: May 2004
+ * Description: This file contains the output result when you run Example9.
+ * $Id: output.txt,v 1.1 2004/05/31 03:41:59 anthony Exp $
+ *
+ * NOTE: // denotes a comment made to explain some of the values.
+ */
+
+
+Starting Example9
+
+//--------------------------------
+// Initializing GridSim and SimJava package
+Initializing GridSim package
+Initialising...
+
+//--------------------------------
+// Creating one grid user entity and one resource entity
+Creates one Grid resource with name = Resource_0
+Creating a grid user entity with name = User_0, and id = 10
+
+
+//--------------------------------
+// Running GridSim
+Starting GridSim version 3.0
+Entities started.
+
+//--------------------------------
+// Once GridSim running, a resource entity, firstly registers two new tags to 
+// GridInformationService (GIS) entity 
+Resource_0.registherOtherEntity(): register HELLO tag to NewGIS at time 0.0
+Resource_0.registherOtherEntity(): register TEST tag to NewGIS at time 0.0
+
+//--------------------------------
+// GIS entity receives the tags from a resource entity 
+NewGIS: Received HELLO tag from Resource_0 at time 0.24
+NewGIS: Received TEST tag from Resource_0 at time 0.36
+
+//--------------------------------
+// A user entity requests for a resource characteristics / information
+User_0:Received ResourceCharacteristics from Resource_0, with id = 6
+
+// A user entity sends two new tags to a resource entity
+User_0: Sending TEST tag to Resource_0 at time 1.76
+User_0: Sending HELLO tag to Resource_0 at time 1.76
+
+//--------------------------------
+// A resource entity receives the tags
+Resource_0: received TEST tag from User_0 at time 1.88
+Resource_0: received HELLO tag from User_0 at time 2.0
+User_0:%%%% Exiting body()
+    
+//--------------------------------
+// When there are no more events to process, then SimJava will exit the program
+// Then GridSim will exit as well    
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+Finish Example9
+

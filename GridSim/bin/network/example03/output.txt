@@ -1,0 +1,116 @@
+Starting network example ...
+Initializing GridSim package
+Initialising...
+
+Starting to create one Grid resource with 3 Machines
+Finally, creates one Grid resource (name: Res_0 - id: 5)
+
+Creating a grid user entity with name = User_0, and id = 10
+User_0:Creating 5 Gridlets
+Creating a grid user entity with name = User_1, and id = 14
+User_1:Creating 5 Gridlets
+Output_User_0.setBackgroundTraffic(): Warning - can not send junk packets to itself.
+Starting GridSim version 3.1
+Entities started.
+Output_User_1: background traffic will start at time 14
+Output_User_0: background traffic will start at time 18
+User_1Sending Gridlet #0 to Res_0
+User_0Sending Gridlet #0 to Res_0
+User_1Sending Gridlet #1 to Res_0
+User_0Sending Gridlet #1 to Res_0
+ack = true for Gridlet #1
+User_0Sending Gridlet #2 to Res_0
+User_0Sending Gridlet #3 to Res_0
+ack = true for Gridlet #1
+User_1Sending Gridlet #2 to Res_0
+User_1Sending Gridlet #3 to Res_0
+ack = true for Gridlet #3
+User_0Sending Gridlet #4 to Res_0
+User_0: Receiving Gridlet #0 at time = 821.3943999999999
+User_0: Receiving Gridlet #1 at time = 821.3943999999999
+User_0: Receiving Gridlet #2 at time = 821.3943999999999
+User_0: Receiving Gridlet #3 at time = 891.722599469496
+ack = true for Gridlet #3
+User_1Sending Gridlet #4 to Res_0
+User_1: Receiving Gridlet #0 at time = 1000.02
+User_1: Receiving Gridlet #1 at time = 1000.02
+User_1: Receiving Gridlet #2 at time = 1000.02
+User_1: Receiving Gridlet #3 at time = 1067.084
+User_0: Receiving Gridlet #4 at time = 2367.722599469497
+User_1: Receiving Gridlet #4 at time = 2735.0200000000004
+
+-------- User_0 ----------------
+Ping information for User_0
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_0		2367.7226        3875.000        1000.000
+router1		3875.010        3877.410        10000.000
+router2		3877.420        5720.220        1000.000
+Res_0		5720.230        5724.230        1000.000
+router2		5724.240        5724.640        10000.000
+router1		5724.650        5728.650        1000.000
+User_0		5728.660            N/A            N/A
+
+Round Trip Time : 1853.660 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000.0 bits/s
+-------- User_0 ----------------
+
+User_0: sending and receiving of Gridlets complete at 5728.660000000001
+
+-------- User_1 ----------------
+Ping information for User_1
+Entity Name	Entry Time	Exit Time	 Bandwidth
+----------------------------------------------------------
+User_1		2735.020        4607.000        1000.000
+router1		4607.010        4607.410        10000.000
+router2		4607.420        6852.220        1000.000
+Res_0		6852.230        6856.230        1000.000
+router2		6856.240        6856.640        10000.000
+router1		6856.650        6860.650        1000.000
+User_1		6860.660            N/A            N/A
+
+Round Trip Time : 2253.660 seconds
+Number of Hops  : 3
+Bottleneck Bandwidth : 1000.0 bits/s
+-------- User_1 ----------------
+
+User_1: sending and receiving of Gridlets complete at 6860.660000000001
+GridInformationService: Notify all GridSim entities for shutting down
+Sim_system: No more future events
+Gathering simulation data.
+Simulation completed.
+
+--- Routing Table for router1 ---
+router2		r1_r2_link
+User_1		User_1_link
+User_0		User_0_link
+Res_0		router2
+-------------------------------------
+
+
+--- Routing Table for router2 ---
+Res_0		Res_0_link
+router1		r1_r2_link
+User_0		router1
+User_1		router1
+-------------------------------------
+
+
+============= OUTPUT for User_0 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        5        39.78779840848807
+    1        Success        5        39.78779840848807
+    2        Success        5        42.7877984084879
+    3        Success        5        42.7877984084879
+    4        Success        5        42.78779840848756
+
+============= OUTPUT for User_1 ==========
+Gridlet ID    STATUS    Resource ID    Cost
+    0        Success        5        39.78779840848807
+    1        Success        5        39.78779840848807
+    2        Success        5        42.7877984084879
+    3        Success        5        42.7877984084879
+    4        Success        5        42.78779840848756
+
+Finish network example ...

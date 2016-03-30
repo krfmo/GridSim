@@ -1,0 +1,4 @@
+# node_id platform_id node_name node_ip node_location timezone proc_model os_name cores_per_proc num_procs mem_size disk_size up_bw down_bw metric_id notes
+         0	    1	         0	      NULL	   USA	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL
+         1	    1	         1	      NULL	   USA	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL
+         2	    1	         2	      NULL	   USA	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL	  NULL
