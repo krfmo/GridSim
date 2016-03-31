@@ -8,51 +8,51 @@ import gridsim.Gridlet;
 import gridsim.GridletList;
 import gridsim.ResourceUserList;
 
-/*¶ÔÕÕexample2µÄÁªÏµ
- * ÔËĞĞ±¾ÀıÊ±£¬»á´òÓ¡Ò»¸öÈÎÎñÁĞ±íºÍËûÃÇµÄÊôĞÔ£¬±¾ÀıÕ¹Ê¾ÁËÈçºÎ´´½¨ÈÎÎñ£¨Gridlet£©£¬ËùÒÔ²»ĞèÒªÄ£ÄâÈÎºÎ¶«Î÷¡£
- * ±¾Àı²»ĞèÒª³õÊ¼»¯GridSimºÍSimJava£¬ÒòÎª´´½¨ÈÎÎñÓëÔËĞĞÄ£ÄâÊÇ²»Ïà¹ØµÄ¡£
+/*å¯¹ç…§example2çš„ç»ƒä¹ 
+ * è¿è¡Œæœ¬ä¾‹æ—¶ï¼Œä¼šæ‰“å°ä¸€ä¸ªä»»åŠ¡åˆ—è¡¨å’Œä»–ä»¬çš„å±æ€§ï¼Œæœ¬ä¾‹å±•ç¤ºäº†å¦‚ä½•åˆ›å»ºä»»åŠ¡ï¼ˆGridletï¼‰ï¼Œæ‰€ä»¥ä¸éœ€è¦æ¨¡æ‹Ÿä»»ä½•ä¸œè¥¿ã€‚
+ * æœ¬ä¾‹ä¸éœ€è¦åˆå§‹åŒ–GridSimå’ŒSimJavaï¼Œå› ä¸ºåˆ›å»ºä»»åŠ¡ä¸è¿è¡Œæ¨¡æ‹Ÿæ˜¯ä¸ç›¸å…³çš„ã€‚
  * 
- * ÃèÊö£ºÒ»¸ö¼òµ¥µÄ³ÌĞòÀ´ËµÃ÷ÈçºÎÊ¹ÓÃGridSim°ü¡£
- * 		±¾ÀıÕ¹Ê¾ÁËÈçºÎ´´½¨Ò»¸ö»ò¶à¸öÍø¸ñÓÃ»§¡£Ò»¸öÍø¸ñÓÃ»§°üÀ¨Ò»¸ö»ò¶à¸öÈÎÎñ¡£
- * 		Òò´Ë£¬±¾ÀıÒ²»áÕ¹Ê¾ÈçºÎÊ¹ÓÃ»ò²»Ê¹ÓÃGridSimRandomÀàÀ´´´½¨ÈÎÎñ¡£
+ * æè¿°ï¼šä¸€ä¸ªç®€å•çš„ç¨‹åºæ¥è¯´æ˜å¦‚ä½•ä½¿ç”¨GridSimåŒ…ã€‚
+ * 		æœ¬ä¾‹å±•ç¤ºäº†å¦‚ä½•åˆ›å»ºä¸€ä¸ªæˆ–å¤šä¸ªç½‘æ ¼ç”¨æˆ·ã€‚ä¸€ä¸ªç½‘æ ¼ç”¨æˆ·åŒ…æ‹¬ä¸€ä¸ªæˆ–å¤šä¸ªä»»åŠ¡ã€‚
+ * 		å› æ­¤ï¼Œæœ¬ä¾‹ä¹Ÿä¼šå±•ç¤ºå¦‚ä½•ä½¿ç”¨æˆ–ä¸ä½¿ç”¨GridSimRandomç±»æ¥åˆ›å»ºä»»åŠ¡ã€‚
  * 
- * ÌáÊ¾£º±¾ÀıÖĞÓÃµ½µÄÖµÊÇ´ÓGridSim paperÖĞÌáÈ¡µÄ£¨http://www.gridbus.org/gridsim/£©*/
+ * æç¤ºï¼šæœ¬ä¾‹ä¸­ç”¨åˆ°çš„å€¼æ˜¯ä»GridSim paperä¸­æå–çš„ï¼ˆhttp://www.gridbus.org/gridsim/ï¼‰*/
 
-/**Õâ¸öÀàÕ¹Ê¾ÁËÈçºÎ´´½¨Ò»¸ö»ò¶à¸öÍø¸ñÓÃ»§¡£ÁíÍâ£¬Ò²ÌÖÂÛÁËÍø¸ñÈÎÎñGridletµÄ´´½¨*/
+/**è¿™ä¸ªç±»å±•ç¤ºäº†å¦‚ä½•åˆ›å»ºä¸€ä¸ªæˆ–å¤šä¸ªç½‘æ ¼ç”¨æˆ·ã€‚å¦å¤–ï¼Œä¹Ÿè®¨è®ºäº†ç½‘æ ¼ä»»åŠ¡Gridletçš„åˆ›å»º*/
 public class Test2 {
 	/**
-	 * ÔËĞĞ±¾ÀıµÄÖ÷º¯Êı
+	 * è¿è¡Œæœ¬ä¾‹çš„ä¸»å‡½æ•°
 	 * */
 	public static void main(String[] args) {
-		System.out.println("¿ªÊ¼´´½¨Íø¸ñÓÃ»§");
+		System.out.println("å¼€å§‹åˆ›å»ºç½‘æ ¼ç”¨æˆ·");
 		System.out.println();
 		
 		try {
-			//´´½¨ÈÎÎñ¼¯ºÏ
+			//åˆ›å»ºä»»åŠ¡é›†åˆ
 			GridletList list=createGridlet();
-			System.out.println("´´½¨ÁË"+list.size()+"¸öÈÎÎñ");
+			System.out.println("åˆ›å»ºäº†"+list.size()+"ä¸ªä»»åŠ¡");
 			
 			ResourceUserList userList=createGridUser(list);
-			System.out.println("´´½¨ÁË"+userList.size()+"¸öÍø¸ñÓÃ»§");
+			System.out.println("åˆ›å»ºäº†"+userList.size()+"ä¸ªç½‘æ ¼ç”¨æˆ·");
 			
-			//´òÓ¡ÈÎÎñÁĞ±í
+			//æ‰“å°ä»»åŠ¡åˆ—è¡¨
 			printGridletList(list);
-			System.out.println("°¸Àı½áÊø~");
+			System.out.println("æ¡ˆä¾‹ç»“æŸ~");
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
-			System.out.println("³ö´íÀ²£¡");
+			System.out.println("å‡ºé”™å•¦ï¼");
 		}
 	}
 	
 	/**
-	 * Ò»¸öÍø¸ñÓÃ»§ÓĞ¶à¸öÒª±»´¦ÀíµÄÍø¸ñÈÎÎñ¡£±¾·½·¨½«Õ¹Ê¾ÈçºÎ´´½¨Íø¸ñÈÎÎñÊ¹ÓÃ»ò²»Ê¹ÓÃGridSimRandomÀà
+	 * ä¸€ä¸ªç½‘æ ¼ç”¨æˆ·æœ‰å¤šä¸ªè¦è¢«å¤„ç†çš„ç½‘æ ¼ä»»åŠ¡ã€‚æœ¬æ–¹æ³•å°†å±•ç¤ºå¦‚ä½•åˆ›å»ºç½‘æ ¼ä»»åŠ¡ä½¿ç”¨æˆ–ä¸ä½¿ç”¨GridSimRandomç±»
 	 * */
 	private static GridletList createGridlet(){
-		//´´½¨Ò»¸öÊ¢·ÅÍø¸ñÈÎÎñµÄÈİÆ÷
+		//åˆ›å»ºä¸€ä¸ªç››æ”¾ç½‘æ ¼ä»»åŠ¡çš„å®¹å™¨
 		GridletList list=new GridletList();
 		
-		//ÎÒÃÇ²»Ê¹ÓÃGridSimRandom£¬ÊÖ¶¯´´½¨3¸öÈÎÎñ
+		//æˆ‘ä»¬ä¸ä½¿ç”¨GridSimRandomï¼Œæ‰‹åŠ¨åˆ›å»º3ä¸ªä»»åŠ¡
 		int id=0;
 		double length=3500.0;
 		long file_size=300;
@@ -63,35 +63,35 @@ public class Test2 {
 		id++;
 		Gridlet gridlet3=new Gridlet(id, 9000, 900, 900);
 		
-		//½«ÈÎÎñ´æ´¢ÖÁ¼¯ºÏ
+		//å°†ä»»åŠ¡å­˜å‚¨è‡³é›†åˆ
 		list.add(gridlet1);
 		list.add(gridlet2);
 		list.add(gridlet3);
 		
-		//ÎÒÃÇÊ¹ÓÃGridSimRandomºÍGridSimStandardPEÀà´´½¨5¸öÈÎÎñ
+		//æˆ‘ä»¬ä½¿ç”¨GridSimRandomå’ŒGridSimStandardPEç±»åˆ›å»º5ä¸ªä»»åŠ¡
 		Random random=new Random();
 		
-		//ÉèÖÃPEµÄMIPS Rating
+		//è®¾ç½®PEçš„MIPS Rating
 		GridSimStandardPE.setRating(100);
 		
-		//´´½¨5¸öÈÎÎñ£¬Ëæ»úÉú³ÉµÄÕâ5¸öÈÎÎñ£¬Æä³¤¶ÈµÈ²ÎÊı¶¼ÊÇËæ»úµÄ£¬ÒÔºóÄ£ÄâÊ±ºòÓÃµÃÉÏ£¡
+		//åˆ›å»º5ä¸ªä»»åŠ¡ï¼Œéšæœºç”Ÿæˆçš„è¿™5ä¸ªä»»åŠ¡ï¼Œå…¶é•¿åº¦ç­‰å‚æ•°éƒ½æ˜¯éšæœºçš„ï¼Œä»¥åæ¨¡æ‹Ÿæ—¶å€™ç”¨å¾—ä¸Šï¼
 		int count=5;
 		double min_range=0.10;
 		double max_range=0.50;
 		for(int i=1;i<count+1;i++){
-			//ÈÎÎñ³¤¶ÈÓÉËæ»úÖµºÍµ±Ç°PE´¦ÀíÄÜÁ¦£¨MIPS Rating£©¾ö¶¨
+			//ä»»åŠ¡é•¿åº¦ç”±éšæœºå€¼å’Œå½“å‰PEå¤„ç†èƒ½åŠ›ï¼ˆMIPS Ratingï¼‰å†³å®š
 			length=GridSimStandardPE.toMIs(random.nextDouble()*output_size);
 			
-			//¹æ¶¨ÁËÈÎÎñÎÄ¼şµÄ³¤¶ÈµÄ±ä»¯·¶Î§ÊÇ£º100 + (10% to 50%)
+			//è§„å®šäº†ä»»åŠ¡æ–‡ä»¶çš„é•¿åº¦çš„å˜åŒ–èŒƒå›´æ˜¯ï¼š100 + (10% to 50%)
 			file_size=(long) GridSimRandom.real(100, min_range, max_range, random.nextDouble());
 			
-			//¹æ¶¨ÁËÈÎÎñÊä³ö³¤¶ÈµÄ±ä»¯·¶Î§ÊÇ£º250 + (10% to 50%)
+			//è§„å®šäº†ä»»åŠ¡è¾“å‡ºé•¿åº¦çš„å˜åŒ–èŒƒå›´æ˜¯ï¼š250 + (10% to 50%)
 			output_size=(long) GridSimRandom.real(250, min_range, max_range, random.nextDouble());
 			
-			//´´½¨Ò»¸öĞÂµÄÍø¸ñÈÎÎñ¶ÔÏó
+			//åˆ›å»ºä¸€ä¸ªæ–°çš„ç½‘æ ¼ä»»åŠ¡å¯¹è±¡
 			Gridlet gridlet=new Gridlet(id+i, length, file_size, output_size);
 			
-			//Ìí¼ÓÍø¸ñÈÎÎñµ½¼¯ºÏ
+			//æ·»åŠ ç½‘æ ¼ä»»åŠ¡åˆ°é›†åˆ
 			list.add(gridlet);
 		}
 		
@@ -99,27 +99,27 @@ public class Test2 {
 	}
 	
 	/**
-	 * ´´½¨Íø¸ñÓÃ»§¡£ÔÚ±¾ÀıÖĞ£¬´´½¨3¸öÓÃ»§£¬È»ºó½«ËûÃÇ·ÖÅä¸øÍø¸ñÈÎÎñ¡£
+	 * åˆ›å»ºç½‘æ ¼ç”¨æˆ·ã€‚åœ¨æœ¬ä¾‹ä¸­ï¼Œåˆ›å»º3ä¸ªç”¨æˆ·ï¼Œç„¶åå°†ä»–ä»¬åˆ†é…ç»™ç½‘æ ¼ä»»åŠ¡ã€‚
 	 */
 	private static ResourceUserList createGridUser(GridletList list){
-		ResourceUserList userList=new ResourceUserList();//ResourceUserListÀà¼Ì³ĞÁËLinkedList
-														//ÀàÖĞÖ»ÓĞÈı¸ö·½·¨£¬Ò»¸öÊÇadd·½·¨£¬Ò»¸öÊÇ¹ıÊ±µÄmyRemove£¬»¹ÓĞÒ»¸öÊÇsuperÁËLinkedListµÄremove·½·¨
+		ResourceUserList userList=new ResourceUserList();//ResourceUserListç±»ç»§æ‰¿äº†LinkedList
+														//ç±»ä¸­åªæœ‰ä¸‰ä¸ªæ–¹æ³•ï¼Œä¸€ä¸ªæ˜¯addæ–¹æ³•ï¼Œä¸€ä¸ªæ˜¯è¿‡æ—¶çš„myRemoveï¼Œè¿˜æœ‰ä¸€ä¸ªæ˜¯superäº†LinkedListçš„removeæ–¹æ³•
 		
-		userList.add(0);//ÓÃ»§id´Ó0¿ªÊ¼
-		userList.add(1);//´Ë´¦²ÎÊıÎªintÀàĞÍ£¬È»¶ø·½·¨ÄÚ²¿»á½«Æä·â×°³ÉInteger¶ÔÏó£¬È»ºóÌí¼Óµ½Á´±í
-		userList.add(2);//·½·¨»áÏÈÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÒÑ¾­´æÔÚ¸Ã¶ÔÏó£¬ÈôÒÑ´æÔÚÔò·µ»Øfalse£¬·ñÔò½«¶ÔÏóÌí¼Óµ½¼¯ºÏ£¬²¢·µ»Øtrue
+		userList.add(0);//ç”¨æˆ·idä»0å¼€å§‹
+		userList.add(1);//æ­¤å¤„å‚æ•°ä¸ºintç±»å‹ï¼Œç„¶è€Œæ–¹æ³•å†…éƒ¨ä¼šå°†å…¶å°è£…æˆIntegerå¯¹è±¡ï¼Œç„¶åæ·»åŠ åˆ°é“¾è¡¨
+		userList.add(2);//æ–¹æ³•ä¼šå…ˆåˆ¤æ–­é›†åˆä¸­æ˜¯å¦å·²ç»å­˜åœ¨è¯¥å¯¹è±¡ï¼Œè‹¥å·²å­˜åœ¨åˆ™è¿”å›falseï¼Œå¦åˆ™å°†å¯¹è±¡æ·»åŠ åˆ°é›†åˆï¼Œå¹¶è¿”å›true
 		
 		int userSize=userList.size();
 		int gridletSize=list.size();
 		int id=0;
 		
-		//½«ÓÃ»§ID·ÖÅä¸øÖ¸¶¨ÈÎÎñ
+		//å°†ç”¨æˆ·IDåˆ†é…ç»™æŒ‡å®šä»»åŠ¡
 		for(int i=0;i<gridletSize;i++){
 			if(i!=0 && i%userSize==0){
 				id++;
 			}
-				//ÕâÖÖ·ÖÅä·½Ê½Ò²ÊÇÍ¦ÌØ±ğ...012·ÖÅä¸øÓÃ»§0£¬345·ÖÅä¸øÓÃ»§1£¬67·ÖÅä¸øÓÃ»§2£¬ÕâÓ¦¸ÃÊÇÃ»ÓÃµ½Ê²Ã´µ÷¶ÈËã·¨°É...
-			((Gridlet)list.get(i)).setUserID(id);//½«µÚi¸öÈÎÎñ·ÖÅä¸øµÚid¸öÓÃ»§
+				//è¿™ç§åˆ†é…æ–¹å¼ä¹Ÿæ˜¯æŒºç‰¹åˆ«...012åˆ†é…ç»™ç”¨æˆ·0ï¼Œ345åˆ†é…ç»™ç”¨æˆ·1ï¼Œ67åˆ†é…ç»™ç”¨æˆ·2ï¼Œè¿™åº”è¯¥æ˜¯æ²¡ç”¨åˆ°ä»€ä¹ˆè°ƒåº¦ç®—æ³•å§...
+			((Gridlet)list.get(i)).setUserID(id);//å°†ç¬¬iä¸ªä»»åŠ¡åˆ†é…ç»™ç¬¬idä¸ªç”¨æˆ·
 		}
 		
 		return userList;
@@ -129,13 +129,13 @@ public class Test2 {
 		int size=list.size();
 		Gridlet gridlet;
 		
-		String indent="	";//Ëõ½ø
+		String indent="	";//ç¼©è¿›
 		System.out.println();
 		System.out.println("Gridlet ID"+ indent+indent +"User ID"+ indent+indent +"length"+ indent+indent 
 				+"file size"+ indent +"output size");
 		
 		for(int i=0;i<size;i++){
-			gridlet=(Gridlet)list.get(i);//ÎªÉ¶·ÇÒªÇ¿×ªÒ»ÏÂ£¿£¿£¿
+			gridlet=(Gridlet)list.get(i);//ä¸ºå•¥éè¦å¼ºè½¬ä¸€ä¸‹ï¼Ÿï¼Ÿï¼Ÿ
 			System.out.println(indent+gridlet.getGridletID()+indent+
 					indent+gridlet.getUserID()+indent+indent+
 					(int)gridlet.getGridletLength()+indent+indent+
